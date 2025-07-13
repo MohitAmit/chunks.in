@@ -22,7 +22,7 @@ export default function Home() {
                 Unreal Taste
               </h1>
               <p className="mt-4 max-w-xl mx-auto md:mx-0 text-lg md:text-xl text-muted-foreground">
-                Discover guilt-free, homegrown health chunks sourced directly from the heartlands of India
+                Discover guilt-free, homegrown chunks sourced directly from the heartlands of India
               </p>
               <div className="mt-8 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
                 <Button asChild size="lg">
@@ -95,23 +95,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Know Your Farmers CTA Section */}
+      {/* Know Your Chunkers CTA Section */}
       <section className="py-16 md:py-24 bg-muted">
         <div className="container px-4 md:px-6">
           <div className="bg-card rounded-lg shadow-soft overflow-hidden md:grid md:grid-cols-2 items-center border-2 border-secondary">
             <div className="p-8 md:p-12">
-              <h2 className="text-3xl md:text-4xl font-headline font-bold">Know Your Farmers</h2>
+              <h2 className="text-3xl md:text-4xl font-headline font-bold">Know Your Chunkers</h2>
               <p className="mt-4 text-lg text-muted-foreground">
                 Meet the incredible people behind your food Learn their stories, understand their craft, and see the passion that goes into every product
               </p>
               <Button asChild size="lg" className="mt-6">
-                <Link href="/farmers">Meet the Growers</Link>
+                <Link href="/chunkers">Meet the Growers</Link>
               </Button>
             </div>
             <div className="h-64 md:h-full">
               <Image
                 src="https://placehold.co/600x600.png"
-                alt="A collage of Indian farmers"
+                alt="A collage of Indian chunkers"
                 data-ai-hint="indian farmers collage"
                 width={600}
                 height={600}

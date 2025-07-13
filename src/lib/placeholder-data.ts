@@ -18,7 +18,7 @@ export const products: Product[] = [
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
     region: 'Kashmir',
     ingredients: [{ name: 'Raw Multi-floral Honey', source: 'Pahalgam Meadows', batchId: 'KSH-2401', procurementDate: '2024-05-10', expiryDate: '2026-05-09' }, { name: 'Saffron Strands', source: 'Pampore Fields', batchId: 'SFF-2311', procurementDate: '2023-11-20', expiryDate: '2025-11-19' }],
-    farmerStory: {
+    chunkerStory: {
       name: 'Ghulam Ahmed',
       story: 'For generations, our family has practiced the art of beekeeping in the pristine meadows of Pahalgam We believe in letting the bees thrive naturally, resulting in honey that is pure and full of life',
       video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
@@ -39,7 +39,7 @@ export const products: Product[] = [
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
     region: 'Himalayan Region',
     ingredients: [{ name: 'Raw Honey', source: 'Himalayan Foothills', batchId: 'HNY-2403', procurementDate: '2024-03-15', expiryDate: '2026-03-14' }, { name: 'Shilajit Extract', source: 'Himalayan Higher Altitudes', batchId: 'SHJ-2310', procurementDate: '2023-10-02', expiryDate: '2028-10-01' }],
-    farmerStory: {
+    chunkerStory: {
       name: 'Himalayan Herbalists Co-op',
       story: 'We source our Shilajit resin from the highest altitudes of the Himalayas, where it has been forming for centuries We combine this potent mineral with wild honey to create a powerful wellness product',
       video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
@@ -59,7 +59,7 @@ export const products: Product[] = [
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
     region: 'Sundarbans, West Bengal',
     ingredients: [{ name: 'Raw Mangrove Honey', source: 'Sundarbans Mangrove Forest', batchId: 'SMH-2404', procurementDate: '2024-04-22', expiryDate: '2026-04-21' }],
-    farmerStory: {
+    chunkerStory: {
       name: 'The Moulis community',
       story: 'We are the traditional honey collectors of the Sundarbans Risking our lives, we venture deep into the forests to collect this precious nectar, following ancient sustainable practices',
       video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
@@ -78,7 +78,7 @@ export const products: Product[] = [
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
     region: 'Himalayas, Nepal',
     ingredients: [{ name: 'Raw Himalayan Cliff Honey', source: 'Nepalese Cliffs', batchId: 'NCH-2402', procurementDate: '2024-02-18', expiryDate: '2026-02-17' }, { name: 'Nectar of Wild Rhododendrons', source: 'Nepalese Cliffs', batchId: 'NCH-2402', procurementDate: '2024-02-18', expiryDate: '2026-02-17' }],
-    farmerStory: {
+    chunkerStory: {
       name: 'The Gurung Tribe Hunters',
       story: 'We are the descendants of ancient honey hunters, a tradition passed down through generations We scale treacherous cliffs with nothing but handmade ropes to bring you this liquid gold It is a dangerous dance with nature, but it allows us to share this gift from the mountains with the world',
       video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
@@ -101,7 +101,7 @@ export const products: Product[] = [
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
     region: 'Gujarat',
     ingredients: [{ name: 'A2 Milk from Gir cows', source: 'Ranchodbhai Patel Farm', batchId: 'GIR-2405', procurementDate: '2024-05-20', expiryDate: '2025-05-19' }],
-    farmerStory: {
+    chunkerStory: {
       name: 'Ranchodbhai Patel',
       story: 'Our Gir cows are the pride of our farm They graze freely on organic pastures, and we treat them with love and respect This ghee is a product of that care, churned by hand to preserve its natural goodness',
       video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
@@ -125,7 +125,7 @@ export const products: Product[] = [
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
     region: 'Punjab',
     ingredients: [{ name: 'A2 Milk from Sahiwal cows', source: 'Balwinder Singh Farm', batchId: 'SAH-2405', procurementDate: '2024-05-18', expiryDate: '2025-05-17' }],
-    farmerStory: {
+    chunkerStory: {
       name: 'Balwinder Singh',
       story: 'The Sahiwal is a special cow, and its milk produces ghee of exceptional quality We follow age-old practices, ensuring that every jar of ghee we produce is a testament to Punjab\'s rich dairy heritage',
       video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
@@ -148,7 +148,7 @@ export const products: Product[] = [
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
     region: 'Uttar Pradesh',
     ingredients: [{ name: 'A2 Milk from Kankrej cows', source: 'Avadh Dairy Collective', batchId: 'KAN-2404', procurementDate: '2024-04-30', expiryDate: '2025-04-29' }],
-    farmerStory: {
+    chunkerStory: {
       name: 'Avadh Dairy Collective',
       story: 'Our Kankrej cattle are known for their resilience The ghee from their milk is a cherished product of our community, made with techniques passed down through generations',
       video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
@@ -168,9 +168,9 @@ export const products: Product[] = [
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
     region: 'Multi-regional',
     ingredients: [{ name: 'Gir Cow Ghee (100g)', source: 'Ranchodbhai Patel Farm', batchId: 'GIR-2405', procurementDate: '2024-05-20', expiryDate: '2025-05-19' }, { name: 'Sahiwal Cow Ghee (100g)', source: 'Balwinder Singh Farm', batchId: 'SAH-2405', procurementDate: '2024-05-18', expiryDate: '2025-05-17' }, { name: 'Kankrej Cow Ghee (100g)', source: 'Avadh Dairy Collective', batchId: 'KAN-2404', procurementDate: '2024-04-30', expiryDate: '2025-04-29' }],
-    farmerStory: {
-      name: 'Various Farmers',
-      story: 'This pack represents a journey across India, from the pastures of Gujarat to the fields of Punjab It\'s a tribute to the dedicated farmers who uphold the traditions of raising native Indian cattle breeds',
+    chunkerStory: {
+      name: 'Various Chunkers',
+      story: 'This pack represents a journey across India, from the pastures of Gujarat to the fields of Punjab It\'s a tribute to the dedicated chunkers who uphold the traditions of raising native Indian cattle breeds',
       video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
       photo: 'https://placehold.co/300x300.png',
     },
@@ -188,7 +188,7 @@ export const products: Product[] = [
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
     region: 'Haryana',
     ingredients: [{ name: 'Buffalo Milk', source: 'Sukhbir Singh Farm', batchId: 'MUR-2405', procurementDate: '2024-05-21', expiryDate: '2025-02-20' }],
-    farmerStory: {
+    chunkerStory: {
         name: 'Sukhbir Singh',
         story: 'Our Murrah buffaloes are champions, known for their high-quality milk We make our ghee with traditional methods to ensure it is as pure and delicious as possible It is the secret ingredient in our family recipes',
         video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
@@ -215,7 +215,7 @@ export const products: Product[] = [
       { name: 'Ragi Flour', source: 'GreenHarvest Farms, Mandya', batchId: 'RAG-2406A', procurementDate: '2024-06-01', expiryDate: '2024-12-01' },
       { name: 'Jaggery', source: 'Natural Sweeteners Co, Kolhapur', batchId: 'JAG-2405C', procurementDate: '2024-05-15', expiryDate: '2025-05-14' }
     ],
-    farmerStory: {
+    chunkerStory: {
       name: 'Sahana Women\'s Collective',
       story: 'We are a group of women from rural Karnataka dedicated to reviving traditional grains Our recipes are passed down through generations, made with love and the finest local ingredients',
       video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
@@ -238,7 +238,7 @@ export const products: Product[] = [
         { name: 'Date-Almond Butter', source: 'In-house', batchId: 'DAB-2406', procurementDate: '2024-06-01', expiryDate: '2024-09-01' },
         { name: 'Dark Chocolate', source: 'Indian Cocoa Farms', batchId: 'DC-2405', procurementDate: '2024-05-15', expiryDate: '2025-05-14' }
     ],
-    farmerStory: {
+    chunkerStory: {
       name: 'Urban Homemakers',
       story: 'We create treats that are both indulgent and healthy These cone bites are our modern take on guilt-free snacking',
       video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
@@ -262,7 +262,7 @@ export const products: Product[] = [
         { name: 'Rolled Oats', source: 'Punjab Farms', batchId: 'OAT-2403', procurementDate: '2024-03-20', expiryDate: '2025-09-19' },
         { name: 'Raw Honey', source: 'Himalayan Foothills', batchId: 'HNY-2403', procurementDate: '2024-03-15', expiryDate: '2026-03-14' }
     ],
-    farmerStory: {
+    chunkerStory: {
       name: 'The Fitness Kitchen',
       story: 'We believe in the power of natural energy Our energy cubes are crafted to provide sustained fuel for active lifestyles, without any artificial ingredients',
       video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
@@ -287,8 +287,8 @@ export const products: Product[] = [
         { name: 'Makhana (Fox Nuts)', source: 'Mithila Region', batchId: 'MKH-2405', procurementDate: '2024-05-10', expiryDate: '2025-05-09' },
         { name: 'A2 Ghee', source: 'Gir Farms', batchId: 'GIR-2405', procurementDate: '2024-05-20', expiryDate: '2025-02-19' }
     ],
-    farmerStory: {
-      name: 'Mithila Makhana Farmers',
+    chunkerStory: {
+      name: 'Mithila Makhana Chunkers',
       story: 'Makhana has been a part of our culture for centuries We cultivate it in natural ponds and sun-dry it to perfection, preserving its nutritional benefits',
       video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
       photo: 'https://placehold.co/300x300.png',
@@ -311,7 +311,7 @@ export const products: Product[] = [
         { name: 'Dates', source: 'Omani Imports', batchId: 'DAT-2404', procurementDate: '2024-04-10', expiryDate: '2025-04-09' },
         { name: 'Oat Flour', source: 'In-house', batchId: 'OATF-2406', procurementDate: '2024-06-01', expiryDate: '2024-12-01' }
     ],
-    farmerStory: {
+    chunkerStory: {
       name: 'The Heritage Kitchen',
       story: 'We are reinventing traditional Indian sweets for the modern palate Our laddoos carry the warmth of tradition with the benefits of clean, healthy ingredients',
       video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
@@ -333,7 +333,7 @@ export const products: Product[] = [
         { name: 'Multigrain Flour', source: 'Local Millers', batchId: 'MGF-2406', procurementDate: '2024-06-01', expiryDate: '2024-12-01' },
         { name: 'Dry Garlic Chutney', source: 'In-house', batchId: 'DGC-2406', procurementDate: '2024-06-01', expiryDate: '2024-09-01' }
     ],
-    farmerStory: {
+    chunkerStory: {
       name: 'Snacksmiths India',
       story: 'We love bold Indian flavors Our garlic chutney chips are a tribute to the fiery chutneys of Maharashtra, made healthier by baking',
       video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
@@ -356,7 +356,7 @@ export const products: Product[] = [
         { name: 'Yogurt', source: 'Local Dairy', batchId: 'YOG-2406', procurementDate: '2024-06-10', expiryDate: '2024-06-20' },
         { name: 'Jaggery', source: 'Kolhapur Farms', batchId: 'JAG-2405', procurementDate: '2024-05-15', expiryDate: '2025-05-14' },
     ],
-    farmerStory: {
+    chunkerStory: {
       name: 'The Breakfast Club',
       story: 'We believe that breakfast should be both beautiful and beneficial Our parfait jars are designed to give you a healthy, happy start to your day',
       video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
@@ -379,7 +379,7 @@ export const products: Product[] = [
         { name: 'Turmeric', source: 'Erode Farms', batchId: 'TUR-2403', procurementDate: '2024-03-10', expiryDate: '2025-09-09' },
         { name: 'Almond Butter', source: 'In-house', batchId: 'ALB-2406', procurementDate: '2024-06-01', expiryDate: '2024-12-01' }
     ],
-    farmerStory: {
+    chunkerStory: {
       name: 'The Wellness Pantry',
       story: 'Our goal is to create snacks that heal By combining the power of turmeric and cacao, we have made a treat that tastes good and does good',
       video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
@@ -402,7 +402,7 @@ export const products: Product[] = [
         { name: 'Beetroot Powder', source: 'Ooty Farms', batchId: 'BTP-2405', procurementDate: '2024-05-20', expiryDate: '2025-05-19' },
         { name: 'Saffron', source: 'Kashmir Fields', batchId: 'SFF-2311', procurementDate: '2023-11-20', expiryDate: '2025-11-19' }
     ],
-    farmerStory: {
+    chunkerStory: {
       name: 'The Crispy Cracker Co',
       story: 'We believe snacks should be fun and colorful without artificial ingredients Our crisps get their vibrant hues from real vegetables and spices',
       video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
@@ -441,7 +441,7 @@ export const products: Product[] = [
         calcium: "344mg",
         iron: "4.5mg"
     },
-    farmerStory: {
+    chunkerStory: {
       name: 'Sahana Women\'s Collective',
       story: 'We are a group of women from rural Karnataka dedicated to reviving traditional grains Our recipes are passed down through generations, made with love and the finest local ingredients',
       video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
@@ -465,7 +465,7 @@ export const products: Product[] = [
         { name: 'Almonds', source: 'California Orchards', batchId: 'ALM-2403', procurementDate: '2024-03-20', expiryDate: '2025-09-19' },
         { name: 'A2 Ghee', source: 'Balwinder Singh Farm, Punjab', batchId: 'SAH-2405', procurementDate: '2024-05-18', expiryDate: '2025-02-17' },
     ],
-    farmerStory: {
+    chunkerStory: {
       name: 'Urban Homemakers',
       story: 'Inspired by our family traditions, we started creating these healthy treats in our home kitchens We source the best quality dry fruits to ensure every ladoo is packed with goodness',
       video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
@@ -487,7 +487,7 @@ export const products: Product[] = [
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
     region: 'Uttar Pradesh',
     ingredients: [{ name: 'Sugarcane Juice', source: 'Chaudhary Sugarcane Farms', batchId: 'SUG-UP-2401', procurementDate: '2024-01-20', expiryDate: '2025-01-19' }],
-    farmerStory: {
+    chunkerStory: {
       name: 'The Chaudhary Family',
       story: 'For over a century, our family has been cultivating sugarcane and making gur using traditional methods We use no chemicals, only the pure juice of our sun-kissed cane, to bring you a taste of real Uttar Pradesh',
       video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
@@ -510,9 +510,9 @@ export const products: Product[] = [
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
     region: 'Maharashtra',
     ingredients: [{ name: 'Sugarcane Juice', source: 'Kolhapur Jaggery Cooperative', batchId: 'SUG-MH-2402', procurementDate: '2024-02-15', expiryDate: '2025-02-14' }],
-    farmerStory: {
+    chunkerStory: {
       name: 'Kolhapur Jaggery Cooperative',
-      story: 'We are a cooperative of over 100 small farmers dedicated to preserving the legacy of Kolhapuri Gul Our jaggery is a symbol of our collective effort and the rich soil of Maharashtra',
+      story: 'We are a cooperative of over 100 small chunkers dedicated to preserving the legacy of Kolhapuri Gul Our jaggery is a symbol of our collective effort and the rich soil of Maharashtra',
       video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
       photo: 'https://placehold.co/300x300.png',
     },
@@ -530,7 +530,7 @@ export const products: Product[] = [
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
     region: 'Kerala',
     ingredients: [{ name: 'Sugarcane Juice', source: 'Marayoor Sugarcane Growers', batchId: 'SUG-KL-2312', procurementDate: '2023-12-25', expiryDate: '2024-12-24' }],
-    farmerStory: {
+    chunkerStory: {
       name: 'Marayoor Sugarcane Growers',
       story: 'The unique climate of Marayoor gives our sugarcane its special sweetness We make our jaggery in underground pits, a method that has been used for centuries, to create this delicious and healthy Sharkara',
       video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
@@ -550,7 +550,7 @@ export const testimonials: Testimonial[] = [
     name: 'Allen',
     location: 'IIM Calcutta',
     avatar: 'https://placehold.co/100x100.png',
-    text: 'The quality of the products is outstanding You can really taste the difference I love the Shilajit Honey Twigs, they are my go-to pre-workout boost',
+    text: 'Finally, a brand that is transparent about its sourcing Reading the chunker stories makes me feel more connected to the food I eat Great initiative',
     rating: 5,
   },
   {
@@ -558,7 +558,7 @@ export const testimonials: Testimonial[] = [
     name: 'Anamika Rathod',
     location: 'IIT Chennai',
     avatar: 'https://placehold.co/100x100.png',
-    text: 'Finally, a brand that is transparent about its sourcing Reading the farmer stories makes me feel more connected to the food I eat Great initiative',
+    text: 'The quality of the products is outstanding You can really taste the difference I love the Shilajit Honey Twigs, they are my go-to pre-workout boost',
     rating: 5,
   },
   {

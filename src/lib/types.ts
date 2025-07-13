@@ -31,7 +31,7 @@ export interface Product {
   images: string[];
   region: string;
   ingredients: Ingredient[];
-  farmerStory: {
+  chunkerStory: {
     name: string;
     story: string;
     video: string;

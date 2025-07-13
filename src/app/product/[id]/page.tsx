@@ -239,14 +239,14 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
           </div>
         </div>
 
-        {/* Farmer Story Section */}
+        {/* Chunker Story Section */}
         <div className="mt-16 md:mt-24">
             <Card className="bg-muted overflow-hidden border-none shadow-none">
                 <div className="grid md:grid-cols-2 items-center">
                     <div className="md:col-span-1">
                         <Image
-                            src={product.farmerStory.photo}
-                            alt={product.farmerStory.name}
+                            src={product.chunkerStory.photo}
+                            alt={product.chunkerStory.name}
                             data-ai-hint="farmer portrait"
                             width={500}
                             height={500}
@@ -255,11 +255,11 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
                     </div>
                     <div className="md:col-span-1 p-8 md:p-12">
                         <CardHeader className="p-0">
-                            <CardTitle className="font-headline text-2xl flex items-center gap-2"><Feather className="h-6 w-6 text-secondary"/> From the Farmer</CardTitle>
+                            <CardTitle className="font-headline text-2xl flex items-center gap-2"><Feather className="h-6 w-6 text-secondary"/> From the Chunker</CardTitle>
                         </CardHeader>
                         <CardContent className="p-0 mt-4">
-                            <p className="text-muted-foreground italic text-base">&quot;{product.farmerStory.story}&quot;</p>
-                            <p className="font-semibold mt-4">- {product.farmerStory.name}, {product.region}</p>
+                            <p className="text-muted-foreground italic text-base">&quot;{product.chunkerStory.story}&quot;</p>
+                            <p className="font-semibold mt-4">- {product.chunkerStory.name}, {product.region}</p>
                         </CardContent>
                     </div>
                 </div>
