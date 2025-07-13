@@ -68,10 +68,10 @@ export default function KnowYourBodyPage() {
   }
 
   const flowchartSteps = [
-    { icon: FileUp, title: "Upload Your Report" },
-    { icon: Bot, title: "AI Analyzes Your Body Metrics" },
-    { icon: Microscope, title: "Detects Imbalances / Highlights Concerns" },
-    { icon: Leaf, title: "Suggests Personalized Food Products" },
+    { icon: FileUp, title: "Step 1: Upload Your Health Report", description: "Drop in your full body report (PDF, image, or scan). The journey to smarter snacking begins here." },
+    { icon: Bot, title: "Step 2: Smart AI Does the Heavy Lifting", description: "Our system decodes your body metrics – vitamins, sugar levels, deficiencies, and more." },
+    { icon: Microscope, title: "Step 3: Discover What’s Off-Balance", description: "We flag anything that’s too high or too low — and highlight what your body needs more of." },
+    { icon: Leaf, title: "Step 4: Get Your Personalized Food Plan", description: "You’ll receive snack & food recommendations from our natural, homegrown collection – tailored to your body." },
   ];
 
   return (
@@ -79,10 +79,9 @@ export default function KnowYourBodyPage() {
       {!results && (
         <>
           <div className="text-center mb-12">
-            <HeartPulse className="h-16 w-16 text-primary mx-auto mb-4" />
-            <h1 className="text-4xl md:text-5xl font-headline font-bold text-foreground">Know Your Body</h1>
+            <h1 className="text-4xl md:text-5xl font-headline font-bold text-foreground">🌿 Know Your Body: Your Health, Your Snacks</h1>
             <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
-              Upload your health report to get personalized insights and product recommendations from Chunks.
+              Take charge of your health in just 4 simple steps — and let Chunks craft the perfect snack plan for you.
             </p>
              <p className="mt-2 text-sm text-muted-foreground max-w-3xl mx-auto">
               ⚠️ Your data is 100% private and used only for this health analysis.
@@ -90,16 +89,19 @@ export default function KnowYourBodyPage() {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* How It Works Section */}
-            <div className="lg:order-1">
-              <h2 className="text-2xl font-headline font-bold text-center mb-6">How It Works</h2>
+            <div className="lg:order-1 space-y-4">
+              <h2 className="text-2xl font-headline font-bold text-center mb-6">⚙️ How It Works</h2>
               <div className="flex flex-col items-center">
                 {flowchartSteps.map((step, index) => (
                   <div key={index} className="flex flex-col items-center w-full">
-                    <div className="flex items-center gap-6 w-full max-w-sm">
+                    <div className="flex flex-col items-center text-center gap-4 w-full max-w-md">
                         <div className="bg-primary/10 p-4 rounded-full border-2 border-primary/20 bg-background">
                             <step.icon className="h-8 w-8 text-primary" />
                         </div>
-                        <p className="text-lg font-semibold flex-1">{step.title}</p>
+                        <div className="flex-1">
+                          <h3 className="text-lg font-semibold">🔹 {step.title}</h3>
+                          <p className="text-muted-foreground text-sm">{step.description}</p>
+                        </div>
                     </div>
                     {index < flowchartSteps.length - 1 && (
                       <div className="h-12 w-px flex justify-center">
@@ -109,6 +111,7 @@ export default function KnowYourBodyPage() {
                   </div>
                 ))}
               </div>
+              <p className="text-center mt-6 font-semibold">🎯 Think of it as a health report card + snack prescription, all in one!</p>
             </div>
 
             {/* Upload Section */}
