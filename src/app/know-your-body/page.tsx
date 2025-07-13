@@ -92,9 +92,9 @@ export default function KnowYourBodyPage() {
             {/* How It Works Section */}
             <div className="lg:order-1">
               <h2 className="text-2xl font-headline font-bold text-center mb-6">How It Works</h2>
-              <div className="relative flex flex-col items-start lg:items-center">
+              <div className="relative max-w-sm mx-auto">
                  {/* Dotted Line */}
-                 <div className="absolute left-6 lg:left-1/2 top-4 bottom-4 w-px border-l-2 border-dashed border-primary/50 -translate-x-1/2"></div>
+                 <div className="absolute left-1/2 top-4 bottom-4 w-px border-l-2 border-dashed border-primary/50 -translate-x-1/2"></div>
                 {flowchartSteps.map((step, index) => (
                   <div key={index} className="flex items-center gap-6 mb-8 w-full z-10">
                     <div className="bg-primary/10 p-4 rounded-full border-2 border-primary/20 bg-background">
