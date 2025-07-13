@@ -74,9 +74,9 @@ export default function Home() {
                   <Users className="h-8 w-8 text-primary" />
                 </div>
               </div>
-              <h3 className="text-xl font-headline font-semibold">Chunker First</h3>
+              <h3 className="text-xl font-headline font-semibold">Farmer First</h3>
               <p className="mt-2 text-muted-foreground">
-                We ensure fair prices, empowering our chunking communities and sharing their stories
+                We ensure fair prices, empowering our farmer communities and sharing their stories
               </p>
             </div>
             <div className="p-6">

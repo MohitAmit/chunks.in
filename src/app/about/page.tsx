@@ -54,9 +54,9 @@ export default function AboutPage() {
                   <Users className="h-8 w-8 text-primary" />
                 </div>
               </div>
-              <h3 className="text-xl font-headline font-semibold">Chunker First</h3>
+              <h3 className="text-xl font-headline font-semibold">Farmer First</h3>
               <p className="mt-2 text-muted-foreground">
-                We ensure fair prices and empower our chunking communities by sharing their stories and craftsmanship
+                We ensure fair prices and empower our farmer communities by sharing their stories and craftsmanship
               </p>
             </div>
             <div className="p-6 bg-card rounded-lg shadow-soft">
