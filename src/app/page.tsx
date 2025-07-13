@@ -19,10 +19,10 @@ export default function Home() {
               <h1 className="text-4xl md:text-6xl font-headline font-bold tracking-tight">
                 Real Indian Snacks,
                 <br />
-                Unreal Taste.
+                Unreal Taste
               </h1>
               <p className="mt-4 max-w-xl mx-auto md:mx-0 text-lg md:text-xl text-muted-foreground">
-                Discover guilt-free, homegrown health snacks sourced directly from the heartlands of India.
+                Discover guilt-free, homegrown health snacks sourced directly from the heartlands of India
               </p>
               <div className="mt-8 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
                 <Button asChild size="lg">
@@ -51,7 +51,7 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-headline font-bold">Featured Chunks</h2>
-            <p className="mt-2 text-lg text-muted-foreground">Handpicked for your well-being.</p>
+            <p className="mt-2 text-lg text-muted-foreground">Handpicked for your well-being</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {featuredProducts.map((product) => (
@@ -59,7 +59,7 @@ export default function Home() {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Button asChild variant="link" className="text-primary text-lg">
+            <Button asChild variant="link" className="text-foreground font-bold text-lg hover:text-primary">
               <Link href="/products">
                 View All Products <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
@@ -78,7 +78,7 @@ export default function Home() {
                  <h2 className="text-3xl md:text-4xl font-headline font-bold">Seal of Trust</h2>
               </div>
               <p className="mt-4 text-lg text-muted-foreground">
-                Every Chunks package comes with a tamper-proof seal. This ensures that the product is untouched from our farm to your hands, guaranteeing 100% purity and preventing any alteration. Your trust is our priority.
+                Every Chunks package comes with a tamper-proof seal This ensures that the product is untouched from our farm to your hands, guaranteeing 100% purity and preventing any alteration Your trust is our priority
               </p>
             </div>
             <div className="h-64 md:h-full order-1 md:order-2">
@@ -102,7 +102,7 @@ export default function Home() {
             <div className="p-8 md:p-12">
               <h2 className="text-3xl md:text-4xl font-headline font-bold">Know Your Farmers</h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                Meet the incredible people behind your food. Learn their stories, understand their craft, and see the passion that goes into every product.
+                Meet the incredible people behind your food Learn their stories, understand their craft, and see the passion that goes into every product
               </p>
               <Button asChild size="lg" className="mt-6">
                 <Link href="/farmers">Meet the Growers</Link>
@@ -127,7 +127,7 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-headline font-bold">From Our Community</h2>
-            <p className="mt-2 text-lg text-muted-foreground">Real stories from our happy customers.</p>
+            <p className="mt-2 text-lg text-muted-foreground">Real stories from our happy customers</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.slice(0, 3).map((testimonial) => (
