@@ -35,7 +35,7 @@ export default function LoginPage() {
             <CardHeader>
               <CardTitle>Welcome Back</CardTitle>
               <CardDescription>
-                Enter your credentials to access your account.
+                Enter your credentials to access your account
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -71,7 +71,7 @@ export default function LoginPage() {
             <CardHeader>
               <CardTitle>Create an Account</CardTitle>
               <CardDescription>
-                Join our community to start your wellness journey.
+                This is a referral based community for like minded people You can join Chunks only if you have a legit referral from any community member, since this is a closed small community We prepare in small batches for small groups so that we can maintain the authenticity of our products
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -86,6 +86,10 @@ export default function LoginPage() {
               <div className="space-y-2">
                 <Label htmlFor="password-signup">Password</Label>
                 <Input id="password-signup" type="password" required />
+              </div>
+               <div className="space-y-2">
+                <Label htmlFor="referral-signup">Referral Code</Label>
+                <Input id="referral-signup" type="text" placeholder="Enter referral code" required />
               </div>
             </CardContent>
             <CardFooter className="flex-col gap-4">
