@@ -550,7 +550,7 @@ export const testimonials: Testimonial[] = [
     name: 'Allen',
     location: 'IIM Calcutta',
     avatar: 'https://placehold.co/100x100.png',
-    text: 'Finally, a brand that is transparent about its sourcing Reading the farmer stories makes me feel more connected to the food I eat Great initiative',
+    text: 'The quality of the products is outstanding You can really taste the difference I love the Shilajit Honey Twigs, they are my go-to pre-workout boost',
     rating: 5,
   },
   {
@@ -558,7 +558,7 @@ export const testimonials: Testimonial[] = [
     name: 'Anamika Rathod',
     location: 'IIT Chennai',
     avatar: 'https://placehold.co/100x100.png',
-    text: 'The quality of the products is outstanding You can really taste the difference I love the Shilajit Honey Twigs, they are my go-to pre-workout boost',
+    text: 'Finally, a brand that is transparent about its sourcing Reading the farmer stories makes me feel more connected to the food I eat Great initiative',
     rating: 5,
   },
   {
