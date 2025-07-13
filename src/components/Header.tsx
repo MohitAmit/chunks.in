@@ -16,7 +16,7 @@ const navLinks = [
   { href: '/products', label: 'Products' },
   { href: '/chunkers', label: 'Our Chunkers' },
   { href: '/about', label: 'About' },
-  { href: '/know-your-body', label: 'Know Your Body'},
+  { href: '/know-your-chunks', label: 'Know Your Chunks'},
 ]
 
 const ChunksLogo = () => {

@@ -13,7 +13,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { products } from '@/lib/placeholder-data';
 
-export default function KnowYourBodyPage() {
+export default function KnowYourChunksPage() {
   const [file, setFile] = useState<File | null>(null);
   const [preview, setPreview] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -79,7 +79,7 @@ export default function KnowYourBodyPage() {
       {!results && (
         <>
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-headline font-bold text-foreground">🌿 Know Your Body: Your Health, Your Snacks</h1>
+            <h1 className="text-4xl md:text-5xl font-headline font-bold text-foreground">🌿 Know Your Chunks: Your Health, Your Snacks</h1>
             <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
               Take charge of your health in just 4 simple steps — and let Chunks craft the perfect snack plan for you
             </p>
