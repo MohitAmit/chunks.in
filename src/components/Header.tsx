@@ -17,7 +17,7 @@ const navLinks = [
   { href: '/farmers', label: 'Our Farmers' },
   { href: '/testimonials', label: 'Reviews' },
   { href: '/about', label: 'About' },
-  { href: '/contact', label: 'Contact Us'},
+  { href: '/know-your-body', label: 'Know Your Body'},
 ]
 
 const ChunksLogo = () => (
