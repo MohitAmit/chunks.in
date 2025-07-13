@@ -325,7 +325,7 @@ export const testimonials: Testimonial[] = [
   {
     id: '1',
     name: 'Kuldeep Meena',
-    location: 'IITian',
+    location: 'IIT Bombay',
     avatar: 'https://placehold.co/100x100.png',
     text: 'The Gir Cow Ghee is just like what my grandmother used to make The aroma and taste are so pure It has become a staple in my kitchen!',
     rating: 5,
@@ -333,7 +333,7 @@ export const testimonials: Testimonial[] = [
   {
     id: '2',
     name: 'Ashok NS',
-    location: 'IITian',
+    location: 'IIT Bombay',
     avatar: 'https://placehold.co/100x100.png',
     text: 'I was looking for healthy snacks for my kids, and the Ragi cookies are perfect They love the taste, and I\'m happy they are eating something nutritious',
     rating: 5,
@@ -341,15 +341,15 @@ export const testimonials: Testimonial[] = [
   {
     id: '3',
     name: 'Navin Verma',
-    location: 'IITian',
+    location: 'IIT Bombay',
     avatar: 'https://placehold.co/100x100.png',
     text: 'The Sundarbans honey has a very unique flavour I use it in my morning tea every day It feels so natural and rejuvenating Highly recommend!',
     rating: 4,
   },
   {
     id: '4',
-    name: 'Rohan Mehta',
-    location: 'Delhi',
+    name: 'Allen',
+    location: 'IIM Calcutta',
     avatar: 'https://placehold.co/100x100.png',
     text: 'Finally, a brand that is transparent about its sourcing Reading the farmer stories makes me feel more connected to the food I eat Great initiative!',
     rating: 5,
