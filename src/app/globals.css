@@ -13,11 +13,11 @@
     --primary: 279 47% 47%; /* #8e44ad */
     --primary-foreground: 43 92% 95%; /* Lighter yellow */
     --secondary: 279 30% 60%; 
-    --secondary-foreground: 0 0% 100%; /* White */
+    --secondary-foreground: 43 92% 95%; /* Lighter yellow */
     --muted: 279 30% 50%;
     --muted-foreground: 43 92% 85%;
     --accent: 279 40% 70%;
-    --accent-foreground: 0 0% 100%;
+    --accent-foreground: 43 92% 95%; /* Lighter yellow */
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 279 47% 57%;
@@ -41,7 +41,7 @@
     --primary: 43 92% 57%;
     --primary-foreground: 279 47% 15%;
     --secondary: 43 92% 40%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary-foreground: 279 47% 10%;
     --muted: 279 47% 25%;
     --muted-foreground: 43 92% 80%;
     --accent: 43 80% 60%;
