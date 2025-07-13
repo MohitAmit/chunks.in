@@ -1,3 +1,4 @@
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { categories, products } from "@/lib/placeholder-data";
 import ProductCard from "@/components/ProductCard";
@@ -15,7 +16,7 @@ export default function ProductsPage() {
 
         <Tabs defaultValue="all" className="w-full">
           <TabsList className="grid w-full grid-cols-2 md:grid-cols-5 mb-8">
-            <TabsTrigger value="all">All Products</TabsTrigger>
+            <TabsTrigger value="all">All Chunks</TabsTrigger>
             {categories.map((category) => (
               <TabsTrigger key={category.id} value={category.id}>
                 {category.name}
