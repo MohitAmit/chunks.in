@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { HeartPulse, Upload, FileText, Sparkles, Lightbulb, ShoppingCart, Loader2, ArrowRight, Bot, Microscope, Scale, FileUp, Leaf } from 'lucide-react';
+import { HeartPulse, Upload, FileText, Sparkles, Lightbulb, ShoppingCart, Loader2, ArrowRight, Bot, Microscope, Scale, FileUp, Leaf, ArrowDown } from 'lucide-react';
 import type { AnalyzeHealthReportOutput } from '@/ai/flows/health-report-flow';
 import { analyzeHealthReport } from '@/ai/flows/health-report-flow';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
@@ -92,15 +92,18 @@ export default function KnowYourBodyPage() {
             {/* How It Works Section */}
             <div className="lg:order-1">
               <h2 className="text-2xl font-headline font-bold text-center mb-6">How It Works</h2>
-              <div className="relative max-w-sm mx-auto">
-                 {/* Dotted Line */}
-                 <div className="absolute left-1/2 top-4 bottom-4 w-px border-l-2 border-dashed border-primary/50 -translate-x-1/2"></div>
+              <div className="flex flex-col items-center">
                 {flowchartSteps.map((step, index) => (
-                  <div key={index} className="flex items-center gap-6 mb-8 w-full z-10">
-                    <div className="bg-primary/10 p-4 rounded-full border-2 border-primary/20 bg-background">
-                      <step.icon className="h-8 w-8 text-primary" />
+                  <div key={index} className="flex flex-col items-center">
+                    <div className="flex items-center gap-6 w-full max-w-sm">
+                        <div className="bg-primary/10 p-4 rounded-full border-2 border-primary/20 bg-background">
+                            <step.icon className="h-8 w-8 text-primary" />
+                        </div>
+                        <p className="text-lg font-semibold flex-1">{step.title}</p>
                     </div>
-                    <p className="text-lg font-semibold">{step.title}</p>
+                    {index < flowchartSteps.length - 1 && (
+                      <ArrowDown className="h-8 w-8 text-primary/50 my-2" />
+                    )}
                   </div>
                 ))}
               </div>
