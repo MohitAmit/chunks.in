@@ -1,23 +1,44 @@
+'use client';
 import Link from 'next/link'
 import { Twitter, Facebook, Instagram } from 'lucide-react'
 import { Button } from './ui/button'
 import { Input } from './ui/input'
+import { useEffect, useState } from 'react';
 
-const ChunksLogo = () => (
-    <svg viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="180" height="48">
-        <text y="22" fontFamily="Poppins, sans-serif" fontWeight="700" fontSize="28">
-            <tspan fill="#ADD8E6">C</tspan>
-            <tspan dx="1" fill="#800080">h</tspan>
-            <tspan dx="1" fill="#2A9D8F">u</tspan>
-            <tspan dx="1" fill="#8338EC">n</tspan>
-            <tspan dx="1" fill="#90EE90">k</tspan>
-            <tspan dx="1" fill="#219EBC">s</tspan>
-        </text>
-        <text x="0" y="38" fontSize="12" fill="#6b7280">
-            of happiness
-        </text>
-    </svg>
-)
+const ChunksLogo = () => {
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
+
+    const svgContent = (
+        <svg viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <text y="22" fontFamily="Poppins, sans-serif" fontWeight="700" fontSize="28">
+                <tspan fill="#ADD8E6">C</tspan>
+                <tspan dx="1" fill="#800080">h</tspan>
+                <tspan dx="1" fill="#2A9D8F">u</tspan>
+                <tspan dx="1" fill="#8338EC">n</tspan>
+                <tspan dx="1" fill="#90EE90">k</tspan>
+                <tspan dx="1" fill="#219EBC">s</tspan>
+            </text>
+            <text x="0" y="38" fontSize="12" fill="#6b7280">
+                of happiness
+            </text>
+        </svg>
+    );
+
+    if (!isMounted) {
+        return <div style={{ width: '180px', height: '48px' }}>{svgContent}</div>;
+    }
+
+    return (
+      <div className="w-[180px] h-[48px]">
+          {svgContent}
+      </div>
+    );
+};
+
 
 export default function Footer() {
   return (
