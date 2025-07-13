@@ -41,10 +41,7 @@ export default function Header() {
   }, [])
 
   return (
-    <header className={cn(
-        "sticky top-0 z-50 w-full border-b border-border/20 text-primary-foreground",
-        isMounted && "bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-pan bg-[400%_400%]"
-    )}>
+    <header className="sticky top-0 z-50 w-full border-b border-border/20 text-white" style={{ backgroundColor: '#E52B8A' }}>
       <div className="container flex h-20 items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="flex items-center gap-2">
@@ -110,8 +107,8 @@ export default function Header() {
                 className={cn(
                   'relative transition-opacity hover:opacity-80',
                   pathname === link.href
-                    ? 'font-bold text-primary-foreground'
-                    : 'text-primary-foreground/80'
+                    ? 'font-bold text-white'
+                    : 'text-white/80'
                 )}
               >
                 {link.label}
