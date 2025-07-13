@@ -431,6 +431,16 @@ export const products: Product[] = [
         { name: 'Heavy Metal Test Report', url: '#', date: '2024-06-12' },
         { name: 'FSSAI Compliance Certificate', url: '#', date: '2024-01-05' },
     ],
+    nutrition: {
+        calories: "450 kcal",
+        protein: "8g",
+        carbohydrates: "60g",
+        sugar: "25g",
+        fat: "20g",
+        fiber: "10g",
+        calcium: "344mg",
+        iron: "4.5mg"
+    },
     farmerStory: {
       name: 'Sahana Women\'s Collective',
       story: 'We are a group of women from rural Karnataka dedicated to reviving traditional grains Our recipes are passed down through generations, made with love and the finest local ingredients',

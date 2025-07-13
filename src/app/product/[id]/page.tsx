@@ -11,7 +11,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { CheckCircle, Feather, Heart, ShoppingCart, ShieldCheck, FileText, Download } from 'lucide-react';
+import { CheckCircle, Feather, Heart, ShoppingCart, ShieldCheck, FileText, Download, Info } from 'lucide-react';
 import { TestimonialCard } from '@/components/TestimonialCard';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Label } from '@/components/ui/label';
@@ -177,6 +177,30 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
                     </Table>
                 </AccordionContent>
               </AccordionItem>
+               {product.nutrition && (
+                 <AccordionItem value="item-5">
+                    <AccordionTrigger className="font-headline text-lg">Nutritional Information</AccordionTrigger>
+                    <AccordionContent>
+                         <p className="text-sm text-muted-foreground mb-4">Approximate values per 100g serving.</p>
+                         <Table>
+                            <TableHeader>
+                                <TableRow>
+                                <TableHead>Nutrient</TableHead>
+                                <TableHead className="text-right">Value</TableHead>
+                                </TableRow>
+                            </TableHeader>
+                            <TableBody>
+                                {Object.entries(product.nutrition).map(([key, value]) => (
+                                <TableRow key={key}>
+                                    <TableCell className="font-medium capitalize">{key.replace(/([A-Z])/g, ' $1')}</TableCell>
+                                    <TableCell className="text-right">{value}</TableCell>
+                                </TableRow>
+                                ))}
+                            </TableBody>
+                        </Table>
+                    </AccordionContent>
+                </AccordionItem>
+              )}
               {product.reports && product.reports.length > 0 && (
               <AccordionItem value="item-3">
                 <AccordionTrigger className="font-headline text-lg">Quality Reports</AccordionTrigger>

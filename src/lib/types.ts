@@ -18,6 +18,10 @@ export interface Report {
   date: string;
 }
 
+export interface Nutrition {
+    [key: string]: string;
+}
+
 export interface Product {
   id: string;
   name: string;
@@ -39,6 +43,7 @@ export interface Product {
   dataAiHint?: string;
   reports?: Report[];
   useCase?: string;
+  nutrition?: Nutrition;
 }
 
 export interface Category {
