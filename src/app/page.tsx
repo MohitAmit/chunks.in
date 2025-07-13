@@ -68,24 +68,24 @@ export default function Home() {
         </div>
       </section>
 
-      {/* AI Recommendation CTA Section */}
+      {/* Know Your Farmers CTA Section */}
       <section className="py-16 md:py-24 bg-background">
         <div className="container px-4 md:px-6">
           <div className="bg-card rounded-lg shadow-soft overflow-hidden md:grid md:grid-cols-2 items-center border-2 border-secondary">
             <div className="p-8 md:p-12">
-              <h2 className="text-3xl md:text-4xl font-headline font-bold">Personalized For You</h2>
+              <h2 className="text-3xl md:text-4xl font-headline font-bold">Know Your Farmers</h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                Upload your health report and tell us your goals. Our AI-powered guide will help you discover the perfect snacks from our farms to match your wellness journey.
+                Meet the incredible people behind your food. Learn their stories, understand their craft, and see the passion that goes into every product.
               </p>
               <Button asChild size="lg" className="mt-6">
-                <Link href="/recommendations">Upload PDF</Link>
+                <Link href="/farmers">Meet the Growers</Link>
               </Button>
             </div>
             <div className="h-64 md:h-full">
               <Image
                 src="https://placehold.co/600x600.png"
-                alt="Personalized product selection"
-                data-ai-hint="health wellness"
+                alt="A collage of Indian farmers"
+                data-ai-hint="indian farmers collage"
                 width={600}
                 height={600}
                 className="w-full h-full object-cover"

@@ -13,7 +13,7 @@ import { ThemeToggle } from './ThemeToggle';
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/products', label: 'Products' },
-  { href: '/recommendations', label: 'AI Recs' },
+  { href: '/farmers', label: 'Our Farmers' },
   { href: '/testimonials', label: 'Reviews' },
   { href: '/about', label: 'About' },
 ];
