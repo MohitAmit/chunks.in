@@ -30,7 +30,7 @@ export default function DashboardPage() {
             <Card>
               <CardHeader>
                 <CardTitle>Profile Information</CardTitle>
-                <CardDescription>Your personal details.</CardDescription>
+                <CardDescription>Your personal details</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
@@ -55,7 +55,7 @@ export default function DashboardPage() {
                 <div className="flex justify-between items-start">
                     <div>
                         <CardTitle>Health Reports</CardTitle>
-                        <CardDescription>Your uploaded reports for personalized recommendations.</CardDescription>
+                        <CardDescription>Your uploaded reports for personalized recommendations</CardDescription>
                     </div>
                      <Button>
                         <Upload className="mr-2 h-4 w-4" />
@@ -80,7 +80,7 @@ export default function DashboardPage() {
                     ))
                   ) : (
                     <div className="text-center py-8 border-2 border-dashed rounded-md">
-                        <p className="text-muted-foreground">You haven&apos;t uploaded any reports yet.</p>
+                        <p className="text-muted-foreground">You haven&apos;t uploaded any reports yet</p>
                         <Button variant="link" className="mt-2">Upload your first report</Button>
                     </div>
                   )}

@@ -10,7 +10,7 @@ export default function ProductsPage() {
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-headline font-bold text-foreground">Our Chunks</h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Explore our curated range of natural and homegrown chunks, direct from Indian farms.
+            Explore our curated range of natural and homegrown chunks, direct from Indian farms
           </p>
         </div>
 

@@ -24,7 +24,7 @@ export default function KnowYourBodyPage() {
     const selectedFile = e.target.files?.[0];
     if (selectedFile) {
       if (selectedFile.size > 10 * 1024 * 1024) { // 10MB limit
-        setError('File size must be less than 10MB.');
+        setError('File size must be less than 10MB');
         return;
       }
       setFile(selectedFile);
@@ -40,7 +40,7 @@ export default function KnowYourBodyPage() {
 
   const handleAnalyze = async () => {
     if (!file || !preview) {
-      setError('Please select a file to analyze.');
+      setError('Please select a file to analyze');
       return;
     }
 
@@ -53,7 +53,7 @@ export default function KnowYourBodyPage() {
       setResults(result);
     } catch (err) {
       console.error(err);
-      setError('An error occurred during analysis. Please try again.');
+      setError('An error occurred during analysis Please try again');
     } finally {
       setIsLoading(false);
     }
@@ -68,10 +68,10 @@ export default function KnowYourBodyPage() {
   }
 
   const flowchartSteps = [
-    { icon: FileUp, title: "Step 1: Upload Your Health Report", description: "Drop in your full body report (PDF, image, or scan). The journey to smarter snacking begins here." },
-    { icon: Bot, title: "Step 2: Smart AI Does the Heavy Lifting", description: "Our system decodes your body metrics – vitamins, sugar levels, deficiencies, and more." },
-    { icon: Microscope, title: "Step 3: Discover What’s Off-Balance", description: "We flag anything that’s too high or too low — and highlight what your body needs more of." },
-    { icon: Leaf, title: "Step 4: Get Your Personalized Food Plan", description: "You’ll receive snack & food recommendations from our natural, homegrown collection – tailored to your body." },
+    { icon: FileUp, title: "Step 1: Upload Your Health Report", description: "Drop in your full body report (PDF, image, or scan) The journey to smarter snacking begins here" },
+    { icon: Bot, title: "Step 2: Smart AI Does the Heavy Lifting", description: "Our system decodes your body metrics – vitamins, sugar levels, deficiencies, and more" },
+    { icon: Microscope, title: "Step 3: Discover What’s Off-Balance", description: "We flag anything that’s too high or too low — and highlight what your body needs more of" },
+    { icon: Leaf, title: "Step 4: Get Your Personalized Food Plan", description: "You’ll receive snack & food recommendations from our natural, homegrown collection – tailored to your body" },
   ];
 
   return (
@@ -81,10 +81,10 @@ export default function KnowYourBodyPage() {
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-headline font-bold text-foreground">🌿 Know Your Body: Your Health, Your Snacks</h1>
             <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
-              Take charge of your health in just 4 simple steps — and let Chunks craft the perfect snack plan for you.
+              Take charge of your health in just 4 simple steps — and let Chunks craft the perfect snack plan for you
             </p>
              <p className="mt-2 text-sm text-muted-foreground max-w-3xl mx-auto">
-              ⚠️ Your data is 100% private and used only for this health analysis.
+              ⚠️ Your data is 100% private and used only for this health analysis
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -127,7 +127,7 @@ export default function KnowYourBodyPage() {
                       <span className="text-primary font-semibold">Click to upload</span> or drag and drop
                     </Label>
                     <Input id="report-upload" type="file" className="hidden" accept="image/*,application/pdf" onChange={handleFileChange} disabled={isLoading} />
-                     <p className="text-xs text-muted-foreground mt-2">PDF, JPG or PNG. Max 10MB.</p>
+                     <p className="text-xs text-muted-foreground mt-2">PDF, JPG or PNG Max 10MB</p>
                   </div>
                   
                   {preview && !isLoading && (
@@ -169,7 +169,7 @@ export default function KnowYourBodyPage() {
       {isLoading && !results && (
         <div className="text-center mt-8">
             <Loader2 className="h-12 w-12 mx-auto animate-spin text-primary mb-4" />
-            <p className="text-xl font-semibold">Analyzing your report, please wait...</p>
+            <p className="text-xl font-semibold">Analyzing your report, please wait</p>
             <p className="text-muted-foreground">Our AI is working its magic!</p>
         </div>
       )}
@@ -178,7 +178,7 @@ export default function KnowYourBodyPage() {
         <div className="max-w-5xl mx-auto space-y-12">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-headline font-bold text-foreground">Your Personalized Results</h1>
-            <p className="mt-2 text-lg text-muted-foreground">Here are the insights and recommendations based on your report.</p>
+            <p className="mt-2 text-lg text-muted-foreground">Here are the insights and recommendations based on your report</p>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -189,7 +189,7 @@ export default function KnowYourBodyPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-4xl font-bold">Pitta</p>
-                <p className="text-muted-foreground mt-1">This is a placeholder. Your Ayurvedic dosha or body type would be displayed here.</p>
+                <p className="text-muted-foreground mt-1">This is a placeholder Your Ayurvedic dosha or body type would be displayed here</p>
               </CardContent>
             </Card>
             
@@ -219,7 +219,7 @@ export default function KnowYourBodyPage() {
             <CardHeader>
                 <CardTitle className="text-3xl flex items-center gap-3"><ShoppingCart className="h-8 w-8 text-primary"/> Chunks Food Suggestions</CardTitle>
                  <CardDescription>
-                    Based on your health insights, here are some Chunks products that may be beneficial.
+                    Based on your health insights, here are some Chunks products that may be beneficial
                 </CardDescription>
             </CardHeader>
             <CardContent className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -245,7 +245,7 @@ export default function KnowYourBodyPage() {
              <Alert className="mt-6 text-left max-w-3xl mx-auto">
                 <AlertTitle>Disclaimer</AlertTitle>
                 <AlertDescription>
-                    This analysis is AI-generated and for informational purposes only. It is not a substitute for professional medical advice. Always consult with a healthcare provider for any health concerns.
+                    This analysis is AI-generated and for informational purposes only It is not a substitute for professional medical advice Always consult with a healthcare provider for any health concerns
                 </AlertDescription>
             </Alert>
           </div>

@@ -43,7 +43,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
       addToCart(product, selectedVariant);
       toast({
         title: "Added to cart",
-        description: `${product.name} (${selectedVariant.size}) has been added to your cart.`,
+        description: `${product.name} (${selectedVariant.size}) has been added to your cart`,
       });
     }
   };
@@ -129,7 +129,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
                 <ShieldCheck className="h-8 w-8 text-primary" />
                 <div>
                     <h4 className="font-semibold text-foreground">Chunks Seal of Trust</h4>
-                    <p className="text-sm text-muted-foreground">100% Tamper-proof. Guaranteed Purity.</p>
+                    <p className="text-sm text-muted-foreground">100% Tamper-proof Guaranteed Purity</p>
                 </div>
             </div>
 
@@ -181,7 +181,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
                  <AccordionItem value="item-5">
                     <AccordionTrigger className="font-headline text-lg">Nutritional Information</AccordionTrigger>
                     <AccordionContent>
-                         <p className="text-sm text-muted-foreground mb-4">Approximate values per 100g serving.</p>
+                         <p className="text-sm text-muted-foreground mb-4">Approximate values per 100g serving</p>
                          <Table>
                             <TableHeader>
                                 <TableRow>
@@ -231,7 +231,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
               <AccordionItem value="item-4">
                 <AccordionTrigger className="font-headline text-lg">Certifications</AccordionTrigger>
                 <AccordionContent>
-                  <p className="text-muted-foreground">{product.certifications.join(', ')}.</p>
+                  <p className="text-muted-foreground">{product.certifications.join(', ')}</p>
                 </AccordionContent>
               </AccordionItem>
               )}

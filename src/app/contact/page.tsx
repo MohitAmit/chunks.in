@@ -18,7 +18,7 @@ export default function ContactPage() {
         <div className="text-center">
           <h1 className="text-4xl md:text-5xl font-headline font-bold text-foreground">Get In Touch</h1>
           <p className="mt-4 text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            We&apos;re here to help and answer any question you might have. We look forward to hearing from you.
+            We&apos;re here to help and answer any question you might have We look forward to hearing from you
           </p>
         </div>
 
@@ -29,7 +29,7 @@ export default function ContactPage() {
               <CardHeader>
                 <CardTitle>Speak with our Leadership</CardTitle>
                 <CardDescription>
-                    For any queries, feel free to reach out directly to our leadership team.
+                    For any queries, feel free to reach out directly to our leadership team
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
@@ -111,7 +111,7 @@ export default function ContactPage() {
               <CardHeader>
                 <CardTitle>Send us a Message</CardTitle>
                 <CardDescription>
-                  Fill out the form below and we will get back to you as soon as possible.
+                  Fill out the form below and we will get back to you as soon as possible
                 </CardDescription>
               </CardHeader>
               <CardContent>

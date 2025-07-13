@@ -24,14 +24,14 @@ export default function CartPage() {
             <ShoppingBag className="h-10 w-10 text-primary" />
             <div>
                 <h1 className="text-3xl font-headline font-bold">Your Shopping Cart</h1>
-                <p className="text-muted-foreground">Review your items and proceed to checkout.</p>
+                <p className="text-muted-foreground">Review your items and proceed to checkout</p>
             </div>
         </div>
 
         {cart.items.length === 0 ? (
           <div className="text-center py-20 border-2 border-dashed rounded-md">
             <h2 className="text-2xl font-semibold">Your cart is empty</h2>
-            <p className="text-muted-foreground mt-2">Looks like you haven't added anything to your cart yet.</p>
+            <p className="text-muted-foreground mt-2">Looks like you haven't added anything to your cart yet</p>
             <Button asChild className="mt-6">
               <Link href="/products">Start Shopping</Link>
             </Button>
@@ -107,7 +107,7 @@ export default function CartPage() {
               <Card>
                 <CardHeader>
                   <CardTitle>Shipping Address</CardTitle>
-                  <CardDescription>Enter your delivery details.</CardDescription>
+                  <CardDescription>Enter your delivery details</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="space-y-2">
@@ -130,7 +130,7 @@ export default function CartPage() {
               <Card>
                 <CardHeader>
                     <CardTitle>Payment Details</CardTitle>
-                    <CardDescription>We accept all major cards and UPI.</CardDescription>
+                    <CardDescription>We accept all major cards and UPI</CardDescription>
                 </CardHeader>
                 <CardFooter>
                     <Button className="w-full">

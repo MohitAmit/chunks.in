@@ -15,7 +15,7 @@ export default function TestimonialsPage() {
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-headline font-bold text-foreground">Voices of Our Community</h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Read what our customers have to say about their journey with Chunks snacks.
+            Read what our customers have to say about their journey with Chunks snacks
           </p>
         </div>
 

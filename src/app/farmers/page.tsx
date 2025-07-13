@@ -26,7 +26,7 @@ export default function FarmersPage() {
           <Wheat className="h-16 w-16 text-primary mx-auto mb-4" />
           <h1 className="text-4xl md:text-5xl font-headline font-bold text-foreground">Meet Our Farmers</h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
-            The heart and soul of Chunks. These are the artisans who cultivate with passion, integrity, and a deep respect for nature.
+            The heart and soul of Chunks These are the artisans who cultivate with passion, integrity, and a deep respect for nature
           </p>
         </div>
 
