@@ -17,6 +17,7 @@ const navLinks = [
   { href: '/farmers', label: 'Our Farmers' },
   { href: '/testimonials', label: 'Reviews' },
   { href: '/about', label: 'About' },
+  { href: '/contact', label: 'Contact Us'},
 ]
 
 const ChunksLogo = () => (
@@ -29,7 +30,7 @@ const ChunksLogo = () => (
             <tspan dx="1" fill="#90EE90">k</tspan>
             <tspan dx="1" fill="#219EBC">s</tspan>
         </text>
-        <text x="0" y="38" fontFamily="Inter, sans-serif" fontWeight="500" fontSize="12" className="text-muted-foreground fill-current">
+        <text x="0" y="38" fontFamily="Inter, sans-serif" fontWeight="500" fontSize="12" fill="#6b7280">
             of happiness
         </text>
     </svg>
