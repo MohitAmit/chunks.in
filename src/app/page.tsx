@@ -38,9 +38,9 @@ export default function Home() {
            </div>
            <div className="flex-1 relative h-80 w-full md:h-[500px]">
             <Image
-              src="https://placehold.co/600x600.png"
-              alt="Chunks product packs"
-              data-ai-hint="product snacks"
+              src="https://firebasestorage.googleapis.com/v0/b/app-interact-dev.appspot.com/o/user%2Fclwe02wsv0000mg082269y7v1%2Fclx05c6wz0008mg08c3y513j7%2F1722881515286_image.png?alt=media&token=e937397b-83c8-47c0-8dce-062e5b881358"
+              alt="Chunks of jaggery"
+              data-ai-hint="jaggery chunks"
               fill
               className="object-contain"
               style={{filter: 'drop-shadow(0px 15px 40px hsla(var(--primary)/0.2))'}}
