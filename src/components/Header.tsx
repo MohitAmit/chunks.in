@@ -14,7 +14,7 @@ import { useCart } from '@/context/CartContext'
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/products', label: 'Products' },
-  { href: '/chunkers', label: 'Our Chunkers' },
+  { href: '/chunkers', label: 'Our Farmers' },
   { href: '/about', label: 'About' },
   { href: '/know-your-chunks', label: 'Know Your Chunks'},
 ]
