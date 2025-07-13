@@ -20,7 +20,7 @@ const navLinks = [
 ]
 
 const ChunksLogo = () => (
-    <svg width="180" height="48" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-full w-full">
         <text y="22" fontFamily="Poppins, sans-serif" fontWeight="700" fontSize="28">
             <tspan fill="#ADD8E6">C</tspan>
             <tspan dx="1" fill="#800080">h</tspan>
@@ -51,7 +51,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/20 text-white" style={{ backgroundColor: '#E52B8A' }}>
       <div className="container flex h-20 items-center">
         <div className="mr-4 hidden md:flex">
-          <Link href="/" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2 h-12 w-[180px]">
             <ChunksLogo />
           </Link>
         </div>
@@ -68,7 +68,7 @@ export default function Header() {
             <SheetContent side="left">
               <div className="flex flex-col h-full">
                 <div className="border-b pb-4">
-                  <Link href="/" className="flex items-center gap-2" onClick={() => setSheetOpen(false)}>
+                  <Link href="/" className="flex items-center gap-2 h-12 w-[180px]" onClick={() => setSheetOpen(false)}>
                     <ChunksLogo />
                   </Link>
                 </div>
@@ -98,7 +98,7 @@ export default function Header() {
         </div>
         
         <div className="flex md:hidden flex-1 justify-center">
-           <Link href="/" className="flex items-center gap-2">
+           <Link href="/" className="flex items-center gap-2 h-12 w-[180px]">
             <ChunksLogo />
           </Link>
         </div>

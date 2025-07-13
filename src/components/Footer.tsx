@@ -4,7 +4,7 @@ import { Button } from './ui/button'
 import { Input } from './ui/input'
 
 const ChunksLogo = () => (
-    <svg width="180" height="48" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-full w-full">
         <text y="22" fontFamily="Poppins, sans-serif" fontWeight="700" fontSize="28">
             <tspan fill="#ADD8E6">C</tspan>
             <tspan dx="1" fill="#800080">h</tspan>
@@ -25,7 +25,7 @@ export default function Footer() {
       <div className="container py-12 px-4 md:px-6">
         <div className="grid gap-8 grid-cols-1 md:grid-cols-4">
           <div className="space-y-4">
-            <Link href="/" className="flex items-center gap-2">
+            <Link href="/" className="flex items-center gap-2 h-12 w-[180px]">
               <ChunksLogo />
             </Link>
             <p className="text-sm text-muted-foreground">
