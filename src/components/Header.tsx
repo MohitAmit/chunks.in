@@ -21,12 +21,12 @@ const navLinks = [
 const ChunksLogo = () => (
     <svg width="125" height="28" viewBox="0 0 125 28" fill="none" xmlns="http://www.w3.org/2000/svg">
         <text y="22" fontFamily="Poppins, sans-serif" fontWeight="700" fontSize="28">
-            <tspan fill="#D90429">C</tspan>
-            <tspan dx="1" fill="#E63946">h</tspan>
-            <tspan dx="1" fill="#2A9D8F">u</tspan>
-            <tspan dx="1" fill="#8338EC">n</tspan>
+            <tspan fill="#EF4444">C</tspan>
+            <tspan dx="1" fill="#F472B6">h</tspan>
+            <tspan dx="1" fill="#34D399">u</tspan>
+            <tspan dx="1" fill="#A78BFA">n</tspan>
             <tspan dx="1" fill="#34D399">k</tspan>
-            <tspan dx="1" fill="#219EBC">s</tspan>
+            <tspan dx="1" fill="#60A5FA">s</tspan>
         </text>
     </svg>
 )
@@ -67,7 +67,7 @@ export default function Header() {
                       href={link.href}
                       className={cn(
                         'text-lg font-medium',
-                        pathname === link.href ? 'text-primary' : 'text-muted-foreground hover:text-foreground'
+                        pathname === link.href ? 'text-primary' : 'text-foreground hover:text-primary'
                       )}
                       onClick={() => setSheetOpen(false)}
                     >
@@ -100,7 +100,7 @@ export default function Header() {
               href={link.href}
               className={cn(
                 'transition-colors hover:text-primary relative',
-                pathname === link.href ? 'text-primary font-semibold' : 'text-muted-foreground'
+                pathname === link.href ? 'text-primary font-semibold' : 'text-foreground/80 hover:text-primary'
               )}
             >
               {link.label}
