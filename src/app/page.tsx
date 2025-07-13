@@ -65,7 +65,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-headline font-semibold">100% Natural</h3>
               <p className="mt-2 text-muted-foreground">
-                Sourced directly from trusted chunkers, free from preservatives and additives
+                Sourced directly from trusted vendors, free from preservatives and additives
               </p>
             </div>
             <div className="p-6">

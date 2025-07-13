@@ -45,7 +45,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-xl font-headline font-semibold">Authenticity</h3>
               <p className="mt-2 text-muted-foreground">
-                We guarantee 100% preservative-free, natural products sourced directly from trusted chunkers
+                We guarantee 100% preservative-free, natural products sourced directly from trusted vendors
               </p>
             </div>
             <div className="p-6 bg-card rounded-lg shadow-soft">
