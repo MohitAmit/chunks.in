@@ -5,11 +5,13 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { HeartPulse, Upload, FileText, Sparkles, Lightbulb, ShoppingCart, Loader2 } from 'lucide-react';
+import { HeartPulse, Upload, FileText, Sparkles, Lightbulb, ShoppingCart, Loader2, ArrowRight, Bot, Microscope, Scale, FileUp, Leaf } from 'lucide-react';
 import type { AnalyzeHealthReportOutput } from '@/ai/flows/health-report-flow';
 import { analyzeHealthReport } from '@/ai/flows/health-report-flow';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import Link from 'next/link';
+import Image from 'next/image';
+import { products } from '@/lib/placeholder-data';
 
 export default function KnowYourBodyPage() {
   const [file, setFile] = useState<File | null>(null);
@@ -21,8 +23,8 @@ export default function KnowYourBodyPage() {
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = e.target.files?.[0];
     if (selectedFile) {
-      if (selectedFile.size > 5 * 1024 * 1024) { // 5MB limit
-        setError('File size must be less than 5MB.');
+      if (selectedFile.size > 10 * 1024 * 1024) { // 10MB limit
+        setError('File size must be less than 10MB.');
         return;
       }
       setFile(selectedFile);
@@ -65,121 +67,174 @@ export default function KnowYourBodyPage() {
     setIsLoading(false);
   }
 
+  const flowchartSteps = [
+    { icon: FileUp, title: "Upload Your Report" },
+    { icon: Bot, title: "AI Analyzes Your Body Metrics" },
+    { icon: Microscope, title: "Detects Imbalances / Highlights Concerns" },
+    { icon: Leaf, title: "Suggests Personalized Food Products" },
+  ];
+
   return (
     <div className="container mx-auto px-4 md:px-6 py-12 animate-fade-in">
-      <div className="text-center mb-12">
-        <HeartPulse className="h-16 w-16 text-primary mx-auto mb-4" />
-        <h1 className="text-4xl md:text-5xl font-headline font-bold text-foreground">Know Your Body</h1>
-        <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
-          Upload your health report to get personalized insights and product recommendations from Chunks.
-        </p>
-      </div>
-
       {!results && (
-        <Card className="max-w-2xl mx-auto">
-          <CardHeader>
-            <CardTitle>Upload Your Report</CardTitle>
-            <CardDescription>
-              Upload an image or PDF of your latest health report. Your data is private and secure.
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            <div className="space-y-2">
-              <Label htmlFor="report-upload">Health Report File</Label>
-              <Input id="report-upload" type="file" accept="image/*,application/pdf" onChange={handleFileChange} disabled={isLoading} />
-              <p className="text-sm text-muted-foreground">Max file size: 5MB. Accepts PDF and images.</p>
-            </div>
-            
-            {preview && !isLoading && (
-              <div className="p-4 border rounded-md bg-muted/50">
-                  <p className="font-semibold">File ready for analysis:</p>
-                  <div className="flex items-center gap-2 mt-2 text-sm text-muted-foreground">
-                    <FileText className="h-4 w-4" />
-                    <span>{file?.name}</span>
+        <>
+          <div className="text-center mb-12">
+            <HeartPulse className="h-16 w-16 text-primary mx-auto mb-4" />
+            <h1 className="text-4xl md:text-5xl font-headline font-bold text-foreground">Know Your Body</h1>
+            <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
+              Upload your health report to get personalized insights and product recommendations from Chunks.
+            </p>
+             <p className="mt-2 text-sm text-muted-foreground max-w-3xl mx-auto">
+              ⚠️ Your data is 100% private and used only for this health analysis.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            {/* How It Works Section */}
+            <div className="lg:order-1">
+              <h2 className="text-2xl font-headline font-bold text-center mb-6">How It Works</h2>
+              <div className="relative flex flex-col items-start lg:items-center">
+                 {/* Dotted Line */}
+                 <div className="absolute left-6 lg:left-1/2 top-4 bottom-4 w-px border-l-2 border-dashed border-primary/50 -translate-x-1/2"></div>
+                {flowchartSteps.map((step, index) => (
+                  <div key={index} className="flex items-center gap-6 mb-8 w-full z-10">
+                    <div className="bg-primary/10 p-4 rounded-full border-2 border-primary/20 bg-background">
+                      <step.icon className="h-8 w-8 text-primary" />
+                    </div>
+                    <p className="text-lg font-semibold">{step.title}</p>
                   </div>
+                ))}
               </div>
-            )}
+            </div>
 
-            {error && (
-              <Alert variant="destructive">
-                <AlertTitle>Error</AlertTitle>
-                <AlertDescription>{error}</AlertDescription>
-              </Alert>
-            )}
+            {/* Upload Section */}
+            <div className="lg:order-2">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Upload Full Body Report</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="p-6 border-2 border-dashed rounded-lg text-center bg-muted/50">
+                    <Upload className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
+                    <Label htmlFor="report-upload" className="cursor-pointer">
+                      <span className="text-primary font-semibold">Click to upload</span> or drag and drop
+                    </Label>
+                    <Input id="report-upload" type="file" className="hidden" accept="image/*,application/pdf" onChange={handleFileChange} disabled={isLoading} />
+                     <p className="text-xs text-muted-foreground mt-2">PDF, JPG or PNG. Max 10MB.</p>
+                  </div>
+                  
+                  {preview && !isLoading && (
+                    <div className="p-3 border rounded-md bg-secondary/30">
+                        <div className="flex items-center gap-2 text-sm">
+                          <FileText className="h-4 w-4 text-primary" />
+                          <span className="font-medium">{file?.name}</span>
+                        </div>
+                    </div>
+                  )}
 
-            <Button onClick={handleAnalyze} disabled={!file || isLoading} className="w-full">
-              {isLoading ? (
-                <>
-                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                  Analyzing...
-                </>
-              ) : (
-                <>
-                  <Sparkles className="mr-2 h-4 w-4" />
-                  Analyze My Report
-                </>
-              )}
-            </Button>
-          </CardContent>
-        </Card>
+                  {error && (
+                    <Alert variant="destructive">
+                      <AlertTitle>Error</AlertTitle>
+                      <AlertDescription>{error}</AlertDescription>
+                    </Alert>
+                  )}
+
+                  <Button onClick={handleAnalyze} disabled={!file || isLoading} className="w-full">
+                    {isLoading ? (
+                      <>
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                        Analyzing...
+                      </>
+                    ) : (
+                      <>
+                        <Sparkles className="mr-2 h-4 w-4" />
+                        Analyze My Report
+                      </>
+                    )}
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </>
       )}
 
       {isLoading && !results && (
         <div className="text-center mt-8">
-            <p className="text-lg font-semibold">Analyzing your report, please wait...</p>
+            <Loader2 className="h-12 w-12 mx-auto animate-spin text-primary mb-4" />
+            <p className="text-xl font-semibold">Analyzing your report, please wait...</p>
             <p className="text-muted-foreground">Our AI is working its magic!</p>
         </div>
       )}
 
       {results && (
-        <div className="max-w-4xl mx-auto space-y-8">
-          <Card>
-            <CardHeader>
-              <CardTitle className="text-3xl flex items-center gap-3"><Lightbulb className="h-8 w-8 text-primary"/> Your Health Insights</CardTitle>
-              <CardDescription>
-                Based on the report you provided, here is a summary of key health markers.
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-               <ul className="space-y-2">
-                {results.analysis.map((item, index) => (
-                  <li key={index} className="flex items-start gap-3 p-3 bg-secondary/30 rounded-md">
-                     <Sparkles className="h-5 w-5 text-secondary mt-1 shrink-0" />
-                    <div>
-                        <h4 className="font-semibold">{item.marker}</h4>
-                        <p className="text-muted-foreground">{item.finding}</p>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </CardContent>
-          </Card>
+        <div className="max-w-5xl mx-auto space-y-12">
+          <div className="text-center">
+            <h1 className="text-4xl md:text-5xl font-headline font-bold text-foreground">Your Personalized Results</h1>
+            <p className="mt-2 text-lg text-muted-foreground">Here are the insights and recommendations based on your report.</p>
+          </div>
           
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* Body Type */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2"><Scale className="h-6 w-6 text-primary"/> Your Body Type</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-4xl font-bold">Pitta</p>
+                <p className="text-muted-foreground mt-1">This is a placeholder. Your Ayurvedic dosha or body type would be displayed here.</p>
+              </CardContent>
+            </Card>
+            
+            {/* Health Insights */}
+            <Card className="lg:col-span-2">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2"><Lightbulb className="h-6 w-6 text-primary"/> Health Insights</CardTitle>
+              </CardHeader>
+              <CardContent>
+                 <ul className="space-y-3">
+                  {results.analysis.map((item, index) => (
+                    <li key={index} className="flex items-start gap-3">
+                       <ArrowRight className="h-5 w-5 text-secondary mt-1 shrink-0" />
+                      <div>
+                          <h4 className="font-semibold">{item.marker}</h4>
+                          <p className="text-muted-foreground">{item.finding}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+          
+          {/* Food Suggestions */}
           <Card>
             <CardHeader>
-                <CardTitle className="text-3xl flex items-center gap-3"><ShoppingCart className="h-8 w-8 text-primary"/> Recommended Chunks Products</CardTitle>
+                <CardTitle className="text-3xl flex items-center gap-3"><ShoppingCart className="h-8 w-8 text-primary"/> Chunks Food Suggestions</CardTitle>
                  <CardDescription>
-                    Here are some Chunks products that may align with your health profile.
+                    Based on your health insights, here are some Chunks products that may be beneficial.
                 </CardDescription>
             </CardHeader>
-            <CardContent>
-               <ul className="space-y-4">
-                {results.recommendations.map((item, index) => (
-                  <li key={index} className="p-4 border rounded-lg hover:bg-muted/50 transition-colors">
-                     <h4 className="font-headline text-xl">{item.productName}</h4>
-                     <p className="text-muted-foreground mt-1 mb-3">{item.reason}</p>
-                     <Button asChild variant="outline">
-                        <Link href={`/product/${item.productId}`}>View Product</Link>
-                     </Button>
-                  </li>
-                ))}
-              </ul>
-            </CardContent>
+            <CardContent className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {results.recommendations.map((item, index) => {
+                  const product = products.find(p => p.id === item.productId);
+                  return (
+                    <Card key={index} className="p-4 flex flex-col items-center text-center">
+                       {product && (
+                        <Image src={product.image} alt={product.name} width={150} height={150} className="object-contain" />
+                       )}
+                       <h4 className="font-headline text-lg mt-2">{item.productName}</h4>
+                       <p className="text-muted-foreground text-sm flex-grow mt-1 mb-3">{item.reason}</p>
+                       <Button asChild variant="outline" size="sm" className="w-full">
+                          <Link href={`/product/${item.productId}`}>View Product</Link>
+                       </Button>
+                    </Card>
+                )})}
+              </CardContent>
           </Card>
           
           <div className="text-center">
-             <Button onClick={handleReset} variant="ghost">Analyze a new report</Button>
-             <Alert className="mt-6 text-left">
+             <Button onClick={handleReset} variant="ghost">Analyze Another Report</Button>
+             <Alert className="mt-6 text-left max-w-3xl mx-auto">
                 <AlertTitle>Disclaimer</AlertTitle>
                 <AlertDescription>
                     This analysis is AI-generated and for informational purposes only. It is not a substitute for professional medical advice. Always consult with a healthcare provider for any health concerns.
