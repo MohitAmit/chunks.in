@@ -8,14 +8,14 @@ import { Textarea } from '@/components/ui/textarea';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import { Bot, Loader2, PartyPopper } from 'lucide-react';
+import { Bot, Loader2, PartyPopper, Upload } from 'lucide-react';
 
 function SubmitButton() {
   const { pending } = useFormStatus();
   return (
     <Button type="submit" className="w-full" disabled={pending}>
       {pending ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Bot className="mr-2 h-4 w-4" />}
-      Get My Nudge
+      Get My Recs
     </Button>
   );
 }
@@ -30,7 +30,7 @@ export default function RecommendationForm() {
   const [state, formAction] = useFormState(getRecommendations, initialState);
 
   return (
-    <Card className="w-full">
+    <Card className="w-full border-secondary border-2">
         {state.status === 'success' ? (
             <div className="p-6">
                  <Alert className="border-green-500">
@@ -51,8 +51,11 @@ export default function RecommendationForm() {
                 </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
+                <Button variant="outline" className="w-full border-dashed border-2 h-24">
+                    <Upload className="mr-2"/> Upload Health Report PDF
+                </Button>
                 <div className="space-y-2">
-                    <Label htmlFor="healthReport">Health Report Summary</Label>
+                    <Label htmlFor="healthReport">Or, Summarize Your Report</Label>
                     <Textarea
                         id="healthReport"
                         name="healthReport"

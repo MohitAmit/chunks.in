@@ -6,23 +6,41 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { Heart } from 'lucide-react';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 export default function TestimonialsPage() {
   return (
     <div className="bg-background animate-fade-in">
       <div className="container mx-auto px-4 md:px-6 py-12">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary">Voices of Our Community</h1>
+          <h1 className="text-4xl md:text-5xl font-headline font-bold text-foreground">Voices of Our Community</h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Read what our customers have to say about their journey with Bharat Haat products.
+            Read what our customers have to say about their journey with Chunks snacks.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial) => (
-            <TestimonialCard key={testimonial.id} testimonial={testimonial} />
-          ))}
-        </div>
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full"
+        >
+          <CarouselContent>
+            {testimonials.map((testimonial) => (
+              <CarouselItem key={testimonial.id} className="md:basis-1/2 lg:basis-1/3">
+                 <div className="p-1 h-full">
+                    <TestimonialCard testimonial={testimonial} />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <div className="hidden md:block">
+            <CarouselPrevious />
+            <CarouselNext />
+          </div>
+        </Carousel>
+
 
         <div className="mt-24 max-w-3xl mx-auto">
             <Card>

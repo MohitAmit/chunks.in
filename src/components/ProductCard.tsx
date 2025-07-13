@@ -12,24 +12,27 @@ interface ProductCardProps {
 
 export default function ProductCard({ product }: ProductCardProps) {
   return (
-    <Card className="flex flex-col h-full overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-      <CardHeader className="p-0">
+    <Card className="flex flex-col h-full overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
+      <CardHeader className="p-0 relative">
         <Link href={`/product/${product.id}`} className="block">
-          <Image
-            src={product.image}
-            alt={product.name}
-            data-ai-hint="product image"
-            width={400}
-            height={400}
-            className="w-full h-48 object-cover"
-          />
+           <div className="aspect-square overflow-hidden">
+             <Image
+                src={product.image}
+                alt={product.name}
+                data-ai-hint="product image"
+                width={400}
+                height={400}
+                className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
+                style={{filter: 'drop-shadow(0px 5px 15px rgba(0,0,0,0.1))'}}
+              />
+           </div>
         </Link>
       </CardHeader>
-      <CardContent className="flex-grow p-4">
+      <CardContent className="flex-grow p-4 text-center">
         <CardTitle className="text-lg font-headline">
            <Link href={`/product/${product.id}`} className="hover:text-primary transition-colors">{product.name}</Link>
         </CardTitle>
-        <div className="flex items-center gap-1 text-sm text-muted-foreground mt-1">
+        <div className="flex items-center justify-center gap-1 text-sm text-muted-foreground mt-1">
           <MapPin className="h-4 w-4" />
           <span>{product.region}</span>
         </div>
@@ -38,7 +41,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         </p>
       </CardContent>
       <CardFooter className="p-4 pt-0">
-        <Button asChild className="w-full bg-primary hover:bg-primary/90">
+        <Button asChild className="w-full">
           <Link href={`/product/${product.id}`}>View Details</Link>
         </Button>
       </CardFooter>

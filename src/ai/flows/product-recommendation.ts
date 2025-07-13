@@ -42,7 +42,7 @@ const prompt = ai.definePrompt({
   name: 'productRecommendationPrompt',
   input: {schema: ProductRecommendationInputSchema},
   output: {schema: ProductRecommendationOutputSchema},
-  prompt: `Based on the following health report: {{{healthReport}}} and the user goals: {{{userGoals}}}, recommend Chunks products that would be most beneficial to the user. Return the product recommendations as a string.`,
+  prompt: `Based on the following health report: {{{healthReport}}} and the user goals: {{{userGoals}}}, recommend Chunks snacks that would be most beneficial to the user. Return the product recommendations as a string.`,
 });
 
 const recommendProductsFlow = ai.defineFlow(

@@ -1,20 +1,25 @@
 import Link from 'next/link';
-import { Leaf, Twitter, Facebook, Instagram } from 'lucide-react';
+import { Twitter, Facebook, Instagram } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 
+const ChunksLogo = () => (
+  <svg width="100" height="28" viewBox="0 0 100 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <text x="0" y="22" fontFamily="Poppins, sans-serif" fontWeight="700" fontSize="28" fill="hsl(var(--foreground))">Chunks</text>
+  </svg>
+)
+
 export default function Footer() {
   return (
-    <footer className="bg-secondary text-secondary-foreground border-t">
+    <footer className="bg-muted text-secondary-foreground border-t">
       <div className="container py-12 px-4 md:px-6">
         <div className="grid gap-8 grid-cols-1 md:grid-cols-4">
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
-              <Leaf className="h-6 w-6 text-primary" />
-              <span className="font-headline text-xl font-bold">Bharat Haat</span>
+              <ChunksLogo />
             </Link>
             <p className="text-sm text-muted-foreground">
-              Bringing you the purest, homegrown products from the heart of India.
+              Bringing you the purest, homegrown snacks from the heart of India.
             </p>
             <div className="flex gap-4">
               <Link href="#" aria-label="Twitter">
@@ -50,12 +55,12 @@ export default function Footer() {
             <p className="text-sm text-muted-foreground">Stay updated with our latest products and offers.</p>
             <form className="flex gap-2">
               <Input type="email" placeholder="Enter your email" className="bg-background" />
-              <Button type="submit" className="bg-primary hover:bg-primary/90">Subscribe</Button>
+              <Button type="submit">Subscribe</Button>
             </form>
           </div>
         </div>
         <div className="mt-8 border-t pt-6 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Bharat Haat. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Chunks. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

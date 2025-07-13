@@ -24,38 +24,48 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
         <div className="grid md:grid-cols-2 gap-8 lg:gap-16">
           {/* Product Images Carousel */}
           <div>
-            <Carousel className="w-full">
+            <div className="relative aspect-square">
+               <Image
+                src={product.image}
+                alt={product.name}
+                data-ai-hint="product detail"
+                fill
+                className="w-full h-auto object-contain rounded-lg"
+                style={{filter: 'drop-shadow(0px 10px 30px rgba(0,0,0,0.2))'}}
+              />
+            </div>
+             <Carousel className="w-full max-w-xs mx-auto mt-4">
               <CarouselContent>
                 {product.images.map((img, index) => (
-                  <CarouselItem key={index}>
-                    <Card className="overflow-hidden">
+                  <CarouselItem key={index} className="basis-1/3">
+                    <Card className="overflow-hidden bg-white">
                       <Image
                         src={img}
                         alt={`${product.name} image ${index + 1}`}
-                        data-ai-hint="product detail"
-                        width={600}
-                        height={600}
+                        data-ai-hint="product thumbnail"
+                        width={100}
+                        height={100}
                         className="w-full h-auto object-cover aspect-square"
                       />
                     </Card>
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="ml-16" />
-              <CarouselNext className="mr-16" />
+              <CarouselPrevious className="-left-4" />
+              <CarouselNext className="-right-4"/>
             </Carousel>
           </div>
 
           {/* Product Details */}
           <div className="space-y-6">
             <div className="space-y-2">
+              <Badge variant="accent">{product.category}</Badge>
               <h1 className="text-3xl lg:text-4xl font-headline font-bold">{product.name}</h1>
               <p className="text-muted-foreground text-lg">{product.description}</p>
             </div>
 
             <div className="flex items-center justify-between">
-              <p className="text-3xl font-bold text-primary">₹{product.price}</p>
-              <Badge variant="secondary">{product.category}</Badge>
+              <p className="text-3xl font-bold text-foreground">₹{product.price}</p>
             </div>
 
             <Button size="lg" className="w-full">
@@ -70,7 +80,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
                   <ul className="space-y-2 text-muted-foreground">
                     {product.healthBenefits.map((benefit, i) => (
                       <li key={i} className="flex items-center gap-2">
-                        <CheckCircle className="h-4 w-4 text-green-600" />
+                        <CheckCircle className="h-4 w-4 text-secondary" />
                         <span>{benefit}</span>
                       </li>
                     ))}
@@ -96,25 +106,25 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
         </div>
 
         {/* Farmer Story Section */}
-        <div className="mt-16">
-            <Card className="bg-secondary overflow-hidden">
-                <div className="grid md:grid-cols-3">
+        <div className="mt-16 md:mt-24">
+            <Card className="bg-muted overflow-hidden border-none shadow-none">
+                <div className="grid md:grid-cols-2 items-center">
                     <div className="md:col-span-1">
                         <Image
                             src={product.farmerStory.photo}
                             alt={product.farmerStory.name}
                             data-ai-hint="farmer portrait"
-                            width={400}
-                            height={400}
-                            className="w-full h-full object-cover"
+                            width={500}
+                            height={500}
+                            className="w-full h-full object-cover aspect-square md:aspect-auto rounded-t-lg md:rounded-l-lg md:rounded-tr-none"
                         />
                     </div>
-                    <div className="md:col-span-2 p-8">
+                    <div className="md:col-span-1 p-8 md:p-12">
                         <CardHeader className="p-0">
-                            <CardTitle className="font-headline text-2xl flex items-center gap-2"><Feather className="h-6 w-6 text-primary"/> A Word from the Farmer</CardTitle>
+                            <CardTitle className="font-headline text-2xl flex items-center gap-2"><Feather className="h-6 w-6 text-secondary"/> From the Farmer</CardTitle>
                         </CardHeader>
                         <CardContent className="p-0 mt-4">
-                            <p className="text-muted-foreground italic">&quot;{product.farmerStory.story}&quot;</p>
+                            <p className="text-muted-foreground italic text-base">&quot;{product.farmerStory.story}&quot;</p>
                             <p className="font-semibold mt-4">- {product.farmerStory.name}, {product.region}</p>
                         </CardContent>
                     </div>
@@ -123,7 +133,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
         </div>
 
         {/* Testimonials Section */}
-         <div className="mt-16">
+         <div className="mt-16 md:mt-24">
             <h2 className="text-3xl font-headline font-bold text-center mb-8 flex items-center justify-center gap-2"><Heart className="h-8 w-8 text-primary"/> Customer Experiences</h2>
              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {testimonials.map((testimonial) => (
