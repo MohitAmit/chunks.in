@@ -21,12 +21,12 @@ const navLinks = [
 const ChunksLogo = () => (
     <svg width="125" height="28" viewBox="0 0 125 28" fill="none" xmlns="http://www.w3.org/2000/svg">
         <text y="22" fontFamily="Poppins, sans-serif" fontWeight="700" fontSize="28">
-            <tspan fill="#D90429">C</tspan>
-            <tspan dx="1" fill="#E63946">h</tspan>
-            <tspan dx="1" fill="#2A9D8F">u</tspan>
-            <tspan dx="1" fill="#8338EC">n</tspan>
+            <tspan fill="#EF4444">C</tspan>
+            <tspan dx="1" fill="#F472B6">h</tspan>
+            <tspan dx="1" fill="#34D399">u</tspan>
+            <tspan dx="1" fill="#A78BFA">n</tspan>
             <tspan dx="1" fill="#90EE90">k</tspan>
-            <tspan dx="1" fill="#219EBC">s</tspan>
+            <tspan dx="1" fill="#60A5FA">s</tspan>
         </text>
     </svg>
 )
@@ -93,13 +93,13 @@ export default function Header() {
 
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex md:items-center md:gap-x-8 text-sm font-medium mx-auto">
+        <nav className="hidden md:flex md:items-center md:gap-x-8 text-lg font-nav mx-auto">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               className={cn(
-                'transition-colors hover:opacity-80 relative font-bold',
+                'transition-colors hover:opacity-80 relative',
                 pathname === link.href ? link.color : 'text-foreground/80',
                  link.color
               )}

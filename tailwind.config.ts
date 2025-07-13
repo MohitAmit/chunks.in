@@ -19,6 +19,7 @@ export default {
       fontFamily: {
         body: ['Inter', 'sans-serif'],
         headline: ['Poppins', 'sans-serif'],
+        nav: ['Lobster', 'cursive'],
         code: ['monospace'],
       },
       colors: {
