@@ -19,9 +19,16 @@ const navLinks = [
 ];
 
 const ChunksLogo = () => (
-  <svg width="100" height="28" viewBox="0 0 100 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <text x="0" y="22" fontFamily="Poppins, sans-serif" fontWeight="700" fontSize="28" fill="hsl(var(--foreground))">Chunks</text>
-  </svg>
+    <svg width="125" height="28" viewBox="0 0 125 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <text y="22" fontFamily="Poppins, sans-serif" fontWeight="700" fontSize="28">
+            <tspan fill="hsl(var(--chart-1))">C</tspan>
+            <tspan dx="1" fill="hsl(var(--chart-2))">h</tspan>
+            <tspan dx="1" fill="hsl(var(--chart-3))">u</tspan>
+            <tspan dx="1" fill="hsl(var(--chart-4))">n</tspan>
+            <tspan dx="1" fill="hsl(var(--chart-5))">k</tspan>
+            <tspan dx="1" fill="hsl(var(--chart-1))">s</tspan>
+        </text>
+    </svg>
 )
 
 export default function Header() {
