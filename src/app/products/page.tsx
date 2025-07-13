@@ -7,7 +7,7 @@ export default function ProductsPage() {
     <div className="bg-background animate-fade-in">
       <div className="container mx-auto px-4 md:px-6 py-12">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-headline font-bold text-foreground">Our Collection</h1>
+          <h1 className="text-4xl md:text-5xl font-headline font-bold text-foreground">Our Chunks</h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
             Explore our curated range of natural and homegrown snacks, direct from Indian farms.
           </p>
