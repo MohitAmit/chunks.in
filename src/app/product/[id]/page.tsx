@@ -1,8 +1,9 @@
+
 'use client'
 
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { useState } from 'react';
+import { useState, use } from 'react';
 import Link from 'next/link';
 
 import { products, testimonials as allTestimonials } from '@/lib/placeholder-data';
@@ -21,10 +22,11 @@ import { useCart } from '@/context/CartContext';
 import { useToast } from '@/hooks/use-toast';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 
-export default function ProductDetailPage({ params }: { params: { id: string } }) {
+export default function ProductDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = use(params);
   const { addToCart } = useCart();
   const { toast } = useToast();
-  const product = products.find((p) => p.id === params.id);
+  const product = products.find((p) => p.id === id);
   const testimonials = allTestimonials.slice(0, 2);
 
   const [selectedVariant, setSelectedVariant] = useState<ProductVariant | undefined>(product?.variants[0]);
