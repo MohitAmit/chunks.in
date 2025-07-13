@@ -5,6 +5,7 @@ import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ThemeProvider } from '@/components/ThemeProvider';
+import { CartProvider } from '@/context/CartContext';
 
 export const metadata: Metadata = {
   title: 'Chunks',
@@ -30,12 +31,14 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
         >
+          <CartProvider>
             <div className="flex min-h-screen flex-col">
               <Header />
               <main className="flex-1">{children}</main>
               <Footer />
             </div>
             <Toaster />
+          </CartProvider>
         </ThemeProvider>
       </body>
     </html>

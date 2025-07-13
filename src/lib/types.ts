@@ -39,3 +39,7 @@ export interface Testimonial {
   text: string;
   rating: number;
 }
+
+export interface CartItem extends Product {
+  quantity: number;
+}

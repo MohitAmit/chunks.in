@@ -9,6 +9,7 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { cn } from '@/lib/utils'
 import { useEffect, useState } from 'react'
 import { ThemeToggle } from './ThemeToggle'
+import { useCart } from '@/context/CartContext'
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -35,6 +36,9 @@ export default function Header() {
   const pathname = usePathname()
   const [isSheetOpen, setSheetOpen] = useState(false)
   const [isMounted, setIsMounted] = useState(false)
+  const { cart, isCartAnimating } = useCart();
+  const cartItemCount = cart.items.length;
+
 
   useEffect(() => {
     setIsMounted(true)
@@ -121,7 +125,15 @@ export default function Header() {
         )}
 
         <div className="flex items-center justify-end gap-2">
-           <Button variant="ghost" size="icon">
+           <Button variant="ghost" size="icon" className="relative">
+             {cartItemCount > 0 && (
+                <div className={cn(
+                    "absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs font-bold text-white",
+                    isCartAnimating && "animate-blinking-scaled"
+                )}>
+                    {cartItemCount}
+                </div>
+             )}
              <ShoppingCart className="h-5 w-5" />
              <span className="sr-only">Shopping Cart</span>
            </Button>

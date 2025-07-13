@@ -15,9 +15,13 @@ import { TestimonialCard } from '@/components/TestimonialCard';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Label } from '@/components/ui/label';
 import { cn } from '@/lib/utils';
-import type { ProductVariant } from '@/lib/types';
+import type { Product, ProductVariant } from '@/lib/types';
+import { useCart } from '@/context/CartContext';
+import { useToast } from '@/hooks/use-toast';
 
 export default function ProductDetailPage({ params }: { params: { id: string } }) {
+  const { addToCart } = useCart();
+  const { toast } = useToast();
   const product = products.find((p) => p.id === params.id);
   const testimonials = allTestimonials.slice(0, 2);
 
@@ -32,6 +36,19 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
     setSelectedVariant(newVariant);
   };
   
+  const handleAddToCart = () => {
+    if (product && selectedVariant) {
+      addToCart({
+        ...product,
+        variants: [selectedVariant],
+      });
+      toast({
+        title: "Added to cart",
+        description: `${product.name} (${selectedVariant.size}) has been added to your cart.`,
+      });
+    }
+  };
+
   return (
     <div className="bg-background animate-fade-in">
       <div className="container mx-auto px-4 md:px-6 py-12">
@@ -117,7 +134,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
                 </div>
             </div>
 
-            <Button size="lg" className="w-full">
+            <Button size="lg" className="w-full" onClick={handleAddToCart}>
               <ShoppingCart className="mr-2 h-5 w-5" />
               Add to Cart
             </Button>

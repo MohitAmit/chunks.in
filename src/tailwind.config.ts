@@ -103,6 +103,10 @@ export default {
           "50%": { backgroundPosition: "100% 50%" },
           "100%": { backgroundPosition: "0% 50%" },
         },
+        "blinking-scaled": {
+          "0%, 100%": { transform: "scale(1)", opacity: "1" },
+          "50%": { transform: "scale(1.2)", opacity: "0.7" },
+        }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -110,6 +114,7 @@ export default {
         "fade-in": "fade-in 0.5s ease-out forwards",
         "background-pan": "background-pan 3s linear infinite",
         "gradient-pan": "gradient-pan 15s ease infinite",
+        "blinking-scaled": "blinking-scaled 1s ease-in-out",
       },
     },
   },
