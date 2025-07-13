@@ -142,7 +142,7 @@ export default function Header() {
 
         {/* Desktop Menu */}
         {isMounted && (
-          <nav className="hidden md:flex md:items-center md:gap-x-6 text-base font-medium mx-auto">
+          <nav className="hidden md:flex md:items-center md:gap-x-8 text-lg font-semibold mx-auto">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -150,7 +150,7 @@ export default function Header() {
                 className={cn(
                   'relative transition-all duration-300 ease-in-out hover:text-primary hover:scale-110',
                   pathname === link.href
-                    ? 'font-semibold text-primary'
+                    ? 'text-primary'
                     : 'text-foreground/80'
                 )}
               >
