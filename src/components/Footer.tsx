@@ -10,7 +10,7 @@ const ChunksLogo = () => (
             <tspan dx="1" fill="#F472B6">h</tspan>
             <tspan dx="1" fill="#34D399">u</tspan>
             <tspan dx="1" fill="#A78BFA">n</tspan>
-            <tspan dx="1" fill="#4B0082">k</tspan>
+            <tspan dx="1" fill="#A9A9A9">k</tspan>
             <tspan dx="1" fill="#60A5FA">s</tspan>
         </text>
     </svg>
