@@ -1,11 +1,11 @@
 
-import type { Product, Category, Testimonial } from './types';
+import type { Product, Category, Testimonial } from './types'
 
 export const categories: Category[] = [
-  { id: 'honey', name: 'Organic Honey', description: 'Pure, raw honey from diverse regions of India.' },
-  { id: 'ghee', name: 'Desi Cow A2 Ghee', description: 'Traditionally churned ghee from grass-fed desi cows.' },
-  { id: 'snacks', name: 'Healthy Snacks', description: 'Nutritious and delicious snacks made with natural ingredients.' },
-];
+  { id: 'honey', name: 'Organic Honey', description: 'Pure, raw honey from diverse regions of India' },
+  { id: 'ghee', name: 'Desi Cow A2 Ghee', description: 'Traditionally churned ghee from grass-fed desi cows' },
+  { id: 'snacks', name: 'Healthy Snacks', description: 'Nutritious and delicious snacks made with natural ingredients' },
+]
 
 export const products: Product[] = [
   {
@@ -13,14 +13,14 @@ export const products: Product[] = [
     name: 'Kashmiri Saffron Honey',
     category: 'honey',
     price: 750,
-    description: 'A divine blend of pure multi-floral honey from the valleys of Kashmir and premium saffron strands. This honey is a treat for the senses and a boost for your health.',
+    description: 'A divine blend of pure multi-floral honey from the valleys of Kashmir and premium saffron strands This honey is a treat for the senses and a boost for your health',
     image: 'https://placehold.co/600x600.png',
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
     region: 'Kashmir',
     ingredients: ['Raw Multi-floral Honey', 'Saffron Strands'],
     farmerStory: {
       name: 'Ghulam Ahmed',
-      story: 'For generations, our family has practiced the art of beekeeping in the pristine meadows of Pahalgam. We believe in letting the bees thrive naturally, resulting in honey that is pure and full of life.',
+      story: 'For generations, our family has practiced the art of beekeeping in the pristine meadows of Pahalgam We believe in letting the bees thrive naturally, resulting in honey that is pure and full of life',
       video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
       photo: 'https://placehold.co/300x300.png',
     },
@@ -28,18 +28,37 @@ export const products: Product[] = [
     certifications: ['FSSAI Certified', 'Organic India'],
   },
   {
+    id: 'shilajit-honey-twigs',
+    name: 'Honey Twigs with Shilajit',
+    category: 'honey',
+    price: 450,
+    description: 'The ultimate natural performance enhancer for gym lovers Infused with pure Himalayan Shilajit, these honey twigs provide a sustained energy release to power you through your workouts',
+    image: 'https://placehold.co/600x600.png',
+    images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
+    region: 'Himalayan Region',
+    ingredients: ['Raw Honey', 'Shilajit Extract'],
+    farmerStory: {
+      name: 'Himalayan Herbalists Co-op',
+      story: 'We source our Shilajit resin from the highest altitudes of the Himalayas, where it has been forming for centuries We combine this potent mineral with wild honey to create a powerful wellness product',
+      video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+      photo: 'https://placehold.co/300x300.png',
+    },
+    healthBenefits: ['Boosts stamina and performance', 'Aids in muscle recovery', 'Natural pre-workout energy'],
+    certifications: ['FSSAI Certified'],
+  },
+  {
     id: 'sundarbans-honey',
     name: 'Wild Sundarbans Honey',
     category: 'honey',
     price: 680,
-    description: 'A rare and exotic honey collected by traditional honey hunters from the mangrove forests of the Sundarbans. It has a unique, slightly saline taste and a rich, dark color.',
+    description: 'A rare and exotic honey collected by traditional honey hunters from the mangrove forests of the Sundarbans It has a unique, slightly saline taste and a rich, dark color',
     image: 'https://placehold.co/600x600.png',
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
     region: 'Sundarbans, West Bengal',
     ingredients: ['Raw Mangrove Honey'],
     farmerStory: {
       name: 'The Moulis community',
-      story: 'We are the traditional honey collectors of the Sundarbans. Risking our lives, we venture deep into the forests to collect this precious nectar, following ancient sustainable practices.',
+      story: 'We are the traditional honey collectors of the Sundarbans Risking our lives, we venture deep into the forests to collect this precious nectar, following ancient sustainable practices',
       video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
       photo: 'https://placehold.co/300x300.png',
     },
@@ -50,14 +69,14 @@ export const products: Product[] = [
     name: 'Bilona A2 Ghee',
     category: 'ghee',
     price: 1200,
-    description: 'Crafted using the traditional \'Bilona\' method, this ghee is made from the A2 milk of grass-fed Gir cows from Rajasthan. It\'s a powerhouse of nutrition with a rich, nutty aroma.',
+    description: 'Crafted using the traditional \'Bilona\' method, this ghee is made from the A2 milk of grass-fed Gir cows from Rajasthan It\'s a powerhouse of nutrition with a rich, nutty aroma',
     image: 'https://placehold.co/600x600.png',
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
     region: 'Rajasthan',
     ingredients: ['A2 Cow Milk Butter'],
     farmerStory: {
       name: 'Rani Singh',
-      story: 'Our cows are our family. They roam free and graze on native grasses, which makes their milk incredibly nutritious. We churn the curd in clay pots to make ghee the way our grandmothers did.',
+      story: 'Our cows are our family They roam free and graze on native grasses, which makes their milk incredibly nutritious We churn the curd in clay pots to make ghee the way our grandmothers did',
       video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
       photo: 'https://placehold.co/300x300.png',
     },
@@ -69,14 +88,14 @@ export const products: Product[] = [
     name: 'Ragi & Jaggery Cookies',
     category: 'snacks',
     price: 350,
-    description: 'A guilt-free snack for all ages. These cookies are made from nutrient-dense Ragi (finger millet) and sweetened with natural jaggery. No refined sugar, no maida.',
+    description: 'A guilt-free snack for all ages These cookies are made from nutrient-dense Ragi (finger millet) and sweetened with natural jaggery No refined sugar, no maida',
     image: 'https://placehold.co/600x600.png',
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
     region: 'Karnataka',
     ingredients: ['Ragi Flour', 'Jaggery', 'A2 Ghee', 'Cardamom'],
     farmerStory: {
       name: 'Sahana Women\'s Collective',
-      story: 'We are a group of women from rural Karnataka dedicated to reviving traditional grains. Our recipes are passed down through generations, made with love and the finest local ingredients.',
+      story: 'We are a group of women from rural Karnataka dedicated to reviving traditional grains Our recipes are passed down through generations, made with love and the finest local ingredients',
       video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
       photo: 'https://placehold.co/300x300.png',
     },
@@ -87,22 +106,22 @@ export const products: Product[] = [
     name: 'Dry Fruit Ladoos',
     category: 'snacks',
     price: 550,
-    description: 'Energy balls made from dates, figs, almonds, and other nuts. A perfect, healthy way to satisfy your sweet cravings without any added sugar.',
+    description: 'Energy balls made from dates, figs, almonds, and other nuts A perfect, healthy way to satisfy your sweet cravings without any added sugar',
     image: 'https://placehold.co/600x600.png',
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
     region: 'All India',
     ingredients: ['Dates', 'Figs', 'Almonds', 'Walnuts', 'Pistachios', 'A2 Ghee'],
     farmerStory: {
       name: 'Urban Homemakers',
-      story: 'Inspired by our family traditions, we started creating these healthy treats in our home kitchens. We source the best quality dry fruits to ensure every ladoo is packed with goodness.',
+      story: 'Inspired by our family traditions, we started creating these healthy treats in our home kitchens We source the best quality dry fruits to ensure every ladoo is packed with goodness',
       video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
       photo: 'https://placehold.co/300x300.png',
     },
     healthBenefits: ['Instant energy boost', 'Rich in vitamins and minerals', 'Good for hair and skin'],
   },
-];
+]
 
-export const featuredProducts = products.slice(0, 4);
+export const featuredProducts = products.slice(0, 4)
 
 export const testimonials: Testimonial[] = [
   {
@@ -110,7 +129,7 @@ export const testimonials: Testimonial[] = [
     name: 'Anjali Sharma',
     location: 'Mumbai, Maharashtra',
     avatar: 'https://placehold.co/100x100.png',
-    text: 'The Rajasthani Bilona Ghee is just like what my grandmother used to make. The aroma and taste are so pure. It has become a staple in my kitchen!',
+    text: 'The Rajasthani Bilona Ghee is just like what my grandmother used to make The aroma and taste are so pure It has become a staple in my kitchen!',
     rating: 5,
   },
   {
@@ -118,7 +137,7 @@ export const testimonials: Testimonial[] = [
     name: 'Vikram Patel',
     location: 'Bengaluru, Karnataka',
     avatar: 'https://placehold.co/100x100.png',
-    text: 'I was looking for healthy snacks for my kids, and the Ragi cookies are perfect. They love the taste, and I\'m happy they are eating something nutritious.',
+    text: 'I was looking for healthy snacks for my kids, and the Ragi cookies are perfect They love the taste, and I\'m happy they are eating something nutritious',
     rating: 5,
   },
   {
@@ -126,7 +145,7 @@ export const testimonials: Testimonial[] = [
     name: 'Priya Das',
     location: 'Kolkata, West Bengal',
     avatar: 'https://placehold.co/100x100.png',
-    text: 'The Sundarbans honey has a very unique flavour. I use it in my morning tea every day. It feels so natural and rejuvenating. Highly recommend!',
+    text: 'The Sundarbans honey has a very unique flavour I use it in my morning tea every day It feels so natural and rejuvenating Highly recommend!',
     rating: 4,
   },
   {
@@ -134,7 +153,7 @@ export const testimonials: Testimonial[] = [
     name: 'Rohan Mehta',
     location: 'Delhi',
     avatar: 'https://placehold.co/100x100.png',
-    text: 'Finally, a brand that is transparent about its sourcing. Reading the farmer stories makes me feel more connected to the food I eat. Great initiative!',
+    text: 'Finally, a brand that is transparent about its sourcing Reading the farmer stories makes me feel more connected to the food I eat Great initiative!',
     rating: 5,
   },
-];
+]
