@@ -98,25 +98,27 @@ export default function Header() {
 
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex md:items-center md:gap-x-8 text-2xl font-creative mx-auto">
-          {isMounted && navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={cn(
-                'relative transition-opacity hover:opacity-80',
-                pathname === link.href
-                  ? 'animate-background-pan bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 bg-[200%_auto] bg-clip-text text-transparent'
-                  : 'text-foreground/80'
-              )}
-            >
-              {link.label}
-              {pathname === link.href && (
-                <span className='absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-red-500 via-purple-500 to-blue-500' />
-              )}
-            </Link>
-          ))}
-        </nav>
+        {isMounted && (
+          <nav className="hidden md:flex md:items-center md:gap-x-8 text-2xl font-creative mx-auto">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={cn(
+                  'relative transition-opacity hover:opacity-80',
+                  pathname === link.href
+                    ? 'animate-background-pan bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 bg-[200%_auto] bg-clip-text text-transparent'
+                    : 'text-foreground/80'
+                )}
+              >
+                {link.label}
+                {pathname === link.href && (
+                  <span className='absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-red-500 via-purple-500 to-blue-500' />
+                )}
+              </Link>
+            ))}
+          </nav>
+        )}
 
         <div className="flex items-center justify-end gap-2">
            <Button variant="ghost" size="icon">
