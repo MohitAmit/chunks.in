@@ -542,7 +542,7 @@ export const products: Product[] = [
   },
 ]
 
-export const featuredProducts = [products[0], products[1], products[3], products[4]];
+export const featuredProducts = [products[3], products[4], products[9], products[20]];
 
 export const testimonials: Testimonial[] = [
   {
