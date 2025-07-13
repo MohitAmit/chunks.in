@@ -26,7 +26,7 @@ export default function AboutPage() {
             <Image
               src="https://placehold.co/600x400.png"
               alt="Indian farmer in a field"
-              data-ai-hint="indian farmer"
+              data-ai-hint="indian farm"
               width={600}
               height={400}
               className="rounded-lg shadow-soft"
