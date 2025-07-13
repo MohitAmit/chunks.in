@@ -323,6 +323,14 @@ export const featuredProducts = [products[0], products[1], products[3], products
 
 export const testimonials: Testimonial[] = [
   {
+    id: '4',
+    name: 'Allen',
+    location: 'IIM Calcutta',
+    avatar: 'https://placehold.co/100x100.png',
+    text: 'Finally, a brand that is transparent about its sourcing Reading the farmer stories makes me feel more connected to the food I eat Great initiative!',
+    rating: 5,
+  },
+  {
     id: '1',
     name: 'Kuldeep Meena',
     location: 'IIT Bombay',
@@ -345,13 +353,5 @@ export const testimonials: Testimonial[] = [
     avatar: 'https://placehold.co/100x100.png',
     text: 'The Sundarbans honey has a very unique flavour I use it in my morning tea every day It feels so natural and rejuvenating Highly recommend!',
     rating: 4,
-  },
-  {
-    id: '4',
-    name: 'Allen',
-    location: 'IIM Calcutta',
-    avatar: 'https://placehold.co/100x100.png',
-    text: 'Finally, a brand that is transparent about its sourcing Reading the farmer stories makes me feel more connected to the food I eat Great initiative!',
-    rating: 5,
   },
 ]
