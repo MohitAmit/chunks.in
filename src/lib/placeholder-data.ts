@@ -1,3 +1,4 @@
+
 import type { Product, Category, Testimonial } from './types';
 
 export const categories: Category[] = [
@@ -81,7 +82,7 @@ export const products: Product[] = [
     },
     healthBenefits: ['Rich in calcium and iron', 'High in fiber', 'Gluten-free'],
   },
-    {
+  {
     id: 'ladoos',
     name: 'Dry Fruit Ladoos',
     category: 'snacks',
