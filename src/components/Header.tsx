@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { cn } from '@/lib/utils'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { ThemeToggle } from './ThemeToggle'
 
 const navLinks = [
@@ -34,6 +34,11 @@ const ChunksLogo = () => (
 export default function Header() {
   const pathname = usePathname()
   const [isSheetOpen, setSheetOpen] = useState(false)
+  const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-black/5 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -94,7 +99,7 @@ export default function Header() {
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex md:items-center md:gap-x-8 text-2xl font-creative mx-auto">
-          {navLinks.map((link) => (
+          {isMounted && navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
