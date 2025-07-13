@@ -1,0 +1,63 @@
+import Link from 'next/link';
+import { Leaf, Twitter, Facebook, Instagram } from 'lucide-react';
+import { Button } from './ui/button';
+import { Input } from './ui/input';
+
+export default function Footer() {
+  return (
+    <footer className="bg-secondary text-secondary-foreground border-t">
+      <div className="container py-12 px-4 md:px-6">
+        <div className="grid gap-8 grid-cols-1 md:grid-cols-4">
+          <div className="space-y-4">
+            <Link href="/" className="flex items-center gap-2">
+              <Leaf className="h-6 w-6 text-primary" />
+              <span className="font-headline text-xl font-bold">Bharat Haat</span>
+            </Link>
+            <p className="text-sm text-muted-foreground">
+              Bringing you the purest, homegrown products from the heart of India.
+            </p>
+            <div className="flex gap-4">
+              <Link href="#" aria-label="Twitter">
+                <Twitter className="h-5 w-5 hover:text-primary transition-colors" />
+              </Link>
+              <Link href="#" aria-label="Facebook">
+                <Facebook className="h-5 w-5 hover:text-primary transition-colors" />
+              </Link>
+              <Link href="#" aria-label="Instagram">
+                <Instagram className="h-5 w-5 hover:text-primary transition-colors" />
+              </Link>
+            </div>
+          </div>
+          <div className="space-y-2">
+            <h4 className="font-semibold">Quick Links</h4>
+            <ul className="space-y-2 text-sm">
+              <li><Link href="/about" className="text-muted-foreground hover:text-primary">About Us</Link></li>
+              <li><Link href="/products" className="text-muted-foreground hover:text-primary">Products</Link></li>
+              <li><Link href="/testimonials" className="text-muted-foreground hover:text-primary">Testimonials</Link></li>
+              <li><Link href="/contact" className="text-muted-foreground hover:text-primary">Contact Us</Link></li>
+            </ul>
+          </div>
+          <div className="space-y-2">
+             <h4 className="font-semibold">Legal</h4>
+             <ul className="space-y-2 text-sm">
+              <li><Link href="#" className="text-muted-foreground hover:text-primary">Privacy Policy</Link></li>
+              <li><Link href="#" className="text-muted-foreground hover:text-primary">Terms of Service</Link></li>
+              <li><Link href="#" className="text-muted-foreground hover:text-primary">Shipping Policy</Link></li>
+             </ul>
+          </div>
+          <div className="space-y-4">
+            <h4 className="font-semibold">Newsletter</h4>
+            <p className="text-sm text-muted-foreground">Stay updated with our latest products and offers.</p>
+            <form className="flex gap-2">
+              <Input type="email" placeholder="Enter your email" className="bg-background" />
+              <Button type="submit" className="bg-primary hover:bg-primary/90">Subscribe</Button>
+            </form>
+          </div>
+        </div>
+        <div className="mt-8 border-t pt-6 text-center text-sm text-muted-foreground">
+          <p>&copy; {new Date().getFullYear()} Bharat Haat. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+  );
+}
