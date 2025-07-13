@@ -32,7 +32,7 @@ export const products: Product[] = [
     name: 'Honey Twigs with Shilajit',
     category: 'honey',
     price: 450,
-    description: 'The ultimate natural performance enhancer for gym lovers Infused with pure Himalayan Shilajit, these honey twigs provide a sustained energy release to power you through your workouts',
+    description: 'Our best-selling natural performance enhancer for young people and gym lovers. Infused with pure Himalayan Shilajit, these honey twigs provide a sustained energy release to power you through your workouts.',
     image: 'https://placehold.co/600x600.png',
     dataAiHint: 'honey sticks gym',
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
