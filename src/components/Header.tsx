@@ -29,7 +29,7 @@ const ChunksLogo = () => (
             <tspan dx="1" fill="#90EE90">k</tspan>
             <tspan dx="1" fill="#219EBC">s</tspan>
         </text>
-        <text x="0" y="38" fontFamily="Inter, sans-serif" fontWeight="500" fontSize="12" fill="currentColor">
+        <text x="0" y="38" fontFamily="Inter, sans-serif" fontWeight="500" fontSize="12" className="text-muted-foreground fill-current">
             of happiness
         </text>
     </svg>
