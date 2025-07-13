@@ -18,14 +18,14 @@ const ChunksLogo = () => {
               {`
                 .logo-c { fill: #8e44ad; }
                 .logo-h { fill: #2a9d8f; }
-                .logo-u { fill: #e9c46a; }
+                .logo-u { fill: #e74c3c; }
                 .logo-n { fill: #f4a261; }
                 .logo-k { fill: #e76f51; }
                 .logo-s { fill: #8e44ad; }
                 .logo-subtext { fill: hsl(var(--foreground)); opacity: 0.8; }
                 .dark .logo-c { fill: #f5c02c; }
                 .dark .logo-h { fill: #81b29a; }
-                .dark .logo-u { fill: #f2cc8f; }
+                .dark .logo-u { fill: #e74c3c; }
                 .dark .logo-n { fill: #f5b98b; }
                 .dark .logo-k { fill: #ee9279; }
                 .dark .logo-s { fill: #f5c02c; }
