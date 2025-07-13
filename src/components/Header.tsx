@@ -20,7 +20,7 @@ const navLinks = [
 ]
 
 const ChunksLogo = () => (
-    <svg width="125" height="28" viewBox="0 0 125 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="150" height="40" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <text y="22" fontFamily="Poppins, sans-serif" fontWeight="700" fontSize="28">
             <tspan fill="#ADD8E6">C</tspan>
             <tspan dx="1" fill="#800080">h</tspan>
@@ -28,6 +28,9 @@ const ChunksLogo = () => (
             <tspan dx="1" fill="#8338EC">n</tspan>
             <tspan dx="1" fill="#90EE90">k</tspan>
             <tspan dx="1" fill="#219EBC">s</tspan>
+        </text>
+        <text x="0" y="38" fontFamily="Inter, sans-serif" fontWeight="500" fontSize="12" fill="currentColor">
+            of happiness
         </text>
     </svg>
 )
