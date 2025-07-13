@@ -4,7 +4,7 @@ import { Button } from './ui/button'
 import { Input } from './ui/input'
 
 const ChunksLogo = () => (
-    <svg width="150" height="40" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="180" height="48" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <text y="22" fontFamily="Poppins, sans-serif" fontWeight="700" fontSize="28">
             <tspan fill="#ADD8E6">C</tspan>
             <tspan dx="1" fill="#800080">h</tspan>
