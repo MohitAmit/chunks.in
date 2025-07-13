@@ -41,7 +41,10 @@ export default function Header() {
   }, [])
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/20 text-primary-foreground bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-pan bg-[400%_400%]">
+    <header className={cn(
+        "sticky top-0 z-50 w-full border-b border-border/20 text-primary-foreground",
+        isMounted && "bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-pan bg-[400%_400%]"
+    )}>
       <div className="container flex h-20 items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="flex items-center gap-2">
