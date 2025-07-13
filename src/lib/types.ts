@@ -1,8 +1,13 @@
+export interface ProductVariant {
+  id: string;
+  size: string;
+  price: number;
+}
+
 export interface Product {
   id: string;
   name: string;
   category: string;
-  price: number;
   description: string;
   image: string;
   images: string[];
@@ -16,6 +21,8 @@ export interface Product {
   };
   healthBenefits: string[];
   certifications?: string[];
+  variants: ProductVariant[];
+  dataAiHint?: string;
 }
 
 export interface Category {

@@ -1,5 +1,8 @@
+'use client'
+
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
+import { useState } from 'react';
 
 import { products, testimonials as allTestimonials } from '@/lib/placeholder-data';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -9,15 +12,26 @@ import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { CheckCircle, Feather, Heart, ShoppingCart, ShieldCheck } from 'lucide-react';
 import { TestimonialCard } from '@/components/TestimonialCard';
+import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
+import { Label } from '@/components/ui/label';
+import { cn } from '@/lib/utils';
+import type { ProductVariant } from '@/lib/types';
 
 export default function ProductDetailPage({ params }: { params: { id: string } }) {
   const product = products.find((p) => p.id === params.id);
   const testimonials = allTestimonials.slice(0, 2);
 
+  const [selectedVariant, setSelectedVariant] = useState<ProductVariant | undefined>(product?.variants[0]);
+
   if (!product) {
     notFound();
   }
 
+  const handleVariantChange = (variantId: string) => {
+    const newVariant = product.variants.find(v => v.id === variantId);
+    setSelectedVariant(newVariant);
+  };
+  
   return (
     <div className="bg-background animate-fade-in">
       <div className="container mx-auto px-4 md:px-6 py-12">
@@ -63,9 +77,36 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
               <h1 className="text-3xl lg:text-4xl font-headline font-bold">{product.name}</h1>
               <p className="text-muted-foreground text-lg">{product.description}</p>
             </div>
+            
+            {product.variants.length > 1 && (
+              <div>
+                <Label className="text-lg font-headline mb-2 block">Select Size</Label>
+                <RadioGroup
+                  defaultValue={selectedVariant?.id}
+                  onValueChange={handleVariantChange}
+                  className="flex flex-wrap gap-4"
+                >
+                  {product.variants.map((variant) => (
+                    <Label
+                      key={variant.id}
+                      htmlFor={variant.id}
+                      className={cn(
+                        "flex flex-col items-center justify-center rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground cursor-pointer",
+                        selectedVariant?.id === variant.id && "border-primary"
+                      )}
+                    >
+                      <RadioGroupItem value={variant.id} id={variant.id} className="sr-only" />
+                      <span className="font-bold">{variant.size}</span>
+                      <span className="text-sm">₹{variant.price}</span>
+                    </Label>
+                  ))}
+                </RadioGroup>
+              </div>
+            )}
+
 
             <div className="flex items-center justify-between">
-              <p className="text-3xl font-bold text-foreground">₹{product.price}</p>
+              <p className="text-3xl font-bold text-foreground">₹{selectedVariant?.price}</p>
             </div>
             
             <div className="flex items-center gap-3 p-3 rounded-lg bg-muted border">

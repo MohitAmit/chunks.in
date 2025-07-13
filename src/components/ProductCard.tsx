@@ -11,6 +11,8 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({ product }: ProductCardProps) {
+  const startingPrice = product.variants.reduce((min, v) => v.price < min ? v.price : min, product.variants[0].price);
+  
   return (
     <Card className="flex flex-col h-full overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
       <CardHeader className="p-0 relative">
@@ -37,7 +39,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           <span>{product.region}</span>
         </div>
         <p className="mt-2 text-xl font-semibold">
-          ₹{product.price}
+          From ₹{startingPrice}
         </p>
       </CardContent>
       <CardFooter className="p-4 pt-0">
