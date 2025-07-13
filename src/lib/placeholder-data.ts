@@ -25,6 +25,7 @@ export const products: Product[] = [
       photo: 'https://placehold.co/300x300.png',
     },
     healthBenefits: ['Boosts immunity', 'Rich in antioxidants', 'Improves skin health'],
+    useCase: 'Immunity boosting and improving skin radiance.',
     certifications: ['FSSAI Certified', 'Organic India'],
   },
   {
@@ -45,6 +46,7 @@ export const products: Product[] = [
       photo: 'https://placehold.co/300x300.png',
     },
     healthBenefits: ['Boosts stamina and performance', 'Aids in muscle recovery', 'Natural pre-workout energy'],
+    useCase: 'Enhancing physical performance, stamina, and workout recovery.',
     certifications: ['FSSAI Certified'],
   },
   {
@@ -64,6 +66,7 @@ export const products: Product[] = [
       photo: 'https://placehold.co/300x300.png',
     },
     healthBenefits: ['Natural energy booster', 'Soothes sore throats', 'Aids in digestion'],
+    useCase: 'General wellness, energy, and soothing respiratory issues.',
   },
   {
     id: 'nepal-magical-honey',
@@ -82,6 +85,7 @@ export const products: Product[] = [
       photo: 'https://placehold.co/300x300.png',
     },
     healthBenefits: ['Provides a unique sensory experience', 'Rich in natural pollen', 'Supports ancient traditions'],
+    useCase: 'Unique taste experiences and supporting traditional communities.',
   },
   {
     id: 'gir-ghee',
@@ -104,6 +108,7 @@ export const products: Product[] = [
       photo: 'https://placehold.co/300x300.png',
     },
     healthBenefits: ['Rich in Omega-3 & 9', 'Boosts metabolism', 'Strengthens immunity', 'Improves digestion'],
+    useCase: 'Improving digestion, boosting metabolism and overall immunity.',
     certifications: ['FSSAI Certified', 'Small-Batch Handcrafted'],
   },
    {
@@ -127,6 +132,7 @@ export const products: Product[] = [
       photo: 'https://placehold.co/300x300.png',
     },
     healthBenefits: ['Good for heart health', 'Nourishes skin', 'Anti-inflammatory properties'],
+    useCase: 'Supporting heart health and nourishing the skin.',
     certifications: ['FSSAI Certified', 'Limited Batch'],
   },
    {
@@ -149,6 +155,7 @@ export const products: Product[] = [
       photo: 'https://placehold.co/300x300.png',
     },
     healthBenefits: ['High in fat-soluble vitamins', 'Aids in joint lubrication', 'Improves brain function'],
+    useCase: 'Supporting brain function and joint health.',
     certifications: ['FSSAI Certified', 'Community Sourced'],
   },
   {
@@ -168,6 +175,7 @@ export const products: Product[] = [
       photo: 'https://placehold.co/300x300.png',
     },
     healthBenefits: ['Discover your favorite ghee', 'Perfect for gifting', 'Experience regional diversity'],
+    useCase: 'Sampling different regional ghees for varied health benefits.',
     certifications: ['FSSAI Certified', 'Small-Batch Handcrafted'],
   },
   {
@@ -187,6 +195,7 @@ export const products: Product[] = [
         photo: 'https://placehold.co/300x300.png',
     },
     healthBenefits: ['Rich in Calcium and Magnesium', 'Good source of phosphorus', 'Boosts bone health'],
+    useCase: 'Boosting bone health due to high calcium and magnesium content.',
     certifications: ['FSSAI Certified'],
   },
   {
@@ -216,6 +225,7 @@ export const products: Product[] = [
       photo: 'https://placehold.co/300x300.png',
     },
     healthBenefits: ['Rich in calcium and iron', 'High in fiber', 'Gluten-free'],
+    useCase: 'Healthy, gluten-free snacking, good for iron and calcium intake.',
   },
   {
     id: 'ladoos',
@@ -239,6 +249,7 @@ export const products: Product[] = [
       photo: 'https://placehold.co/300x300.png',
     },
     healthBenefits: ['Instant energy boost', 'Rich in vitamins and minerals', 'Good for hair and skin'],
+    useCase: 'A healthy, sugar-free energy boost.',
   },
   {
     id: 'muzaffarnagar-gur',
@@ -260,6 +271,7 @@ export const products: Product[] = [
       photo: 'https://placehold.co/300x300.png',
     },
     healthBenefits: ['Rich in iron and magnesium', 'Natural detoxifier', 'Boosts energy levels'],
+    useCase: 'A natural sweetener rich in iron, good for managing iron deficiencies.',
     certifications: ['FSSAI Certified', 'Chemical-Free'],
   },
   {
@@ -282,6 +294,7 @@ export const products: Product[] = [
       photo: 'https://placehold.co/300x300.png',
     },
     healthBenefits: ['Excellent source of minerals', 'Cleanses the respiratory tract', 'Aids in digestion'],
+    useCase: 'A mineral-rich sweetener that can aid in digestion and respiratory health.',
     certifications: ['GI Tagged', 'FSSAI Certified'],
   },
   {
@@ -301,6 +314,7 @@ export const products: Product[] = [
       photo: 'https://placehold.co/300x300.png',
     },
     healthBenefits: ['Rich in antioxidants', 'Low sodium content', 'Traditional Ayurvedic ingredient'],
+    useCase: 'A low-sodium, antioxidant-rich sweetener used in traditional wellness practices.',
     certifications: ['GI Tagged', 'FSSAI Certified'],
   },
 ]

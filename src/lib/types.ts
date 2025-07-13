@@ -38,6 +38,7 @@ export interface Product {
   variants: ProductVariant[];
   dataAiHint?: string;
   reports?: Report[];
+  useCase?: string;
 }
 
 export interface Category {
