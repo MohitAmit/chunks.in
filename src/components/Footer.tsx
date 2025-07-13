@@ -6,8 +6,8 @@ import { Input } from './ui/input'
 const ChunksLogo = () => (
     <svg width="125" height="28" viewBox="0 0 125 28" fill="none" xmlns="http://www.w3.org/2000/svg">
         <text y="22" fontFamily="Poppins, sans-serif" fontWeight="700" fontSize="28">
-            <tspan fill="#D90429">C</tspan>
-            <tspan dx="1" fill="#E63946">h</tspan>
+            <tspan fill="#ADD8E6">C</tspan>
+            <tspan dx="1" fill="#800080">h</tspan>
             <tspan dx="1" fill="#2A9D8F">u</tspan>
             <tspan dx="1" fill="#8338EC">n</tspan>
             <tspan dx="1" fill="#34D399">k</tspan>
