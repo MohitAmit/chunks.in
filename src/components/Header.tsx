@@ -41,7 +41,7 @@ export default function Header() {
   }, [])
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-black/5 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-border/20 text-primary-foreground bg-gradient-to-r from-primary via-secondary to-accent animate-gradient-pan bg-[400%_400%]">
       <div className="container flex h-20 items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="flex items-center gap-2">
@@ -108,7 +108,7 @@ export default function Header() {
                   'relative transition-opacity hover:opacity-80',
                   pathname === link.href
                     ? 'animate-background-pan bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 bg-[200%_auto] bg-clip-text text-transparent'
-                    : 'text-foreground/80'
+                    : 'text-primary-foreground/80'
                 )}
               >
                 {link.label}
