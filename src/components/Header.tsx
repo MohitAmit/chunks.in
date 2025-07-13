@@ -110,7 +110,7 @@ export default function Header() {
                 className={cn(
                   'relative transition-opacity hover:opacity-80',
                   pathname === link.href
-                    ? 'animate-background-pan bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 bg-[200%_auto] bg-clip-text text-transparent'
+                    ? 'font-bold text-primary-foreground'
                     : 'text-primary-foreground/80'
                 )}
               >
