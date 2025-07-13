@@ -354,4 +354,12 @@ export const testimonials: Testimonial[] = [
     text: 'The Sundarbans honey has a very unique flavour I use it in my morning tea every day It feels so natural and rejuvenating Highly recommend!',
     rating: 4,
   },
+  {
+    id: '5',
+    name: 'Anamika Rathod',
+    location: 'IIT Chennai',
+    avatar: 'https://placehold.co/100x100.png',
+    text: 'The quality of the products is outstanding. You can really taste the difference. I love the Shilajit Honey Twigs, they are my go-to pre-workout boost!',
+    rating: 5,
+  },
 ]
