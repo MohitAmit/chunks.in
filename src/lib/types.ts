@@ -42,4 +42,5 @@ export interface Testimonial {
 
 export interface CartItem extends Product {
   quantity: number;
+  variant: ProductVariant;
 }

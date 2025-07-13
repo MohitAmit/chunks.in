@@ -1,10 +1,13 @@
 'use client';
 
-import type { Product } from '@/lib/types';
-import React, { createContext, useContext, useState, ReactNode, useEffect } from 'react';
+import type { Product, ProductVariant } from '@/lib/types';
+import React, from 'react';
+import type { ReactNode } from 'react';
+import { createContext, useContext, useState } from 'react';
 
 interface CartItem extends Product {
   quantity: number;
+  variant: ProductVariant;
 }
 
 interface CartState {
@@ -13,7 +16,10 @@ interface CartState {
 
 interface CartContextType {
   cart: CartState;
-  addToCart: (product: Product) => void;
+  addToCart: (product: Product, variant: ProductVariant) => void;
+  removeFromCart: (itemId: string) => void;
+  updateQuantity: (itemId: string, quantity: number) => void;
+  clearCart: () => void;
   isCartAnimating: boolean;
 }
 
@@ -23,10 +29,12 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
   const [cart, setCart] = useState<CartState>({ items: [] });
   const [isCartAnimating, setIsCartAnimating] = useState(false);
 
-  const addToCart = (product: Product) => {
+  const addToCart = (product: Product, variant: ProductVariant) => {
     setCart((prevCart) => {
+      // Unique ID for a cart item is product.id + variant.id
+      const cartItemId = product.id + variant.id;
       const existingItemIndex = prevCart.items.findIndex(
-        (item) => item.id === product.id && item.variants[0].id === product.variants[0].id
+        (item) => (item.id + item.variant.id) === cartItemId
       );
 
       if (existingItemIndex > -1) {
@@ -34,7 +42,11 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
         newItems[existingItemIndex].quantity += 1;
         return { items: newItems };
       } else {
-        const newItem: CartItem = { ...product, quantity: 1 };
+        const newItem: CartItem = { 
+          ...product,
+          quantity: 1,
+          variant: variant
+        };
         return { items: [...prevCart.items, newItem] };
       }
     });
@@ -43,8 +55,32 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     setTimeout(() => setIsCartAnimating(false), 1000); // Animation duration
   };
 
+  const removeFromCart = (itemId: string) => {
+    setCart((prevCart) => ({
+      ...prevCart,
+      items: prevCart.items.filter(item => (item.id + item.variant.id) !== itemId)
+    }));
+  };
+
+  const updateQuantity = (itemId: string, quantity: number) => {
+    if (quantity <= 0) {
+      removeFromCart(itemId);
+      return;
+    }
+    setCart((prevCart) => ({
+      ...prevCart,
+      items: prevCart.items.map(item => 
+        (item.id + item.variant.id) === itemId ? { ...item, quantity } : item
+      )
+    }));
+  };
+
+  const clearCart = () => {
+    setCart({ items: [] });
+  }
+
   return (
-    <CartContext.Provider value={{ cart, addToCart, isCartAnimating }}>
+    <CartContext.Provider value={{ cart, addToCart, isCartAnimating, removeFromCart, updateQuantity, clearCart }}>
       {children}
     </CartContext.Provider>
   );

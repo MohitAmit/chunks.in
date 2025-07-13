@@ -38,10 +38,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
   
   const handleAddToCart = () => {
     if (product && selectedVariant) {
-      addToCart({
-        ...product,
-        variants: [selectedVariant],
-      });
+      addToCart(product, selectedVariant);
       toast({
         title: "Added to cart",
         description: `${product.name} (${selectedVariant.size}) has been added to your cart.`,

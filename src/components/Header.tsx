@@ -37,7 +37,7 @@ export default function Header() {
   const [isSheetOpen, setSheetOpen] = useState(false)
   const [isMounted, setIsMounted] = useState(false)
   const { cart, isCartAnimating } = useCart();
-  const cartItemCount = cart.items.length;
+  const cartItemCount = cart.items.reduce((acc, item) => acc + item.quantity, 0);
 
 
   useEffect(() => {
@@ -125,7 +125,8 @@ export default function Header() {
         )}
 
         <div className="flex items-center justify-end gap-2">
-           <Button variant="ghost" size="icon" className="relative">
+           <Button variant="ghost" size="icon" className="relative" asChild>
+            <Link href="/cart">
              {cartItemCount > 0 && (
                 <div className={cn(
                     "absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs font-bold text-white",
@@ -136,6 +137,7 @@ export default function Header() {
              )}
              <ShoppingCart className="h-5 w-5" />
              <span className="sr-only">Shopping Cart</span>
+            </Link>
            </Button>
            <ThemeToggle />
            <Button variant="ghost" size="icon" asChild>
