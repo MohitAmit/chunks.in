@@ -94,7 +94,7 @@ export default function KnowYourBodyPage() {
               <h2 className="text-2xl font-headline font-bold text-center mb-6">How It Works</h2>
               <div className="flex flex-col items-center">
                 {flowchartSteps.map((step, index) => (
-                  <div key={index} className="flex flex-col items-center">
+                  <div key={index} className="flex flex-col items-center w-full">
                     <div className="flex items-center gap-6 w-full max-w-sm">
                         <div className="bg-primary/10 p-4 rounded-full border-2 border-primary/20 bg-background">
                             <step.icon className="h-8 w-8 text-primary" />
@@ -102,7 +102,9 @@ export default function KnowYourBodyPage() {
                         <p className="text-lg font-semibold flex-1">{step.title}</p>
                     </div>
                     {index < flowchartSteps.length - 1 && (
-                      <ArrowDown className="h-8 w-8 text-primary/50 my-2" />
+                      <div className="h-12 w-px flex justify-center">
+                        <ArrowDown className="h-8 w-8 text-primary/50 my-2" />
+                      </div>
                     )}
                   </div>
                 ))}
