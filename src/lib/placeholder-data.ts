@@ -16,7 +16,7 @@ export const products: Product[] = [
     image: 'https://placehold.co/600x600.png',
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
     region: 'Kashmir',
-    ingredients: ['Raw Multi-floral Honey', 'Saffron Strands'],
+    ingredients: [{ name: 'Raw Multi-floral Honey', source: 'Pahalgam Meadows', batchId: 'KSH-2401', procurementDate: '2024-05-10', expiryDate: '2026-05-09' }, { name: 'Saffron Strands', source: 'Pampore Fields', batchId: 'SFF-2311', procurementDate: '2023-11-20', expiryDate: '2025-11-19' }],
     farmerStory: {
       name: 'Ghulam Ahmed',
       story: 'For generations, our family has practiced the art of beekeeping in the pristine meadows of Pahalgam We believe in letting the bees thrive naturally, resulting in honey that is pure and full of life',
@@ -36,7 +36,7 @@ export const products: Product[] = [
     dataAiHint: 'honey sticks gym',
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
     region: 'Himalayan Region',
-    ingredients: ['Raw Honey', 'Shilajit Extract'],
+    ingredients: [{ name: 'Raw Honey', source: 'Himalayan Foothills', batchId: 'HNY-2403', procurementDate: '2024-03-15', expiryDate: '2026-03-14' }, { name: 'Shilajit Extract', source: 'Himalayan Higher Altitudes', batchId: 'SHJ-2310', procurementDate: '2023-10-02', expiryDate: '2028-10-01' }],
     farmerStory: {
       name: 'Himalayan Herbalists Co-op',
       story: 'We source our Shilajit resin from the highest altitudes of the Himalayas, where it has been forming for centuries We combine this potent mineral with wild honey to create a powerful wellness product',
@@ -55,7 +55,7 @@ export const products: Product[] = [
     image: 'https://placehold.co/600x600.png',
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
     region: 'Sundarbans, West Bengal',
-    ingredients: ['Raw Mangrove Honey'],
+    ingredients: [{ name: 'Raw Mangrove Honey', source: 'Sundarbans Mangrove Forest', batchId: 'SMH-2404', procurementDate: '2024-04-22', expiryDate: '2026-04-21' }],
     farmerStory: {
       name: 'The Moulis community',
       story: 'We are the traditional honey collectors of the Sundarbans Risking our lives, we venture deep into the forests to collect this precious nectar, following ancient sustainable practices',
@@ -73,7 +73,7 @@ export const products: Product[] = [
     image: 'https://placehold.co/600x600.png',
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
     region: 'Himalayas, Nepal',
-    ingredients: ['Raw Himalayan Cliff Honey', 'Nectar of Wild Rhododendrons', 'A touch of mountain spirit (just kidding!)'],
+    ingredients: [{ name: 'Raw Himalayan Cliff Honey', source: 'Nepalese Cliffs', batchId: 'NCH-2402', procurementDate: '2024-02-18', expiryDate: '2026-02-17' }, { name: 'Nectar of Wild Rhododendrons', source: 'Nepalese Cliffs', batchId: 'NCH-2402', procurementDate: '2024-02-18', expiryDate: '2026-02-17' }],
     farmerStory: {
       name: 'The Gurung Tribe Hunters',
       story: 'We are the descendants of ancient honey hunters, a tradition passed down through generations We scale treacherous cliffs with nothing but handmade ropes to bring you this liquid gold It is a dangerous dance with nature, but it allows us to share this gift from the mountains with the world',
@@ -95,7 +95,7 @@ export const products: Product[] = [
     image: 'https://placehold.co/600x600.png',
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
     region: 'Gujarat',
-    ingredients: ['A2 Milk from Gir cows'],
+    ingredients: [{ name: 'A2 Milk from Gir cows', source: 'Ranchodbhai Patel Farm', batchId: 'GIR-2405', procurementDate: '2024-05-20', expiryDate: '2025-05-19' }],
     farmerStory: {
       name: 'Ranchodbhai Patel',
       story: 'Our Gir cows are the pride of our farm. They graze freely on organic pastures, and we treat them with love and respect. This ghee is a product of that care, churned by hand to preserve its natural goodness.',
@@ -118,7 +118,7 @@ export const products: Product[] = [
     image: 'https://placehold.co/600x600.png',
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
     region: 'Punjab',
-    ingredients: ['A2 Milk from Sahiwal cows'],
+    ingredients: [{ name: 'A2 Milk from Sahiwal cows', source: 'Balwinder Singh Farm', batchId: 'SAH-2405', procurementDate: '2024-05-18', expiryDate: '2025-05-17' }],
     farmerStory: {
       name: 'Balwinder Singh',
       story: 'The Sahiwal is a special cow, and its milk produces ghee of exceptional quality. We follow age-old practices, ensuring that every jar of ghee we produce is a testament to Punjab\'s rich dairy heritage.',
@@ -140,7 +140,7 @@ export const products: Product[] = [
     image: 'https://placehold.co/600x600.png',
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
     region: 'Uttar Pradesh',
-    ingredients: ['A2 Milk from Kankrej cows'],
+    ingredients: [{ name: 'A2 Milk from Kankrej cows', source: 'Avadh Dairy Collective', batchId: 'KAN-2404', procurementDate: '2024-04-30', expiryDate: '2025-04-29' }],
     farmerStory: {
       name: 'Avadh Dairy Collective',
       story: 'Our Kankrej cattle are known for their resilience. The ghee from their milk is a cherished product of our community, made with techniques passed down through generations.',
@@ -159,7 +159,7 @@ export const products: Product[] = [
     image: 'https://placehold.co/600x600.png',
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
     region: 'Multi-regional',
-    ingredients: ['Gir Cow Ghee (100g)', 'Sahiwal Cow Ghee (100g)', 'Kankrej Cow Ghee (100g)'],
+    ingredients: [{ name: 'Gir Cow Ghee (100g)', source: 'Ranchodbhai Patel Farm', batchId: 'GIR-2405', procurementDate: '2024-05-20', expiryDate: '2025-05-19' }, { name: 'Sahiwal Cow Ghee (100g)', source: 'Balwinder Singh Farm', batchId: 'SAH-2405', procurementDate: '2024-05-18', expiryDate: '2025-05-17' }, { name: 'Kankrej Cow Ghee (100g)', source: 'Avadh Dairy Collective', batchId: 'KAN-2404', procurementDate: '2024-04-30', expiryDate: '2025-04-29' }],
     farmerStory: {
       name: 'Various Farmers',
       story: 'This pack represents a journey across India, from the pastures of Gujarat to the fields of Punjab. It\'s a tribute to the dedicated farmers who uphold the traditions of raising native Indian cattle breeds.',
@@ -178,7 +178,7 @@ export const products: Product[] = [
     image: 'https://placehold.co/600x600.png',
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
     region: 'Haryana',
-    ingredients: ['Buffalo Milk'],
+    ingredients: [{ name: 'Buffalo Milk', source: 'Sukhbir Singh Farm', batchId: 'MUR-2405', procurementDate: '2024-05-21', expiryDate: '2025-02-20' }],
     farmerStory: {
         name: 'Sukhbir Singh',
         story: 'Our Murrah buffaloes are champions, known for their high-quality milk. We make our ghee with traditional methods to ensure it is as pure and delicious as possible. It is the secret ingredient in our family recipes.',
@@ -197,7 +197,17 @@ export const products: Product[] = [
     image: 'https://placehold.co/600x600.png',
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
     region: 'Karnataka',
-    ingredients: ['Ragi Flour', 'Jaggery', 'A2 Ghee', 'Cardamom'],
+    ingredients: [
+      { name: 'Ragi Flour', source: 'GreenHarvest Farms, Mandya', batchId: 'RAG-2406A', procurementDate: '2024-06-01', expiryDate: '2024-12-01' },
+      { name: 'Jaggery', source: 'Natural Sweeteners Co, Kolhapur', batchId: 'JAG-2405C', procurementDate: '2024-05-15', expiryDate: '2025-05-14' },
+      { name: 'A2 Ghee', source: 'Ranchodbhai Patel Farm, Gujarat', batchId: 'GIR-2405', procurementDate: '2024-05-20', expiryDate: '2025-02-19' },
+      { name: 'Cardamom', source: 'Spice Altar, Kerala', batchId: 'CRD-2312', procurementDate: '2023-12-10', expiryDate: '2025-06-10' }
+    ],
+    reports: [
+        { name: 'Nutritional Analysis Report', url: '#', date: '2024-06-10' },
+        { name: 'Heavy Metal Test Report', url: '#', date: '2024-06-12' },
+        { name: 'FSSAI Compliance Certificate', url: '#', date: '2024-01-05' },
+    ],
     farmerStory: {
       name: 'Sahana Women\'s Collective',
       story: 'We are a group of women from rural Karnataka dedicated to reviving traditional grains Our recipes are passed down through generations, made with love and the finest local ingredients',
@@ -215,7 +225,12 @@ export const products: Product[] = [
     image: 'https://placehold.co/600x600.png',
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
     region: 'All India',
-    ingredients: ['Dates', 'Figs', 'Almonds', 'Walnuts', 'Pistachios', 'A2 Ghee'],
+    ingredients: [
+        { name: 'Dates', source: 'Omani Imports', batchId: 'DAT-2404', procurementDate: '2024-04-10', expiryDate: '2025-04-09' },
+        { name: 'Figs', source: 'Turkish Imports', batchId: 'FIG-2404', procurementDate: '2024-04-12', expiryDate: '2025-04-11' },
+        { name: 'Almonds', source: 'California Orchards', batchId: 'ALM-2403', procurementDate: '2024-03-20', expiryDate: '2025-09-19' },
+        { name: 'A2 Ghee', source: 'Balwinder Singh Farm, Punjab', batchId: 'SAH-2405', procurementDate: '2024-05-18', expiryDate: '2025-02-17' },
+    ],
     farmerStory: {
       name: 'Urban Homemakers',
       story: 'Inspired by our family traditions, we started creating these healthy treats in our home kitchens We source the best quality dry fruits to ensure every ladoo is packed with goodness',

@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { useState } from 'react';
+import Link from 'next/link';
 
 import { products, testimonials as allTestimonials } from '@/lib/placeholder-data';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -10,7 +11,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { CheckCircle, Feather, Heart, ShoppingCart, ShieldCheck } from 'lucide-react';
+import { CheckCircle, Feather, Heart, ShoppingCart, ShieldCheck, FileText, Download } from 'lucide-react';
 import { TestimonialCard } from '@/components/TestimonialCard';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Label } from '@/components/ui/label';
@@ -18,6 +19,7 @@ import { cn } from '@/lib/utils';
 import type { Product, ProductVariant } from '@/lib/types';
 import { useCart } from '@/context/CartContext';
 import { useToast } from '@/hooks/use-toast';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 
 export default function ProductDetailPage({ params }: { params: { id: string } }) {
   const { addToCart } = useCart();
@@ -151,13 +153,58 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
-                <AccordionTrigger className="font-headline text-lg">Ingredients</AccordionTrigger>
+                <AccordionTrigger className="font-headline text-lg">Ingredient Traceability</AccordionTrigger>
                 <AccordionContent>
-                  <p className="text-muted-foreground">{product.ingredients.join(', ')}.</p>
+                   <Table>
+                    <TableHeader>
+                        <TableRow>
+                        <TableHead>Ingredient</TableHead>
+                        <TableHead>Source</TableHead>
+                        <TableHead>Batch ID</TableHead>
+                        <TableHead>Expiry</TableHead>
+                        </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                        {product.ingredients.map((ingredient, i) => (
+                        <TableRow key={i}>
+                            <TableCell className="font-medium">{ingredient.name}</TableCell>
+                            <TableCell>{ingredient.source}</TableCell>
+                            <TableCell>{ingredient.batchId}</TableCell>
+                            <TableCell>{ingredient.expiryDate}</TableCell>
+                        </TableRow>
+                        ))}
+                    </TableBody>
+                    </Table>
                 </AccordionContent>
               </AccordionItem>
-              {product.certifications && (
+              {product.reports && product.reports.length > 0 && (
               <AccordionItem value="item-3">
+                <AccordionTrigger className="font-headline text-lg">Quality Reports</AccordionTrigger>
+                <AccordionContent>
+                    <ul className="space-y-2">
+                        {product.reports.map((report, i) => (
+                            <li key={i} className="flex items-center justify-between p-2 bg-muted/50 rounded-md">
+                                <div className="flex items-center gap-3">
+                                    <FileText className="h-5 w-5 text-primary" />
+                                    <div>
+                                        <p className="font-medium">{report.name}</p>
+                                        <p className="text-sm text-muted-foreground">Date: {report.date}</p>
+                                    </div>
+                                </div>
+                                <Button asChild variant="outline" size="sm">
+                                    <Link href={report.url} target="_blank">
+                                        <Download className="mr-2 h-4 w-4" />
+                                        View
+                                    </Link>
+                                </Button>
+                            </li>
+                        ))}
+                    </ul>
+                </AccordionContent>
+              </AccordionItem>
+              )}
+               {product.certifications && (
+              <AccordionItem value="item-4">
                 <AccordionTrigger className="font-headline text-lg">Certifications</AccordionTrigger>
                 <AccordionContent>
                   <p className="text-muted-foreground">{product.certifications.join(', ')}.</p>

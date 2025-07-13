@@ -4,6 +4,20 @@ export interface ProductVariant {
   price: number;
 }
 
+export interface Ingredient {
+  name: string;
+  source: string;
+  batchId: string;
+  procurementDate: string;
+  expiryDate: string;
+}
+
+export interface Report {
+  name: string;
+  url: string;
+  date: string;
+}
+
 export interface Product {
   id: string;
   name: string;
@@ -12,7 +26,7 @@ export interface Product {
   image: string;
   images: string[];
   region: string;
-  ingredients: string[];
+  ingredients: Ingredient[];
   farmerStory: {
     name: string;
     story: string;
@@ -23,6 +37,7 @@ export interface Product {
   certifications?: string[];
   variants: ProductVariant[];
   dataAiHint?: string;
+  reports?: Report[];
 }
 
 export interface Category {
