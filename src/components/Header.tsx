@@ -11,22 +11,22 @@ import { useState } from 'react'
 import { ThemeToggle } from './ThemeToggle'
 
 const navLinks = [
-  { href: '/', label: 'Home' },
-  { href: '/products', label: 'Products' },
-  { href: '/farmers', label: 'Our Farmers' },
-  { href: '/testimonials', label: 'Reviews' },
-  { href: '/about', label: 'About' },
+  { href: '/', label: 'Home', color: 'text-red-500' },
+  { href: '/products', label: 'Products', color: 'text-pink-500' },
+  { href: '/farmers', label: 'Our Farmers', color: 'text-green-500' },
+  { href: '/testimonials', label: 'Reviews', color: 'text-purple-500' },
+  { href: '/about', label: 'About', color: 'text-blue-500' },
 ]
 
 const ChunksLogo = () => (
     <svg width="125" height="28" viewBox="0 0 125 28" fill="none" xmlns="http://www.w3.org/2000/svg">
         <text y="22" fontFamily="Poppins, sans-serif" fontWeight="700" fontSize="28">
-            <tspan fill="#EF4444">C</tspan>
-            <tspan dx="1" fill="#F472B6">h</tspan>
-            <tspan dx="1" fill="#34D399">u</tspan>
-            <tspan dx="1" fill="#A78BFA">n</tspan>
-            <tspan dx="1" fill="#34D399">k</tspan>
-            <tspan dx="1" fill="#60A5FA">s</tspan>
+            <tspan fill="#D90429">C</tspan>
+            <tspan dx="1" fill="#E63946">h</tspan>
+            <tspan dx="1" fill="#2A9D8F">u</tspan>
+            <tspan dx="1" fill="#8338EC">n</tspan>
+            <tspan dx="1" fill="#90EE90">k</tspan>
+            <tspan dx="1" fill="#219EBC">s</tspan>
         </text>
     </svg>
 )
@@ -99,12 +99,13 @@ export default function Header() {
               key={link.href}
               href={link.href}
               className={cn(
-                'transition-colors hover:text-primary relative',
-                pathname === link.href ? 'text-primary font-semibold' : 'text-foreground/80 hover:text-primary'
+                'transition-colors hover:opacity-80 relative font-bold',
+                pathname === link.href ? link.color : 'text-foreground/80',
+                 link.color
               )}
             >
               {link.label}
-              {pathname === link.href && <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 h-05 w-4 bg-primary rounded-full"></span>}
+              {pathname === link.href && <span className={cn('absolute -bottom-2 left-1/2 -translate-x-1/2 h-05 w-4 rounded-full', `bg-${link.color.split('-')[1]}-${link.color.split('-')[2]}`)}></span>}
             </Link>
           ))}
         </nav>
