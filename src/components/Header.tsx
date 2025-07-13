@@ -1,14 +1,14 @@
-'use client';
+'use client'
 
-import Link from 'next/link';
-import { Menu, ShoppingCart, User } from 'lucide-react';
-import { usePathname } from 'next/navigation';
+import Link from 'next/link'
+import { Menu, ShoppingCart, User } from 'lucide-react'
+import { usePathname } from 'next/navigation'
 
-import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { cn } from '@/lib/utils';
-import { useState } from 'react';
-import { ThemeToggle } from './ThemeToggle';
+import { Button } from '@/components/ui/button'
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
+import { cn } from '@/lib/utils'
+import { useState } from 'react'
+import { ThemeToggle } from './ThemeToggle'
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -16,15 +16,15 @@ const navLinks = [
   { href: '/farmers', label: 'Our Farmers' },
   { href: '/testimonials', label: 'Reviews' },
   { href: '/about', label: 'About' },
-];
+]
 
 const ChunksLogo = () => (
     <svg width="125" height="28" viewBox="0 0 125 28" fill="none" xmlns="http://www.w3.org/2000/svg">
         <text y="22" fontFamily="Poppins, sans-serif" fontWeight="700" fontSize="28">
-            <tspan fill="#F472B6">C</tspan>
-            <tspan dx="1" fill="#EF4444">h</tspan>
-            <tspan dx="1" fill="#A78BFA">u</tspan>
-            <tspan dx="1" fill="#34D399">n</tspan>
+            <tspan fill="#EF4444">C</tspan>
+            <tspan dx="1" fill="#F472B6">h</tspan>
+            <tspan dx="1" fill="#34D399">u</tspan>
+            <tspan dx="1" fill="#A78BFA">n</tspan>
             <tspan dx="1" fill="#FBBF24">k</tspan>
             <tspan dx="1" fill="#60A5FA">s</tspan>
         </text>
@@ -32,8 +32,8 @@ const ChunksLogo = () => (
 )
 
 export default function Header() {
-  const pathname = usePathname();
-  const [isSheetOpen, setSheetOpen] = useState(false);
+  const pathname = usePathname()
+  const [isSheetOpen, setSheetOpen] = useState(false)
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-black/5 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -104,7 +104,7 @@ export default function Header() {
               )}
             >
               {link.label}
-              {pathname === link.href && <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 h-0.5 w-4 bg-primary rounded-full"></span>}
+              {pathname === link.href && <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 h-05 w-4 bg-primary rounded-full"></span>}
             </Link>
           ))}
         </nav>
@@ -129,5 +129,5 @@ export default function Header() {
         </div>
       </div>
     </header>
-  );
+  )
 }

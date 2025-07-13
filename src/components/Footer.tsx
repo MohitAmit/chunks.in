@@ -1,15 +1,15 @@
-import Link from 'next/link';
-import { Twitter, Facebook, Instagram } from 'lucide-react';
-import { Button } from './ui/button';
-import { Input } from './ui/input';
+import Link from 'next/link'
+import { Twitter, Facebook, Instagram } from 'lucide-react'
+import { Button } from './ui/button'
+import { Input } from './ui/input'
 
 const ChunksLogo = () => (
     <svg width="125" height="28" viewBox="0 0 125 28" fill="none" xmlns="http://www.w3.org/2000/svg">
         <text y="22" fontFamily="Poppins, sans-serif" fontWeight="700" fontSize="28">
-            <tspan fill="#F472B6">C</tspan>
-            <tspan dx="1" fill="#EF4444">h</tspan>
-            <tspan dx="1" fill="#A78BFA">u</tspan>
-            <tspan dx="1" fill="#34D399">n</tspan>
+            <tspan fill="#EF4444">C</tspan>
+            <tspan dx="1" fill="#F472B6">h</tspan>
+            <tspan dx="1" fill="#34D399">u</tspan>
+            <tspan dx="1" fill="#A78BFA">n</tspan>
             <tspan dx="1" fill="#FBBF24">k</tspan>
             <tspan dx="1" fill="#60A5FA">s</tspan>
         </text>
@@ -26,7 +26,7 @@ export default function Footer() {
               <ChunksLogo />
             </Link>
             <p className="text-sm text-muted-foreground">
-              Bringing you the purest, homegrown snacks from the heart of India.
+              Bringing you the purest, homegrown snacks from the heart of India
             </p>
             <div className="flex gap-4">
               <Link href="#" aria-label="Twitter">
@@ -59,7 +59,7 @@ export default function Footer() {
           </div>
           <div className="space-y-4">
             <h4 className="font-semibold">Newsletter</h4>
-            <p className="text-sm text-muted-foreground">Stay updated with our latest products and offers.</p>
+            <p className="text-sm text-muted-foreground">Stay updated with our latest products and offers</p>
             <form className="flex gap-2">
               <Input type="email" placeholder="Enter your email" className="bg-background" />
               <Button type="submit">Subscribe</Button>
@@ -67,9 +67,9 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t pt-6 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Chunks. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Chunks All Rights Reserved</p>
         </div>
       </div>
     </footer>
-  );
+  )
 }
