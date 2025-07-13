@@ -15,7 +15,6 @@ const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/products', label: 'Products' },
   { href: '/farmers', label: 'Our Farmers' },
-  { href: '/testimonials', label: 'Reviews' },
   { href: '/about', label: 'About' },
   { href: '/know-your-body', label: 'Know Your Body'},
 ]
