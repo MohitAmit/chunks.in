@@ -148,7 +148,7 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  'relative transition-colors hover:text-primary',
+                  'relative transition-all duration-300 ease-in-out hover:text-primary hover:scale-110',
                   pathname === link.href
                     ? 'font-semibold text-primary'
                     : 'text-foreground/80'
