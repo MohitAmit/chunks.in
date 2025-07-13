@@ -7,7 +7,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { CheckCircle, Feather, Heart, ShoppingCart } from 'lucide-react';
+import { CheckCircle, Feather, Heart, ShoppingCart, ShieldCheck } from 'lucide-react';
 import { TestimonialCard } from '@/components/TestimonialCard';
 
 export default function ProductDetailPage({ params }: { params: { id: string } }) {
@@ -66,6 +66,14 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
 
             <div className="flex items-center justify-between">
               <p className="text-3xl font-bold text-foreground">₹{product.price}</p>
+            </div>
+            
+            <div className="flex items-center gap-3 p-3 rounded-lg bg-muted border">
+                <ShieldCheck className="h-8 w-8 text-primary" />
+                <div>
+                    <h4 className="font-semibold text-foreground">Chunks Seal of Trust</h4>
+                    <p className="text-sm text-muted-foreground">100% Tamper-proof. Guaranteed Purity.</p>
+                </div>
             </div>
 
             <Button size="lg" className="w-full">

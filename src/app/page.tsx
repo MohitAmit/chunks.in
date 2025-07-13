@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, Star } from 'lucide-react';
+import { ArrowRight, Star, ShieldCheck } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { featuredProducts, testimonials } from '@/lib/placeholder-data';
@@ -67,9 +67,36 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
+      {/* Seal of Trust Section */}
+      <section className="py-16 md:py-24 bg-background">
+        <div className="container px-4 md:px-6">
+          <div className="bg-card rounded-lg shadow-soft overflow-hidden md:grid md:grid-cols-2 items-center">
+            <div className="p-8 md:p-12 order-2 md:order-1">
+              <div className="flex items-center gap-3 mb-3">
+                 <ShieldCheck className="h-10 w-10 text-primary"/>
+                 <h2 className="text-3xl md:text-4xl font-headline font-bold">Seal of Trust</h2>
+              </div>
+              <p className="mt-4 text-lg text-muted-foreground">
+                Every Chunks package comes with a tamper-proof seal. This ensures that the product is untouched from our farm to your hands, guaranteeing 100% purity and preventing any alteration. Your trust is our priority.
+              </p>
+            </div>
+            <div className="h-64 md:h-full order-1 md:order-2">
+              <Image
+                src="https://placehold.co/600x600.png"
+                alt="A Chunks package with a seal of trust"
+                data-ai-hint="secure packaging seal"
+                width={600}
+                height={600}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Know Your Farmers CTA Section */}
-      <section className="py-16 md:py-24 bg-background">
+      <section className="py-16 md:py-24 bg-muted">
         <div className="container px-4 md:px-6">
           <div className="bg-card rounded-lg shadow-soft overflow-hidden md:grid md:grid-cols-2 items-center border-2 border-secondary">
             <div className="p-8 md:p-12">
@@ -96,7 +123,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 md:py-24 bg-muted">
+      <section className="py-16 md:py-24 bg-background">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-headline font-bold">From Our Community</h2>
