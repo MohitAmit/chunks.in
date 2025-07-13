@@ -4,6 +4,7 @@ export const categories: Category[] = [
   { id: 'honey', name: 'Organic Honey', description: 'Pure, raw honey from diverse regions of India' },
   { id: 'ghee', name: 'Desi Cow A2 Ghee', description: 'Traditionally churned ghee from grass-fed desi cows' },
   { id: 'snacks', name: 'Healthy Snacks', description: 'Nutritious and delicious snacks made with natural ingredients' },
+  { id: 'jaggery', name: 'Artisanal Jaggery', description: 'Traditional and unrefined jaggery from across India' },
 ]
 
 export const products: Product[] = [
@@ -238,6 +239,69 @@ export const products: Product[] = [
       photo: 'https://placehold.co/300x300.png',
     },
     healthBenefits: ['Instant energy boost', 'Rich in vitamins and minerals', 'Good for hair and skin'],
+  },
+  {
+    id: 'muzaffarnagar-gur',
+    name: 'Muzaffarnagar Gur',
+    category: 'jaggery',
+    variants: [
+        { id: 'mg-500g', size: '500g', price: 250 },
+        { id: 'mg-1kg', size: '1kg', price: 480 },
+    ],
+    description: 'Authentic, chemical-free jaggery from the sugarcane belt of Muzaffarnagar. Known for its rich, earthy flavor and soft texture, it is a perfect natural sweetener.',
+    image: 'https://placehold.co/600x600.png',
+    images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
+    region: 'Uttar Pradesh',
+    ingredients: [{ name: 'Sugarcane Juice', source: 'Chaudhary Sugarcane Farms', batchId: 'SUG-UP-2401', procurementDate: '2024-01-20', expiryDate: '2025-01-19' }],
+    farmerStory: {
+      name: 'The Chaudhary Family',
+      story: 'For over a century, our family has been cultivating sugarcane and making gur using traditional methods. We use no chemicals, only the pure juice of our sun-kissed cane, to bring you a taste of real Uttar Pradesh.',
+      video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+      photo: 'https://placehold.co/300x300.png',
+    },
+    healthBenefits: ['Rich in iron and magnesium', 'Natural detoxifier', 'Boosts energy levels'],
+    certifications: ['FSSAI Certified', 'Chemical-Free'],
+  },
+  {
+    id: 'kolhapuri-gul',
+    name: 'Kolhapuri Gul',
+    category: 'jaggery',
+    variants: [
+        { id: 'kg-500g', size: '500g', price: 280 },
+        { id: 'kg-1kg', size: '1kg', price: 540 },
+    ],
+    description: 'Famous for its unique dark color and rich, mineral-heavy taste. This jaggery from Kolhapur is made in traditional "gurhals" and is a GI-tagged product, ensuring its authenticity.',
+    image: 'https://placehold.co/600x600.png',
+    images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
+    region: 'Maharashtra',
+    ingredients: [{ name: 'Sugarcane Juice', source: 'Kolhapur Jaggery Cooperative', batchId: 'SUG-MH-2402', procurementDate: '2024-02-15', expiryDate: '2025-02-14' }],
+    farmerStory: {
+      name: 'Kolhapur Jaggery Cooperative',
+      story: 'We are a cooperative of over 100 small farmers dedicated to preserving the legacy of Kolhapuri Gul. Our jaggery is a symbol of our collective effort and the rich soil of Maharashtra.',
+      video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+      photo: 'https://placehold.co/300x300.png',
+    },
+    healthBenefits: ['Excellent source of minerals', 'Cleanses the respiratory tract', 'Aids in digestion'],
+    certifications: ['GI Tagged', 'FSSAI Certified'],
+  },
+  {
+    id: 'marayoor-sharkara',
+    name: 'Marayoor Jaggery (Sharkara)',
+    category: 'jaggery',
+    variants: [{ id: 'ms-500g', size: '500g', price: 320 }],
+    description: 'A premium, dark brown jaggery from the Marayoor region of Kerala. Made from a special variety of sugarcane, it is produced in a traditional way and has a very low salt content, giving it a unique taste.',
+    image: 'https://placehold.co/600x600.png',
+    images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
+    region: 'Kerala',
+    ingredients: [{ name: 'Sugarcane Juice', source: 'Marayoor Sugarcane Growers', batchId: 'SUG-KL-2312', procurementDate: '2023-12-25', expiryDate: '2024-12-24' }],
+    farmerStory: {
+      name: 'Marayoor Sugarcane Growers',
+      story: 'The unique climate of Marayoor gives our sugarcane its special sweetness. We make our jaggery in underground pits, a method that has been used for centuries, to create this delicious and healthy Sharkara.',
+      video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+      photo: 'https://placehold.co/300x300.png',
+    },
+    healthBenefits: ['Rich in antioxidants', 'Low sodium content', 'Traditional Ayurvedic ingredient'],
+    certifications: ['GI Tagged', 'FSSAI Certified'],
   },
 ]
 
