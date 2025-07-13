@@ -65,6 +65,24 @@ export const products: Product[] = [
     healthBenefits: ['Natural energy booster', 'Soothes sore throats', 'Aids in digestion'],
   },
   {
+    id: 'nepal-magical-honey',
+    name: 'Nepal\'s Magical Cliff Honey',
+    category: 'honey',
+    price: 850,
+    description: 'Sourced from the perilous cliffs of the Nepalese Himalayas, this isn\'t just honey—it\'s an adventure in a jar Harvested by brave honey hunters, its unique, slightly intoxicating flavor comes from the nectar of wild rhododendrons A taste of the magic is a taste of the wild',
+    image: 'https://placehold.co/600x600.png',
+    images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
+    region: 'Himalayas, Nepal',
+    ingredients: ['Raw Himalayan Cliff Honey', 'Nectar of Wild Rhododendrons', 'A touch of mountain spirit (just kidding!)'],
+    farmerStory: {
+      name: 'The Gurung Tribe Hunters',
+      story: 'We are the descendants of ancient honey hunters, a tradition passed down through generations We scale treacherous cliffs with nothing but handmade ropes to bring you this liquid gold It is a dangerous dance with nature, but it allows us to share this gift from the mountains with the world',
+      video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+      photo: 'https://placehold.co/300x300.png',
+    },
+    healthBenefits: ['Provides a unique sensory experience', 'Rich in natural pollen', 'Supports ancient traditions'],
+  },
+  {
     id: 'rajasthani-ghee',
     name: 'Bilona A2 Ghee',
     category: 'ghee',
@@ -106,7 +124,7 @@ export const products: Product[] = [
     name: 'Dry Fruit Ladoos',
     category: 'snacks',
     price: 550,
-    description: 'Energy balls made from dates, figs, almonds, and other nuts A perfect, healthy way to satisfy your sweet cravings without any added sugar',
+    description: 'Energy balls made from dates, figs, almonds, and other nuts A perfect, a healthy way to satisfy your sweet cravings without any added sugar',
     image: 'https://placehold.co/600x600.png',
     images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
     region: 'All India',
@@ -121,7 +139,7 @@ export const products: Product[] = [
   },
 ]
 
-export const featuredProducts = products.slice(0, 4)
+export const featuredProducts = [products[0], products[1], products[3], products[4]];
 
 export const testimonials: Testimonial[] = [
   {
