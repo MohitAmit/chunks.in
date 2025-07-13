@@ -71,7 +71,9 @@ export default function LoginPage() {
             <CardHeader>
               <CardTitle>Create an Account</CardTitle>
               <CardDescription>
-                This is a referral based community for like minded people You can join Chunks only if you have a legit referral from any community member, since this is a closed small community We prepare in small batches for small groups so that we can maintain the authenticity of our products
+                <p className="mb-2">Chunks is a referral-only community of like-minded people</p>
+                <p className="mb-2">You can join only through a legit invite from an existing member</p>
+                <p>We craft in small batches for a small, trusted circle — to keep our products real, fresh, and authentic</p>
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
