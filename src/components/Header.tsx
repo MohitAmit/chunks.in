@@ -11,11 +11,11 @@ import { useState } from 'react'
 import { ThemeToggle } from './ThemeToggle'
 
 const navLinks = [
-  { href: '/', label: 'Home', color: 'text-red-500' },
-  { href: '/products', label: 'Products', color: 'text-pink-500' },
-  { href: '/farmers', label: 'Our Farmers', color: 'text-green-500' },
-  { href: '/testimonials', label: 'Reviews', color: 'text-purple-500' },
-  { href: '/about', label: 'About', color: 'text-blue-500' },
+  { href: '/', label: 'Home' },
+  { href: '/products', label: 'Products' },
+  { href: '/farmers', label: 'Our Farmers' },
+  { href: '/testimonials', label: 'Reviews' },
+  { href: '/about', label: 'About' },
 ]
 
 const ChunksLogo = () => (
@@ -93,19 +93,22 @@ export default function Header() {
 
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex md:items-center md:gap-x-8 text-xl font-creative mx-auto">
+        <nav className="hidden md:flex md:items-center md:gap-x-8 text-2xl font-creative mx-auto">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               className={cn(
-                'transition-colors hover:opacity-80 relative',
-                pathname === link.href ? link.color : 'text-foreground/80',
-                 link.color
+                'relative transition-opacity hover:opacity-80',
+                pathname === link.href
+                  ? 'animate-background-pan bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 bg-[200%_auto] bg-clip-text text-transparent'
+                  : 'text-foreground/80'
               )}
             >
               {link.label}
-              {pathname === link.href && <span className={cn('absolute -bottom-2 left-1/2 -translate-x-1/2 h-05 w-4 rounded-full', `bg-${link.color.split('-')[1]}-${link.color.split('-')[2]}`)}></span>}
+              {pathname === link.href && (
+                <span className='absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-red-500 via-purple-500 to-blue-500' />
+              )}
             </Link>
           ))}
         </nav>
