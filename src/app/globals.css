@@ -68,3 +68,27 @@
         text-wrap: balance;
     }
 }
+
+@keyframes fly-1 {
+  0% { transform: translateX(0) translateY(0) rotate(0deg); opacity: 1; }
+  50% { transform: translateX(50vw) translateY(-20px) rotate(5deg); opacity: 1; }
+  100% { transform: translateX(110vw) translateY(20px) rotate(-5deg); opacity: 1; }
+}
+
+@keyframes fly-2 {
+  0% { transform: translateX(0) translateY(0) rotate(0deg); opacity: 1; }
+  50% { transform: translateX(60vw) translateY(30px) rotate(-10deg); opacity: 1; }
+  100% { transform: translateX(110vw) translateY(-10px) rotate(10deg); opacity: 1; }
+}
+
+@keyframes fly-3 {
+  0% { transform: translateX(0) translateY(0) rotate(0deg); opacity: 1; }
+  50% { transform: translateX(40vw) translateY(-40px) rotate(15deg); opacity: 1; }
+  100% { transform: translateX(110vw) translateY(10px) rotate(0deg); opacity: 1; }
+}
+
+@keyframes fly-4 {
+  0% { transform: translateX(0) translateY(0) rotate(0deg); opacity: 1; }
+  50% { transform: translateX(55vw) translateY(50px) rotate(-5deg); opacity: 1; }
+  100% { transform: translateX(110vw) translateY(-20px) rotate(5deg); opacity: 1; }
+}
