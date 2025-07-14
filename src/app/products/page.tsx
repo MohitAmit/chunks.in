@@ -3,6 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { categories, products } from "@/lib/placeholder-data";
 import ProductCard from "@/components/ProductCard";
 import { Bee } from "@/components/Bee";
+import { Cow } from "@/components/Cow";
 
 export default function ProductsPage() {
   return (
@@ -35,13 +36,20 @@ export default function ProductsPage() {
           {categories.map((category) => (
             <TabsContent key={category.id} value={category.id} className="relative">
                {category.id === 'honey' && (
-                  <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+                  <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-10">
                     <Bee style={{ animation: 'fly-1 15s linear infinite', top: '10%', left: '0', animationDelay: '0s' }} />
                     <Bee style={{ animation: 'fly-2 18s linear infinite', top: '30%', left: '0', animationDelay: '2s' }} />
                     <Bee style={{ animation: 'fly-3 20s linear infinite', top: '50%', left: '0', animationDelay: '5s' }} />
                     <Bee style={{ animation: 'fly-4 16s linear infinite', top: '70%', left: '0', animationDelay: '8s' }} />
                     <Bee style={{ animation: 'fly-1 22s linear infinite', top: '80%', left: '0', animationDelay: '10s' }} />
                   </div>
+                )}
+                {category.id === 'ghee' && (
+                    <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-10">
+                        <Cow className="w-24 h-24" style={{ animation: 'cow-peek-left 12s ease-in-out infinite', bottom: '5%', left: '-2rem' }}/>
+                        <Cow className="w-32 h-32" style={{ animation: 'cow-peek-right 15s ease-in-out infinite', bottom: '20%', right: '-3rem', animationDelay: '3s' }}/>
+                        <Cow className="w-20 h-20" style={{ animation: 'cow-peek-left 18s ease-in-out infinite', top: '10%', left: '-2.5rem', animationDelay: '7s' }}/>
+                    </div>
                 )}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
                 {products
@@ -57,4 +65,3 @@ export default function ProductsPage() {
     </div>
   );
 }
-
