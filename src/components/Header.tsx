@@ -85,7 +85,7 @@ export default function Header() {
   }, [])
 
   if (!isMounted) {
-    return <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-sm"><div className="container flex h-20 items-center"></div></header>;
+    return null;
   }
 
 
