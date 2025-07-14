@@ -37,11 +37,11 @@ export default function ProductsPage() {
             <TabsContent key={category.id} value={category.id} className="relative">
                {category.id === 'honey' && (
                   <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-10">
-                    <Bee style={{ animation: 'fly-1 15s linear infinite', top: '10%', left: '0', animationDelay: '0s' }} />
-                    <Bee style={{ animation: 'fly-2 18s linear infinite', top: '30%', left: '0', animationDelay: '2s' }} />
-                    <Bee style={{ animation: 'fly-3 20s linear infinite', top: '50%', left: '0', animationDelay: '5s' }} />
-                    <Bee style={{ animation: 'fly-4 16s linear infinite', top: '70%', left: '0', animationDelay: '8s' }} />
-                    <Bee style={{ animation: 'fly-1 22s linear infinite', top: '80%', left: '0', animationDelay: '10s' }} />
+                    <Bee style={{ animation: 'fly-1 25s linear infinite', top: '10%', left: '0', animationDelay: '0s' }} />
+                    <Bee style={{ animation: 'fly-2 28s linear infinite', top: '30%', left: '0', animationDelay: '2s' }} />
+                    <Bee style={{ animation: 'fly-3 30s linear infinite', top: '50%', left: '0', animationDelay: '5s' }} />
+                    <Bee style={{ animation: 'fly-4 26s linear infinite', top: '70%', left: '0', animationDelay: '8s' }} />
+                    <Bee style={{ animation: 'fly-1 32s linear infinite', top: '80%', left: '0', animationDelay: '10s' }} />
                   </div>
                 )}
                 {category.id === 'ghee' && (
