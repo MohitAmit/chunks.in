@@ -70,19 +70,19 @@
 }
 
 @keyframes fly-1 {
-  0% { transform: translateX(-10%) translateY(50vh) rotate(-15deg); opacity: 0; }
+  0% { transform: translateX(-10%) translateY(10vh) rotate(-15deg); opacity: 0; }
   10% { opacity: 1; }
   50% { transform: translateX(50vw) translateY(30vh) rotate(15deg); }
   90% { opacity: 1; }
-  100% { transform: translateX(110vw) translateY(10vh) rotate(-15deg); opacity: 0; }
+  100% { transform: translateX(110vw) translateY(20vh) rotate(-15deg); opacity: 0; }
 }
 
 @keyframes fly-2 {
-  0% { transform: translateX(110%) translateY(10vh) rotate(15deg); opacity: 0; }
+  0% { transform: translateX(110%) translateY(80vh) rotate(15deg); opacity: 0; }
   10% { opacity: 1; }
-  50% { transform: translateX(50vw) translateY(70vh) rotate(-15deg); }
+  50% { transform: translateX(50vw) translateY(50vh) rotate(-15deg); }
   90% { opacity: 1; }
-  100% { transform: translateX(-10vw) translateY(90vh) rotate(15deg); opacity: 0; }
+  100% { transform: translateX(-10vw) translateY(70vh) rotate(15deg); opacity: 0; }
 }
 
 @keyframes fly-3 {
@@ -93,16 +93,7 @@
   100% { transform: translateX(80vw) translateY(-10%) rotate(10deg); opacity: 0; }
 }
 
-
 @keyframes walk {
   from { transform: translateX(-100%); }
   to { transform: translateX(100vw); }
-}
-
-@keyframes graze {
-  0% { transform: translateX(-110%) translateY(0) rotate(-5deg); opacity: 0; }
-  10% { transform: translateX(0) translateY(0) rotate(-5deg); opacity: 1; }
-  50% { transform: translateX(50vw) translateY(-20px) rotate(5deg); opacity: 1; }
-  90% { transform: translateX(100vw) translateY(0) rotate(-5deg); opacity: 1; }
-  100% { transform: translateX(110vw) translateY(0) rotate(-5deg); opacity: 0; }
 }

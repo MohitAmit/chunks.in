@@ -1,79 +1,25 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { categories, products } from "@/lib/placeholder-data";
-import ProductCard from "@/components/ProductCard";
-import { Bee } from "@/components/Bee";
-import Image from "next/image";
+import { cn } from "@/lib/utils";
 
-export default function ProductsPage() {
-  return (
-    <div className="bg-background animate-fade-in">
-      <div className="container mx-auto px-4 md:px-6 py-12">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-headline font-bold text-foreground">Our Chunks</h1>
-          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Explore our curated range of natural and homegrown chunks, direct from Indian farms
-          </p>
-        </div>
-
-        <Tabs defaultValue="all" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 md:grid-cols-5 mb-8">
-            <TabsTrigger value="all">All Chunks</TabsTrigger>
-            {categories.map((category) => (
-              <TabsTrigger key={category.id} value={category.id}>
-                {category.name}
-              </TabsTrigger>
-            ))}
-          </TabsList>
-
-          <TabsContent value="all">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
-              {products.map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))}
-            </div>
-          </TabsContent>
-          {categories.map((category) => (
-            <TabsContent key={category.id} value={category.id} className="relative overflow-hidden">
-               {category.id === 'honey' && (
-                  <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-10">
-                    <Bee style={{ animation: 'fly-1 35s linear infinite', animationDelay: '0s', top: '10%' }} />
-                    <Bee style={{ animation: 'fly-2 40s linear infinite', animationDelay: '5s', top: '50%' }} />
-                    <Bee style={{ animation: 'fly-3 30s linear infinite', animationDelay: '10s', top: '80%' }} />
-                  </div>
-                )}
-                {category.id === 'ghee' && (
-                    <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-0 opacity-20 dark:opacity-40">
-                       <Image 
-                         src="https://placehold.co/400x300.png"
-                         data-ai-hint="walking cow"
-                         alt="walking cow"
-                         width={200}
-                         height={150}
-                         className="absolute"
-                         style={{ top: '10%', animation: 'walk 25s linear infinite' }}
-                       />
-                        <Image 
-                         src="https://placehold.co/400x300.png"
-                         data-ai-hint="grazing cow"
-                         alt="grazing cow"
-                         width={250}
-                         height={180}
-                         className="absolute"
-                         style={{ top: '60%', animation: 'walk 35s linear infinite reverse', animationDelay: '5s' }}
-                       />
-                    </div>
-                )}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
-                {products
-                  .filter((product) => product.category === category.id)
-                  .map((product) => (
-                    <ProductCard key={product.id} product={product} />
-                  ))}
-              </div>
-            </TabsContent>
-          ))}
-        </Tabs>
-      </div>
-    </div>
-  );
+export function Cow({ className, ...props }: React.SVGProps<SVGSVGElement>) {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className={cn("text-foreground", className)}
+            {...props}
+        >
+            <path d="M18.5 7.5c0 2.5-2 4.5-4.5 4.5s-4.5-2-4.5-4.5" />
+            <path d="M14 12c-2.5 0-4.5 2-4.5 4.5V20h9v-3.5c0-2.5-2-4.5-4.5-4.5Z" />
+            <path d="M4.5 16.5c-1.5 0-3-1.5-3-3V6c0-1.5 1-3 3-3h1c1.5 0 3 1.5 3 3v2" />
+            <path d="M19.5 16.5c1.5 0 3-1.5 3-3V6c0-1.5-1-3-3-3h-1c-1.5 0-3 1.5-3 3v2" />
+            <path d="M7 11v1" />
+            <path d="M17 11v1" />
+            <path d="M12 16h.01" />
+        </svg>
+    );
 }
