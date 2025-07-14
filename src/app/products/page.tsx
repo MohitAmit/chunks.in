@@ -36,7 +36,7 @@ export default function ProductsPage() {
           {categories.map((category) => (
             <TabsContent key={category.id} value={category.id} className="relative">
                {category.id === 'honey' && (
-                  <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-0">
+                  <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-10">
                     <Bee style={{ animation: 'fly-1 35s linear infinite', animationDelay: '0s', top: '10%' }} />
                     <Bee style={{ animation: 'fly-2 40s linear infinite', animationDelay: '5s', top: '50%' }} />
                     <Bee style={{ animation: 'fly-3 30s linear infinite', animationDelay: '10s', top: '80%' }} />
@@ -44,9 +44,8 @@ export default function ProductsPage() {
                 )}
                 {category.id === 'ghee' && (
                     <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-0">
-                        <Cow className="w-48 h-48" style={{ animation: 'dance 10s ease-in-out infinite alternate', top: '5%', left: '5%' }}/>
-                        <Cow className="w-32 h-32" style={{ animation: 'dance 12s ease-in-out infinite alternate-reverse', top: '50%', right: '10%' }}/>
-                        <Cow className="w-40 h-40" style={{ animation: 'dance 8s ease-in-out infinite alternate', bottom: '5%', left: '30%' }}/>
+                        <Cow className="w-32 h-32" style={{ animation: 'dance 12s ease-in-out infinite alternate-reverse', top: '5%', right: '5%' }}/>
+                        <Cow className="w-40 h-40" style={{ animation: 'dance 8s ease-in-out infinite alternate', bottom: '5%', left: '5%' }}/>
                     </div>
                 )}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
