@@ -33,14 +33,14 @@ export default function ProductsPage() {
             </div>
           </TabsContent>
           {categories.map((category) => (
-            <TabsContent key={category.id} value={category.id}>
+            <TabsContent key={category.id} value={category.id} className="relative">
                {category.id === 'honey' && (
                   <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none -z-10">
-                    <Bee style={{ animation: 'fly-1 20s linear infinite', top: '10%', left: '-10%' }} />
-                    <Bee style={{ animation: 'fly-2 25s linear infinite', top: '30%', left: '-10%' }} />
-                    <Bee style={{ animation: 'fly-3 18s linear infinite', top: '50%', left: '-10%' }} />
-                    <Bee style={{ animation: 'fly-4 22s linear infinite', top: '70%', left: '-10%' }} />
-                    <Bee style={{ animation: 'fly-1 23s linear infinite 5s', top: '90%', left: '-10%' }} />
+                    <Bee style={{ animation: 'fly-1 15s linear infinite', top: '10%', left: '0', animationDelay: '0s' }} />
+                    <Bee style={{ animation: 'fly-2 18s linear infinite', top: '30%', left: '0', animationDelay: '2s' }} />
+                    <Bee style={{ animation: 'fly-3 20s linear infinite', top: '50%', left: '0', animationDelay: '5s' }} />
+                    <Bee style={{ animation: 'fly-4 16s linear infinite', top: '70%', left: '0', animationDelay: '8s' }} />
+                    <Bee style={{ animation: 'fly-1 22s linear infinite', top: '80%', left: '0', animationDelay: '10s' }} />
                   </div>
                 )}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
