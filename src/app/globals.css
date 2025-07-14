@@ -72,43 +72,31 @@
 @keyframes fly-1 {
   0% { transform: translateX(-10%) translateY(50vh) rotate(-15deg); opacity: 0; }
   10% { opacity: 1; }
-  25% { transform: translateX(25vw) translateY(30vh) rotate(25deg); }
-  40% { transform: translateX(50vw) translateY(20vh) rotate(-20deg); }
-  50% { transform: translateX(60vw) translateY(30vh) rotate(0deg); } /* Bottom point of heart */
-  60% { transform: translateX(50vw) translateY(20vh) rotate(20deg); }
-  75% { transform: translateX(75vw) translateY(30vh) rotate(-25deg); }
+  50% { transform: translateX(50vw) translateY(30vh) rotate(15deg); }
   90% { opacity: 1; }
-  100% { transform: translateX(110vw) translateY(50vh) rotate(15deg); opacity: 0; }
+  100% { transform: translateX(110vw) translateY(10vh) rotate(-15deg); opacity: 0; }
 }
 
 @keyframes fly-2 {
   0% { transform: translateX(110%) translateY(10vh) rotate(15deg); opacity: 0; }
   10% { opacity: 1; }
-  25% { transform: translateX(75vw) translateY(30vh) rotate(-20deg); }
-  40% { transform: translateX(50vw) translateY(40vh) rotate(25deg); }
-  50% { transform: translateX(40vw) translateY(30vh) rotate(0deg); } /* Bottom point of heart */
-  60% { transform: translateX(50vw) translateY(40vh) rotate(-25deg); }
-  75% { transform: translateX(25vw) translateY(30vh) rotate(20deg); }
+  50% { transform: translateX(50vw) translateY(70vh) rotate(-15deg); }
   90% { opacity: 1; }
-  100% { transform: translateX(-10vw) translateY(10vh) rotate(-15deg); opacity: 0; }
+  100% { transform: translateX(-10vw) translateY(90vh) rotate(15deg); opacity: 0; }
 }
 
 @keyframes fly-3 {
-  0% { transform: translateX(-10%) translateY(5vh) rotate(10deg); opacity: 0; }
+  0% { transform: translateX(50%) translateY(-10%) rotate(10deg); opacity: 0; }
   10% { opacity: 1; }
-  25% { transform: translateX(30vw) translateY(25vh) rotate(-15deg); }
-  40% { transform: translateX(55vw) translateY(15vh) rotate(20deg); }
-  50% { transform: translateX(50vw) translateY(25vh) rotate(0deg); } /* Bottom point of heart */
-  60% { transform: translateX(55vw) translateY(15vh) rotate(-20deg); }
-  75% { transform: translateX(70vw) translateY(25vh) rotate(15deg); }
+  50% { transform: translateX(20vw) translateY(110vh) rotate(-10deg); }
   90% { opacity: 1; }
-  100% { transform: translateX(110vw) translateY(5vh) rotate(-10deg); opacity: 0; }
+  100% { transform: translateX(80vw) translateY(-10%) rotate(10deg); opacity: 0; }
 }
 
 
-@keyframes dance {
-  0%, 100% { transform: translateX(-10%) rotate(-5deg); }
-  50% { transform: translateX(10%) rotate(5deg); }
+@keyframes walk {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(100vw); }
 }
 
 @keyframes graze {

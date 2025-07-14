@@ -3,7 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { categories, products } from "@/lib/placeholder-data";
 import ProductCard from "@/components/ProductCard";
 import { Bee } from "@/components/Bee";
-import { Cow } from "@/components/Cow";
+import Image from "next/image";
 
 export default function ProductsPage() {
   return (
@@ -34,7 +34,7 @@ export default function ProductsPage() {
             </div>
           </TabsContent>
           {categories.map((category) => (
-            <TabsContent key={category.id} value={category.id} className="relative">
+            <TabsContent key={category.id} value={category.id} className="relative overflow-hidden">
                {category.id === 'honey' && (
                   <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-10">
                     <Bee style={{ animation: 'fly-1 35s linear infinite', animationDelay: '0s', top: '10%' }} />
@@ -43,9 +43,25 @@ export default function ProductsPage() {
                   </div>
                 )}
                 {category.id === 'ghee' && (
-                    <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-0">
-                        <Cow className="w-32 h-32" style={{ animation: 'dance 12s ease-in-out infinite alternate-reverse', top: '5%', right: '5%' }}/>
-                        <Cow className="w-40 h-40" style={{ animation: 'dance 8s ease-in-out infinite alternate', bottom: '5%', left: '5%' }}/>
+                    <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-0 opacity-20 dark:opacity-40">
+                       <Image 
+                         src="https://placehold.co/400x300.png"
+                         data-ai-hint="walking cow"
+                         alt="walking cow"
+                         width={200}
+                         height={150}
+                         className="absolute"
+                         style={{ top: '10%', animation: 'walk 25s linear infinite' }}
+                       />
+                        <Image 
+                         src="https://placehold.co/400x300.png"
+                         data-ai-hint="grazing cow"
+                         alt="grazing cow"
+                         width={250}
+                         height={180}
+                         className="absolute"
+                         style={{ top: '60%', animation: 'walk 35s linear infinite reverse', animationDelay: '5s' }}
+                       />
                     </div>
                 )}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
