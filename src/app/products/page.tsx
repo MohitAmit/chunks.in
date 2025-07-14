@@ -38,8 +38,8 @@ export default function ProductsPage() {
                {category.id === 'honey' && (
                   <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-10">
                     <Bee style={{ animation: 'fly-1 35s linear infinite', animationDelay: '0s' }} />
-                    <Bee className="w-16 h-16" style={{ animation: 'fly-2 40s linear infinite', animationDelay: '5s' }} />
-                    <Bee className="w-10 h-10" style={{ animation: 'fly-3 30s linear infinite', animationDelay: '10s' }} />
+                    <Bee style={{ animation: 'fly-2 40s linear infinite', animationDelay: '5s' }} />
+                    <Bee style={{ animation: 'fly-3 30s linear infinite', animationDelay: '10s' }} />
                   </div>
                 )}
                 {category.id === 'ghee' && (
