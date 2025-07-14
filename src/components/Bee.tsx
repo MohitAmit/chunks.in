@@ -9,33 +9,23 @@ export function Bee({ className, ...props }: React.SVGProps<SVGSVGElement>) {
             {...props}
         >
             <g transform="translate(5, 5) rotate(15)">
-                {/* <!-- Wings --> */}
-                <path d="M 50 30 C 20 0, 20 60, 50 50" fill="#e3f2fd" opacity="0.8" stroke="#90a4ae" strokeWidth="0.5" transform="rotate(-20 50 30)" />
-                <path d="M 45 30 C 10 -10, 10 50, 45 45" fill="#fafafa" opacity="0.7" stroke="#b0bec5" strokeWidth="0.5" transform="rotate(-25 45 30)" />
+                {/* Wings */}
+                <ellipse cx="45" cy="35" rx="15" ry="20" fill="#e0f7fa" stroke="#b0bec5" strokeWidth="1" transform="rotate(-10 45 35)" />
+                <ellipse cx="55" cy="35" rx="15" ry="20" fill="#e0f7fa" stroke="#b0bec5" strokeWidth="1" transform="rotate(10 55 35)" />
 
-                {/* <!-- Body --> */}
-                <ellipse cx="65" cy="65" rx="20" ry="25" fill="#ffc107" transform="rotate(-45 65 65)" />
+                {/* Body */}
+                <ellipse cx="60" cy="60" rx="25" ry="20" fill="#ffc107" />
                 
-                {/* <!-- Stripes --> */}
-                <path d="M 75 55 Q 85 70 70 80 L 60 75 Q 70 65 75 55" fill="#212121" />
-                <path d="M 83 63 Q 93 78 78 88 L 68 83 Q 78 73 83 63" fill="#212121" />
-                <path d="M 52 72 Q 62 87 47 97 L 37 92 Q 47 82 52 72" fill="#212121" />
+                {/* Stripes */}
+                <path d="M 55 50 Q 60 60 55 70" stroke="#212121" strokeWidth="6" strokeLinecap="round" />
+                <path d="M 68 48 Q 73 58 68 68" stroke="#212121" strokeWidth="6" strokeLinecap="round" />
 
-                {/* <!-- Head --> */}
-                <circle cx="40" cy="50" r="22" fill="#ffc107" />
+                {/* Stinger */}
+                <path d="M 85 60 L 95 60" stroke="#212121" strokeWidth="2" strokeLinecap="round" />
                 
-                {/* <!-- Eyes --> */}
-                <circle cx="35" cy="50" r="8" fill="white" />
-                <circle cx="33" cy="52" r="4" fill="black" />
-                <circle cx="37" cy="48" r="1.5" fill="white" opacity="0.9" />
-                
-                {/* <!-- Antennae --> */}
-                <path d="M 25 35 Q 20 25, 25 20" stroke="black" strokeWidth="1.5" fill="none" />
-                <path d="M 35 30 Q 38 20, 45 22" stroke="black" strokeWidth="1.5" fill="none" />
-
-                {/* <!-- Fuzz/Legs --> */}
-                <path d="M 50 60 L 45 65 M 55 65 L 50 70 M 60 70 L 55 75" stroke="#424242" strokeWidth="1" strokeLinecap="round" />
-                 <path d="M 45 55 L 40 60" stroke="#424242" strokeWidth="1" strokeLinecap="round" />
+                {/* Antennae */}
+                <path d="M 40 45 Q 30 30 40 25" stroke="black" strokeWidth="1.5" fill="none" />
+                <path d="M 50 45 Q 60 30 50 25" stroke="black" strokeWidth="1.5" fill="none" />
             </g>
         </svg>
     )
