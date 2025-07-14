@@ -4,6 +4,7 @@ import { categories, products } from "@/lib/placeholder-data";
 import ProductCard from "@/components/ProductCard";
 import { Bee } from "@/components/Bee";
 import { Cow } from "@/components/Cow";
+import { Sugarcane } from "@/components/Sugarcane";
 
 export default function ProductsPage() {
   return (
@@ -37,9 +38,9 @@ export default function ProductsPage() {
             <TabsContent key={category.id} value={category.id} className="relative overflow-hidden min-h-[50vh]">
                {category.id === 'honey' && (
                   <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-10">
-                    <Bee style={{ animation: 'fly-1 35s linear infinite', animationDelay: '0s' }} />
-                    <Bee style={{ animation: 'fly-2 40s linear infinite', animationDelay: '5s' }} />
-                    <Bee style={{ animation: 'fly-3 30s linear infinite', animationDelay: '10s' }} />
+                    <Bee style={{ animation: 'fly-heart-1 25s linear infinite', top: '5%', left: '-10%' }} />
+                    <Bee style={{ animation: 'fly-heart-2 30s linear infinite', top: '15%', left: '100%' }} />
+                    <Bee style={{ animation: 'fly-heart-3 20s linear infinite', top: '100%', left: '30%' }} />
                   </div>
                 )}
                 {category.id === 'ghee' && (
@@ -52,6 +53,13 @@ export default function ProductsPage() {
                          className="w-32 h-32 absolute"
                          style={{ top: '60%', animation: 'walk 60s linear infinite reverse', animationDelay: '5s' }}
                        />
+                    </div>
+                )}
+                {category.id === 'jaggery' && (
+                    <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-0 opacity-30 dark:opacity-50">
+                       <Sugarcane style={{ animation: 'fall-1 20s linear infinite', left: '10%' }} />
+                       <Sugarcane style={{ animation: 'fall-2 15s linear infinite', left: '50%', animationDelay: '5s' }} />
+                       <Sugarcane style={{ animation: 'fall-3 18s linear infinite', left: '80%', animationDelay: '10s' }} />
                     </div>
                 )}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
