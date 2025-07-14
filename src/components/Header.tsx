@@ -21,13 +21,8 @@ const navLinks = [
 ]
 
 const ChunksLogo = () => {
-    const [isMounted, setIsMounted] = useState(false);
-
-    useEffect(() => {
-        setIsMounted(true);
-    }, []);
-
-    const svgContent = (
+    return (
+      <div className="w-[150px] h-[40px]">
         <svg viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
             <style>
               {`
@@ -59,15 +54,6 @@ const ChunksLogo = () => {
                 of happiness
             </text>
         </svg>
-    );
-
-    if (!isMounted) {
-        return <div style={{ width: '150px', height: '40px' }} />;
-    }
-
-    return (
-      <div className="w-[150px] h-[40px]">
-          {svgContent}
       </div>
     );
 };
@@ -75,19 +61,8 @@ const ChunksLogo = () => {
 export default function Header() {
   const pathname = usePathname()
   const [isSheetOpen, setSheetOpen] = useState(false)
-  const [isMounted, setIsMounted] = useState(false)
   const { cart, isCartAnimating } = useCart();
   const cartItemCount = cart.items.reduce((acc, item) => acc + item.quantity, 0);
-
-
-  useEffect(() => {
-    setIsMounted(true)
-  }, [])
-
-  if (!isMounted) {
-    return null;
-  }
-
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-sm">
