@@ -60,6 +60,16 @@ const ChunksLogo = () => {
 
 
 export default function Footer() {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null;
+  }
+
   return (
     <footer className="bg-muted text-muted-foreground border-t-[3px]" style={{borderColor: 'hsl(var(--accent-2))'}}>
       <div className="container py-12 px-4 md:px-6">

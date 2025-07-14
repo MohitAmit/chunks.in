@@ -84,6 +84,11 @@ export default function Header() {
     setIsMounted(true)
   }, [])
 
+  if (!isMounted) {
+    return <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-sm"><div className="container flex h-20 items-center"></div></header>;
+  }
+
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-sm">
       <div className="container flex h-20 items-center">
@@ -142,8 +147,7 @@ export default function Header() {
 
 
         {/* Desktop Menu */}
-        {isMounted && (
-          <nav className="hidden md:flex md:items-center md:gap-x-8 text-lg font-semibold mx-auto">
+        <nav className="hidden md:flex md:items-center md:gap-x-8 text-lg font-semibold mx-auto">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -161,8 +165,7 @@ export default function Header() {
                 )}
               </Link>
             ))}
-          </nav>
-        )}
+        </nav>
 
         <div className="flex items-center justify-end gap-2">
            <Button variant="ghost" size="icon" className="relative" asChild>
