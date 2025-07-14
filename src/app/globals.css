@@ -14,10 +14,11 @@
     --primary-foreground: 47 98% 95%; /* Very light yellow for text on primary */
     --secondary: 279 30% 85%; /* Light purple/grey */
     --secondary-foreground: 279 47% 15%;
-    --muted: 279 30% 92%; /* Very light purple/grey */
+    --muted: 279 70% 96%; /* Light Lavender for Footer */
     --muted-foreground: 279 30% 40%;
     --accent: 279 40% 70%;
     --accent-foreground: 0 0% 100%;
+    --accent-2: 47 98% 68%; /* Yellow for Footer Input */
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 279 30% 85%;
@@ -42,10 +43,11 @@
     --primary-foreground: 279 47% 15%;
     --secondary: 279 47% 30%;
     --secondary-foreground: 47 98% 85%;
-    --muted: 279 47% 25%;
+    --muted: 279 47% 18%; /* Darker purple for dark footer */
     --muted-foreground: 47 98% 75%;
     --accent: 47 90% 70%;
     --accent-foreground: 279 47% 10%;
+    --accent-2: 47 98% 68%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
     --border: 279 47% 30%;
