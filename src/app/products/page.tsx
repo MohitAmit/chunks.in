@@ -37,11 +37,14 @@ export default function ProductsPage() {
             <TabsContent key={category.id} value={category.id} className="relative">
                {category.id === 'honey' && (
                   <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-10">
-                    <Bee style={{ animation: 'fly-1 25s linear infinite', top: '10%', left: '0', animationDelay: '0s' }} />
-                    <Bee style={{ animation: 'fly-2 28s linear infinite', top: '30%', left: '0', animationDelay: '2s' }} />
-                    <Bee style={{ animation: 'fly-3 30s linear infinite', top: '50%', left: '0', animationDelay: '5s' }} />
-                    <Bee style={{ animation: 'fly-4 26s linear infinite', top: '70%', left: '0', animationDelay: '8s' }} />
-                    <Bee style={{ animation: 'fly-1 32s linear infinite', top: '80%', left: '0', animationDelay: '10s' }} />
+                    {/* Flying Bee */}
+                    <Bee style={{ animation: 'fly-1 35s linear infinite', top: '50%', left: '0' }} />
+                    
+                    {/* Bee sitting on "Organic Honey" tab */}
+                    <Bee className="w-16 h-16" style={{ top: '-80px', right: '45%', transform: 'rotate(-15deg)' }} />
+
+                    {/* Bee sitting on the first honey product */}
+                    <Bee className="w-12 h-12" style={{ top: '60px', left: '180px', transform: 'rotate(15deg)' }} />
                   </div>
                 )}
                 {category.id === 'ghee' && (
