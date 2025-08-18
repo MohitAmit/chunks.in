@@ -483,8 +483,8 @@ export const products: Product[] = [
         { id: 'mg-1kg', size: '1kg', price: 480 },
     ],
     description: 'Authentic, chemical-free jaggery from the sugarcane belt of Muzaffarnagar Known for its rich, earthy flavor and soft texture, it is a perfect natural sweetener',
-    image: 'https://placehold.co/600x600.png',
-    images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
+    image: 'https://i.ibb.co/jvqYVsJ/Gemini-Generated-Image-6cs9126cs9126cs9.png',
+    images: ['https://i.ibb.co/jvqYVsJ/Gemini-Generated-Image-6cs9126cs9126cs9.png', 'https://i.ibb.co/jvqYVsJ/Gemini-Generated-Image-6cs9126cs9126cs9.png', 'https://i.ibb.co/jvqYVsJ/Gemini-Generated-Image-6cs9126cs9126cs9.png'],
     region: 'Uttar Pradesh',
     ingredients: [{ name: 'Sugarcane Juice', source: 'Chaudhary Sugarcane Farms', batchId: 'SUG-UP-2401', procurementDate: '2024-01-20', expiryDate: '2025-01-19' }],
     chunkerStory: {
@@ -506,8 +506,8 @@ export const products: Product[] = [
         { id: 'kg-1kg', size: '1kg', price: 540 },
     ],
     description: 'Famous for its unique dark color and rich, mineral-heavy taste This jaggery from Kolhapur is made in traditional "gurhals" and is a GI-tagged product, ensuring its authenticity',
-    image: 'https://placehold.co/600x600.png',
-    images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
+    image: 'https://i.ibb.co/jvqYVsJ/Gemini-Generated-Image-6cs9126cs9126cs9.png',
+    images: ['https://i.ibb.co/jvqYVsJ/Gemini-Generated-Image-6cs9126cs9126cs9.png', 'https://i.ibb.co/jvqYVsJ/Gemini-Generated-Image-6cs9126cs9126cs9.png', 'https://i.ibb.co/jvqYVsJ/Gemini-Generated-Image-6cs9126cs9126cs9.png'],
     region: 'Maharashtra',
     ingredients: [{ name: 'Sugarcane Juice', source: 'Kolhapur Jaggery Cooperative', batchId: 'SUG-MH-2402', procurementDate: '2024-02-15', expiryDate: '2025-02-14' }],
     chunkerStory: {
@@ -526,8 +526,8 @@ export const products: Product[] = [
     category: 'jaggery',
     variants: [{ id: 'ms-500g', size: '500g', price: 320 }],
     description: 'A premium, dark brown jaggery from the Marayoor region of Kerala Made from a special variety of sugarcane, it is produced in a traditional way and has a very low salt content, giving it a unique taste',
-    image: 'https://placehold.co/600x600.png',
-    images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
+    image: 'https://i.ibb.co/jvqYVsJ/Gemini-Generated-Image-6cs9126cs9126cs9.png',
+    images: ['https://i.ibb.co/jvqYVsJ/Gemini-Generated-Image-6cs9126cs9126cs9.png', 'https://i.ibb.co/jvqYVsJ/Gemini-Generated-Image-6cs9126cs9126cs9.png', 'https://i.ibb.co/jvqYVsJ/Gemini-Generated-Image-6cs9126cs9126cs9.png'],
     region: 'Kerala',
     ingredients: [{ name: 'Sugarcane Juice', source: 'Marayoor Sugarcane Growers', batchId: 'SUG-KL-2312', procurementDate: '2023-12-25', expiryDate: '2024-12-24' }],
     chunkerStory: {
