@@ -58,7 +58,7 @@ export default function Header() {
                       key={link.href}
                       href={link.href}
                       className={cn(
-                        'text-lg font-medium',
+                        'text-lg uppercase tracking-wider',
                         pathname === link.href ? 'text-primary' : 'text-foreground hover:text-primary'
                       )}
                       onClick={() => setSheetOpen(false)}
@@ -85,7 +85,7 @@ export default function Header() {
 
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex md:items-center md:gap-x-8 text-lg mx-auto">
+        <nav className="hidden md:flex md:items-center md:gap-x-8 text-sm uppercase tracking-wider mx-auto">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -127,9 +127,12 @@ export default function Header() {
               <span className="sr-only">User Profile</span>
              </Link>
            </Button>
-           <div className="hidden md:block">
-            <Button asChild>
+           <div className="hidden md:block space-x-2">
+            <Button asChild variant="ghost">
               <Link href="/login">Login</Link>
+            </Button>
+             <Button asChild>
+              <Link href="/login">Sign Up</Link>
             </Button>
            </div>
         </div>

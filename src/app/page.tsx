@@ -13,13 +13,9 @@ export default function Home() {
   return (
     <div className="flex flex-col bg-background animate-fade-in">
       {/* Hero Section */}
-      <section className="relative w-full overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-transparent z-0"></div>
+      <section className="relative w-full overflow-hidden bg-secondary">
         <div className="container relative px-4 md:px-6 py-20 md:py-32 flex flex-col md:flex-row items-center gap-12 text-center md:text-left">
            <div className="flex-1 space-y-6 z-10">
-              <Badge variant="secondary" className="text-lg py-2 px-4 shadow-soft">
-                <Leaf className="mr-2 h-5 w-5" /> 100% Preservative-Free
-              </Badge>
               <h1 className="text-4xl md:text-6xl font-headline font-bold tracking-tight text-balance">
                 Real Indian Chunks,
                 <br />
@@ -30,10 +26,7 @@ export default function Home() {
               </p>
               <div className="mt-8 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
                 <Button asChild size="lg">
-                  <Link href="/products">Explore Chunks</Link>
-                </Button>
-                <Button asChild size="lg" variant="outline">
-                  <Link href="/about">Our Story</Link>
+                  <Link href="/products">Explore Our Offerings</Link>
                 </Button>
               </div>
            </div>
@@ -51,7 +44,7 @@ export default function Home() {
       </section>
 
        {/* Why Chunks Section */}
-      <section className="py-16 md:py-24 bg-card">
+      <section className="py-16 md:py-24 bg-background">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-headline font-bold">Why Chunks?</h2>
@@ -96,7 +89,7 @@ export default function Home() {
       </section>
 
       {/* Featured Products Section */}
-      <section id="products" className="py-16 md:py-24 bg-background">
+      <section id="products" className="py-16 md:py-24 bg-card">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-headline font-bold">Featured Chunks</h2>
@@ -118,9 +111,9 @@ export default function Home() {
       </section>
       
       {/* Know Your Chunks CTA Section */}
-      <section className="py-16 md:py-24 bg-card">
+      <section className="py-16 md:py-24 bg-background">
         <div className="container px-4 md:px-6">
-          <div className="bg-background rounded-2xl shadow-md overflow-hidden md:grid md:grid-cols-2 items-center">
+          <div className="bg-secondary rounded-2xl shadow-md overflow-hidden md:grid md:grid-cols-2 items-center">
             <div className="p-8 md:p-12">
               <Badge variant="accent">AI-Powered Nutrition</Badge>
               <h2 className="text-3xl md:text-4xl font-headline font-bold mt-2">Know Your Chunks</h2>
@@ -146,7 +139,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 md:py-24 bg-background">
+      <section className="py-16 md:py-24 bg-card">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-headline font-bold">From Our Community</h2>
