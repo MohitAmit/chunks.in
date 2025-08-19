@@ -39,9 +39,9 @@ export default function Home() {
            </div>
            <div className="flex-1 relative h-80 w-full md:h-[500px] aspect-square">
             <Image
-              src="https://placehold.co/600x600.png"
-              alt="Chunks of jaggery"
-              data-ai-hint="jaggery chunks"
+              src="https://i.ibb.co/b54KQm6/main-screen.png"
+              alt="Artisanal Indian health products"
+              data-ai-hint="artisanal products"
               fill
               className="object-contain"
               style={{filter: 'drop-shadow(0px 15px 40px hsla(var(--primary)/0.2))'}}
