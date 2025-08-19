@@ -39,7 +39,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           <span>{product.region}</span>
         </div>
         <p className="mt-2 text-xl font-semibold">
-          From ₹{startingPrice}
+          From Rs {startingPrice}
         </p>
       </CardContent>
       <CardFooter className="p-4 pt-0">

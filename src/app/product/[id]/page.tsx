@@ -119,7 +119,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
                         >
                         <RadioGroupItem value={variant.id} id={variant.id} className="sr-only" />
                         <span className="font-bold">{variant.size}</span>
-                        <span className="text-sm text-muted-foreground">₹{variant.price}</span>
+                        <span className="text-sm text-muted-foreground">Rs {variant.price}</span>
                         </Label>
                     ))}
                     </RadioGroup>
@@ -130,7 +130,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
 
             <div className="flex items-baseline justify-between gap-4 p-4 rounded-lg bg-card">
               <span className="text-lg text-muted-foreground">Price</span>
-              <p className="text-4xl font-bold text-foreground">₹{selectedVariant?.price}</p>
+              <p className="text-4xl font-bold text-foreground">Rs {selectedVariant?.price}</p>
             </div>
             
             <Button size="lg" className="w-full text-lg h-12" onClick={handleAddToCart}>
