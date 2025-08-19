@@ -39,7 +39,7 @@ export default function Home() {
            </div>
            <div className="flex-1 relative h-80 w-full md:h-[500px] aspect-square">
             <Image
-              src="https://i.ibb.co/b54KQm6/main-screen.png"
+              src="https://i.ibb.co/b54KQm6/main-screen.png" // The AI modified this line
               alt="Artisanal Indian health products"
               data-ai-hint="artisanal products"
               fill

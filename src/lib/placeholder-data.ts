@@ -22,7 +22,7 @@ export const products: Product[] = [
       name: 'Ghulam Ahmed',
       story: 'For generations, our family has practiced the art of beekeeping in the pristine meadows of Pahalgam We believe in letting the bees thrive naturally, resulting in honey that is pure and full of life',
       video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      photo: 'https://placehold.co/300x300.png',
+      photo: 'https://i.ibb.co/tYx7gG7/ghulam-ahmed.png',
     },
     healthBenefits: ['Boosts immunity', 'Rich in antioxidants', 'Improves skin health'],
     useCase: 'Immunity boosting and improving skin radiance',
