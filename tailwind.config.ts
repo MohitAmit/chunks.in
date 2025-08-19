@@ -17,10 +17,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        body: ['Inter', 'sans-serif'],
-        headline: ['Poppins', 'sans-serif'],
-        nav: ['Lobster', 'cursive'],
-        code: ['monospace'],
+        body: ['"PT Sans"', 'sans-serif'],
+        headline: ['Alegreya', 'serif'],
       },
       colors: {
         background: 'hsl(var(--background))',
