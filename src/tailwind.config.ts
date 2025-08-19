@@ -19,7 +19,7 @@ export default {
       fontFamily: {
         body: ['Inter', 'sans-serif'],
         headline: ['Poppins', 'sans-serif'],
-        nav: ['Lobster', 'cursive'],
+        nav: ['Poppins', 'sans-serif'],
         creative: ['Bangers', 'cursive'],
         code: ['monospace'],
       },
@@ -67,12 +67,12 @@ export default {
       },
       borderRadius: {
         lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 4px)',
-        sm: 'calc(var(--radius) - 8px)',
+        md: 'calc(var(--radius) - 2px)',
+        sm: 'calc(var(--radius) - 4px)',
       },
       boxShadow: {
-        'soft': '0 4px 12px rgba(0,0,0,.08)',
-        'md': '0 8px 24px rgba(0,0,0,.1)',
+        'soft': '0 2px 10px rgba(0,0,0,.08)',
+        'md': '0 4px 16px rgba(0,0,0,.1)',
       },
       keyframes: {
         'accordion-down': {

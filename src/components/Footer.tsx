@@ -8,7 +8,7 @@ import { ChunksLogo } from './ChunksLogo';
 
 export default function Footer() {
   return (
-    <footer className="bg-muted text-muted-foreground border-t-[3px]" style={{borderColor: 'hsl(var(--accent-2))'}}>
+    <footer className="bg-muted text-muted-foreground border-t">
       <div className="container py-12 px-4 md:px-6">
         <div className="grid gap-8 grid-cols-1 md:grid-cols-4">
           <div className="space-y-4">
@@ -51,7 +51,7 @@ export default function Footer() {
             <h4 className="font-semibold text-foreground">Newsletter</h4>
             <p className="text-sm">Stay updated with our latest products and offers</p>
             <form className="flex gap-2">
-              <Input type="email" placeholder="Enter your email" className="bg-[hsl(var(--accent-2))] placeholder:text-foreground/60 border-primary/20 focus-visible:ring-primary" />
+              <Input type="email" placeholder="Enter your email" className="bg-background placeholder:text-foreground/60 border-primary/20 focus-visible:ring-primary" />
               <Button type="submit">Subscribe</Button>
             </form>
           </div>
