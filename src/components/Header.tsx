@@ -58,8 +58,8 @@ export default function Header() {
                       key={link.href}
                       href={link.href}
                       className={cn(
-                        'text-lg uppercase tracking-wider',
-                        pathname === link.href ? 'text-primary' : 'text-foreground hover:text-primary'
+                        'text-lg',
+                        pathname === link.href ? 'text-primary font-semibold' : 'text-foreground hover:text-primary'
                       )}
                       onClick={() => setSheetOpen(false)}
                     >
@@ -85,15 +85,15 @@ export default function Header() {
 
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex md:items-center md:gap-x-8 text-sm uppercase tracking-wider mx-auto">
+        <nav className="hidden md:flex md:items-center md:gap-x-8 text-sm mx-auto">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  'relative transition-all duration-300 ease-in-out hover:text-primary hover:scale-110',
+                  'relative transition-all duration-300 ease-in-out hover:text-primary',
                   pathname === link.href
-                    ? 'text-primary'
+                    ? 'text-primary font-semibold'
                     : 'text-foreground/80'
                 )}
               >
