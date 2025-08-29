@@ -14,7 +14,7 @@ import { ChunksLogo } from './ChunksLogo'
 import { ThemeToggle } from './ThemeToggle'
 
 const navLinks = [
-  { href: '/products', label: 'Collections' },
+  { href: '/products', label: 'Shop' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
   { href: '/blog', label: 'Blog' },
@@ -58,7 +58,7 @@ export default function Header() {
                       href={link.href}
                       className={cn(
                         'text-lg font-headline font-bold',
-                        pathname === link.href ? 'text-secondary' : 'text-foreground hover:text-primary'
+                        pathname === link.href ? 'text-primary' : 'text-foreground hover:text-primary'
                       )}
                       onClick={() => setSheetOpen(false)}
                     >
@@ -92,7 +92,7 @@ export default function Header() {
                 className={cn(
                   'relative transition-all duration-300 ease-in-out hover:text-primary font-headline font-bold text-lg',
                   pathname === link.href
-                    ? 'text-secondary'
+                    ? 'text-primary'
                     : 'text-foreground/80'
                 )}
               >
