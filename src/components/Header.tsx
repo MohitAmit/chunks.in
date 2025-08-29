@@ -14,7 +14,7 @@ import { ChunksLogo } from './ChunksLogo'
 import { ThemeToggle } from './ThemeToggle'
 
 const navLinks = [
-  { href: '/products', label: 'Just Try' },
+  { href: '/products', label: 'Shop' },
   { href: '/about', label: <>My Kahani</> },
   { href: '/contact', label: <>बात-चीत</> },
   { href: '/blog', label: <>अनोखा ज्ञान</> },
