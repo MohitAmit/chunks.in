@@ -29,7 +29,7 @@ export default function AboutPage() {
               data-ai-hint="indian farm"
               width={600}
               height={400}
-              className="rounded-lg shadow-soft"
+              className="rounded-lg"
             />
           </div>
         </div>
@@ -37,7 +37,7 @@ export default function AboutPage() {
         <div className="mt-24">
           <h2 className="text-3xl font-headline font-bold text-center mb-12">Our Core Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div className="p-6 bg-card rounded-lg shadow-soft">
+            <div className="p-6 bg-card rounded-lg">
               <div className="flex justify-center mb-4">
                 <div className="bg-primary/10 p-4 rounded-full">
                   <Leaf className="h-8 w-8 text-primary" />
@@ -48,7 +48,7 @@ export default function AboutPage() {
                 We guarantee 100% preservative-free, natural products sourced directly from trusted vendors
               </p>
             </div>
-            <div className="p-6 bg-card rounded-lg shadow-soft">
+            <div className="p-6 bg-card rounded-lg">
               <div className="flex justify-center mb-4">
                 <div className="bg-primary/10 p-4 rounded-full">
                   <Users className="h-8 w-8 text-primary" />
@@ -59,7 +59,7 @@ export default function AboutPage() {
                 We ensure fair prices and empower our farmer communities by sharing their stories and craftsmanship
               </p>
             </div>
-            <div className="p-6 bg-card rounded-lg shadow-soft">
+            <div className="p-6 bg-card rounded-lg">
               <div className="flex justify-center mb-4">
                 <div className="bg-primary/10 p-4 rounded-full">
                   <Heart className="h-8 w-8 text-primary" />
