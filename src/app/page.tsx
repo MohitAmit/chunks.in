@@ -186,7 +186,7 @@ export default function Home() {
             </div>
             <div className="h-64 md:h-full">
               <Image
-                src="https://placehold.co/600x400.png"
+                src="https://picsum.photos/600/600"
                 alt="A collage of Indian chunkers"
                 data-ai-hint="health report analysis"
                 width={600}
