@@ -17,7 +17,7 @@ const navLinks = [
   { href: '/products', label: 'Shop' },
   { href: '/about', label: 'Our Story' },
   { href: '/contact', label: "Let's Talk" },
-  { href: '/blog', label: <>अनोखा ज्ञान</> },
+  { href: '/blog', label: 'Blog' },
 ]
 
 export default function Header() {
