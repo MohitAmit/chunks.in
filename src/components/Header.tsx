@@ -11,6 +11,7 @@ import { cn } from '@/lib/utils'
 import { useState } from 'react'
 import { useCart } from '@/context/CartContext'
 import { ChunksLogo } from './ChunksLogo'
+import { ThemeToggle } from './ThemeToggle'
 
 const navLinks = [
   { href: '/products', label: 'Collections' },
@@ -100,15 +101,16 @@ export default function Header() {
             ))}
         </nav>
 
-        <div className="flex items-center justify-end gap-4 ml-auto">
+        <div className="flex items-center justify-end gap-2 ml-auto">
            <Button variant="ghost" size="icon">
              <Search className="h-6 w-6" />
              <span className="sr-only">Search</span>
            </Button>
-           <Button variant="ghost" size="icon" className="relative">
+           <Button variant="ghost" size="icon" asChild>
+            <Link href="/dashboard">
              <User className="h-6 w-6" />
-             <Zap className="h-4 w-4 absolute -top-1 -right-1 text-yellow-500 fill-yellow-500" />
-              <span className="sr-only">User Profile</span>
+             <span className="sr-only">User Profile</span>
+            </Link>
            </Button>
            <Button variant="ghost" size="icon" className="relative" asChild>
             <Link href="/cart">
@@ -124,6 +126,7 @@ export default function Header() {
              <span className="sr-only">Shopping Cart</span>
             </Link>
            </Button>
+           <ThemeToggle />
         </div>
       </div>
     </header>
