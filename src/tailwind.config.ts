@@ -18,7 +18,7 @@ export default {
     extend: {
       fontFamily: {
         body: ['"PT Sans"', 'sans-serif'],
-        headline: ['"Alegreya"', 'serif'],
+        headline: ['Alegreya', 'serif'],
       },
       colors: {
         background: 'hsl(var(--background))',
@@ -64,12 +64,12 @@ export default {
       },
       borderRadius: {
         lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 2px)',
-        sm: 'calc(var(--radius) - 4px)',
+        md: 'calc(var(--radius) - 4px)',
+        sm: 'calc(var(--radius) - 8px)',
       },
       boxShadow: {
-        'soft': '0 2px 10px rgba(0,0,0,.08)',
-        'md': '0 4px 16px rgba(0,0,0,.1)',
+        'soft': '0 2px 8px rgba(0,0,0,.08)',
+        'neon-primary': '0 0 5px hsl(var(--primary)), 0 0 10px hsl(var(--primary) / 0.8), 0 0 20px hsl(var(--primary) / 0.5)',
       },
       keyframes: {
         'accordion-down': {
@@ -91,28 +91,12 @@ export default {
         "fade-in": {
           "0%": { opacity: "0", transform: "translateY(10px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
-        },
-        "background-pan": {
-          "0%": { backgroundPosition: "0% center" },
-          "100%": { backgroundPosition: "-200% center" },
-        },
-        "gradient-pan": {
-          "0%": { backgroundPosition: "0% 50%" },
-          "50%": { backgroundPosition: "100% 50%" },
-          "100%": { backgroundPosition: "0% 50%" },
-        },
-        "blinking-scaled": {
-          "0%, 100%": { transform: "scale(1)", opacity: "1" },
-          "50%": { transform: "scale(1.2)", opacity: "0.7" },
         }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         "fade-in": "fade-in 0.5s ease-out forwards",
-        "background-pan": "background-pan 3s linear infinite",
-        "gradient-pan": "gradient-pan 15s ease infinite",
-        "blinking-scaled": "blinking-scaled 1s ease-in-out",
       },
     },
   },
