@@ -34,9 +34,9 @@ export const products: Product[] = [
     category: 'honey',
     variants: [{ id: 'sht-30pc', size: '30 Twigs', price: 450 }],
     description: 'Our best-selling natural performance enhancer for young people and gym lovers Infused with pure Himalayan Shilajit, these honey twigs provide a sustained energy release to power you through your workouts',
-    image: 'https://placehold.co/600x600.png',
+    image: 'https://i.ibb.co/rwsz90P/Screenshot-2025-08-29-at-10-53-43-PM.png',
     dataAiHint: 'honey sticks gym',
-    images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
+    images: ['https://i.ibb.co/rwsz90P/Screenshot-2025-08-29-at-10-53-43-PM.png', 'https://i.ibb.co/rwsz90P/Screenshot-2025-08-29-at-10-53-43-PM.png', 'https://i.ibb.co/rwsz90P/Screenshot-2025-08-29-at-10-53-43-PM.png'],
     region: 'Himalayan Region',
     ingredients: [{ name: 'Raw Honey', source: 'Himalayan Foothills', batchId: 'HNY-2403', procurementDate: '2024-03-15', expiryDate: '2026-03-14' }, { name: 'Shilajit Extract', source: 'Himalayan Higher Altitudes', batchId: 'SHJ-2310', procurementDate: '2023-10-02', expiryDate: '2028-10-01' }],
     chunkerStory: {
