@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -10,7 +11,7 @@ import { Separator } from "@/components/ui/separator";
 
 export default function ContactPage() {
   const amitWhatsappLink = "https://wa.me/918879049091?text=Hello%20Chunks,%20I%20have%20a%20query.";
-  const mohitWhatsappLink = "https://wa.me/917303576066?text=Hello%20Chunks,%20I%20have%20a%20query.";
+  const mohitWhatsappLink = "https://wa.me/917303576066?text=Hello%20Chunks,%20I%20have%a%20query.";
 
   return (
     <div className="bg-background animate-fade-in">
