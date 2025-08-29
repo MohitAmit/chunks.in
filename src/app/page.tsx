@@ -72,7 +72,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Coz Baat Barose Ki Hai Section */}
+      {/* Seal of Trust Section */}
       <section className="py-16 md:py-24 bg-background">
         <div className="container px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -87,7 +87,7 @@ export default function Home() {
               />
             </div>
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-headline font-bold">Coz Baat Barose Ki Hai</h2>
+              <h2 className="text-3xl md:text-4xl font-headline font-bold">Seal of Trust</h2>
               <div className="text-muted-foreground leading-relaxed space-y-4">
                 <p>
                   Our farmers instantly seal-pack every item with our patented seal, created to guarantee freshness and safety. Once your order is packed, nobody can open it except you. We’ve invested heavily in research to make sure the chances of duplicacy are impossible.
