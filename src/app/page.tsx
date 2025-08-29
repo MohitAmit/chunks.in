@@ -10,7 +10,6 @@ import { TestimonialCard } from '@/components/TestimonialCard';
 import { Badge } from '@/components/ui/badge';
 
 export default function Home() {
-
   return (
     <div className="flex flex-col bg-background animate-fade-in">
       {/* Hero Section */}
@@ -55,7 +54,7 @@ export default function Home() {
                   Welcome to Chunks, a clean-label brand reimagining everyday indulgence. Amit and Priyanka, self-taught home chefs and cuisine explorers, are passionate about creating new flavors that feel both exciting and familiar.
                 </p>
                 <p>
-                  Every product is crafted with love, using only clean ingredients, with no preservatives and no shortcuts. We also work with a handful of genuine farmers who produce items on our demand, so your order starts getting prepared only after we receive it. That’s why deliveries take a little more time. <strong>जल्दी का काम शैतान का.</strong>
+                  Every product is crafted with love, using only clean ingredients, with no preservatives and no shortcuts. We also work with a handful of genuine farmers who produce items on our demand, so your order starts getting prepared only after we receive it. That’s why deliveries take a little more time <strong>जल्दी का काम शैतान का!!!!</strong>
                 </p>
               </div>
             </div>
