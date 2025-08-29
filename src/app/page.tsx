@@ -118,8 +118,37 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Sealed with Trust Section */}
+      <section className="py-16 md:py-24 bg-background">
+        <div className="container px-4 md:px-6">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <Image
+                src="https://i.ibb.co/RzM8yCg/promise.png"
+                alt="Our promise of quality"
+                data-ai-hint="product packaging"
+                width={600}
+                height={400}
+                className="rounded-lg w-full"
+              />
+            </div>
+            <div className="space-y-6">
+              <h2 className="text-3xl md:text-4xl font-headline font-bold">Sealed with Trust!!</h2>
+              <div className="text-muted-foreground leading-relaxed space-y-4">
+                <p>
+                  Our farmers instantly seal-pack every item with our patented seal, created to guarantee freshness and safety. Once your order is packed, nobody can open it except you. We’ve invested heavily in research to make sure the chances of duplicacy are impossible.
+                </p>
+                <p>
+                  And because we believe in complete transparency, we also share videos and photos of the making and sealing process. So just relax, <strong>और बाकी हम पे छोड़ दो.</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Featured Products Section */}
-      <section id="products" className="py-16 md:py-24 bg-background">
+      <section id="products" className="py-16 md:py-24 bg-card">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-headline font-bold">Featured Chunks</h2>
@@ -141,7 +170,7 @@ export default function Home() {
       </section>
       
       {/* Know Your Chunks CTA Section */}
-      <section className="py-16 md:py-24 bg-card">
+      <section className="py-16 md:py-24 bg-background">
         <div className="container px-4 md:px-6">
           <div className="bg-secondary rounded-2xl shadow-md overflow-hidden md:grid md:grid-cols-2 items-center">
             <div className="p-8 md:p-12">
@@ -170,7 +199,7 @@ export default function Home() {
 
       {/* Testimonials Section */}
       <section className="py-16 md:py-24 bg-background">
-        <div className="container px-4 md:px-6">
+        <div className="container px-4 mdS:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-headline font-bold">From Our Community</h2>
             <p className="mt-2 text-lg text-muted-foreground">Real stories from our happy customers</p>
