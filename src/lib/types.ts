@@ -44,6 +44,7 @@ export interface Product {
   reports?: Report[];
   useCase?: string;
   nutrition?: Nutrition;
+  goal?: string;
 }
 
 export interface Category {
