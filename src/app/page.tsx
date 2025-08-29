@@ -52,7 +52,7 @@ export default function Home() {
                 <Feather className="h-10 w-10 text-primary" />
                 <h2 className="text-3xl md:text-4xl font-headline font-bold">Our Story</h2>
               </div>
-              <div className="text-muted-foreground leading-relaxed space-y-4">
+              <div className="text-muted-foreground leading-relaxed space-y-4 text-lg">
                 <p>
                   Welcome to Chunks, a clean-label brand reimagining everyday indulgence. Amit and Priyanka, self-taught home chefs and cuisine explorers, are passionate about creating new flavours that feel both exciting and familiar.
                 </p>
