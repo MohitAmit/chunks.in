@@ -1,7 +1,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, Star, ShieldCheck, Heart, Users, Leaf, CookingPot, Truck, ChefHat, PackageCheck, Lock } from 'lucide-react';
+import { ArrowRight, Star, ShieldCheck, Heart, Users, Leaf, CookingPot, Truck, ChefHat, PackageCheck, Lock, Snail, Award } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { featuredProducts, testimonials } from '@/lib/placeholder-data';
@@ -105,23 +105,23 @@ export default function Home() {
       {/* New "Why Chunks" Section */}
       <section className="py-12 md:py-16 bg-primary text-primary-foreground">
         <div className="container px-4 md:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 text-center justify-center">
             <div className="flex flex-col items-center gap-2">
                 <div className="flex items-center justify-center h-16 w-16 rounded-full border-2 border-primary-foreground/30 bg-primary-foreground/10">
-                    <Truck className="h-8 w-8" />
+                    <Snail className="h-8 w-8" />
                 </div>
-                <h3 className="text-xl font-headline font-semibold mt-2">Fast Shipping</h3>
+                <h3 className="text-xl font-headline font-semibold mt-2">Slow Shipping</h3>
                 <p className="text-sm text-primary-foreground/80 max-w-xs">
-                    Enjoy quick, reliable delivery on all orders.
+                    Made fresh on order, delivered with love.
                 </p>
             </div>
             <div className="flex flex-col items-center gap-2">
                 <div className="flex items-center justify-center h-16 w-16 rounded-full border-2 border-primary-foreground/30 bg-primary-foreground/10">
                     <ChefHat className="h-8 w-8" />
                 </div>
-                <h3 className="text-xl font-headline font-semibold mt-2">Made by Chefs</h3>
+                <h3 className="text-xl font-headline font-semibold mt-2">Home Chefs</h3>
                 <p className="text-sm text-primary-foreground/80 max-w-xs">
-                    Expertly baked by chefs with premium ingredients.
+                    Expertly crafted by home chefs with premium ingredients.
                 </p>
             </div>
             <div className="flex flex-col items-center gap-2">
@@ -140,6 +140,15 @@ export default function Home() {
                 <h3 className="text-xl font-headline font-semibold mt-2">100% Secure Shopping</h3>
                 <p className="text-sm text-primary-foreground/80 max-w-xs">
                     Shop with confidence, your data is fully protected.
+                </p>
+            </div>
+             <div className="flex flex-col items-center gap-2">
+                <div className="flex items-center justify-center h-16 w-16 rounded-full border-2 border-primary-foreground/30 bg-primary-foreground/10">
+                    <Award className="h-8 w-8" />
+                </div>
+                <h3 className="text-xl font-headline font-semibold mt-2">Seal of Trust</h3>
+                <p className="text-sm text-primary-foreground/80 max-w-xs">
+                    Authenticity and quality, guaranteed.
                 </p>
             </div>
           </div>
