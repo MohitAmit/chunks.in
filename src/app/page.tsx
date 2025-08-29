@@ -1,7 +1,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, Star, ShieldCheck, Heart, Users, Leaf, CookingPot, Truck, ChefHat, PackageCheck, Lock, Snail, Award } from 'lucide-react';
+import { ArrowRight, Star, ShieldCheck, Heart, Users, Leaf, CookingPot, Truck, ChefHat, PackageCheck, Lock, Snail, Award, Feather } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { featuredProducts, testimonials } from '@/lib/placeholder-data';
@@ -48,7 +48,10 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-headline font-bold">My Kahani, My Zubani</h2>
+              <div className="flex items-center gap-3">
+                <Feather className="h-10 w-10 text-primary" />
+                <h2 className="text-3xl md:text-4xl font-headline font-bold">My Kahani, My Zubani</h2>
+              </div>
               <div className="text-muted-foreground leading-relaxed space-y-4">
                 <p>
                   Welcome to Chunks, a clean-label brand reimagining everyday indulgence. Amit and Priyanka, self-taught home chefs and cuisine explorers, are passionate about creating new flavors that feel both exciting and familiar.
