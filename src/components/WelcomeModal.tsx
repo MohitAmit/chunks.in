@@ -4,7 +4,6 @@
 import {
   Dialog,
   DialogContent,
-  DialogClose,
   DialogHeader,
   DialogTitle,
   DialogDescription,
@@ -14,7 +13,7 @@ import { Input } from './ui/input';
 import { Label } from './ui/label';
 import { Checkbox } from './ui/checkbox';
 import { ChunksLogo } from './ChunksLogo';
-import { BookOpen, Target, Award, X } from 'lucide-react';
+import { BookOpen, Target, Award, Heart } from 'lucide-react';
 import Link from 'next/link';
 
 interface WelcomeModalProps {
@@ -23,23 +22,14 @@ interface WelcomeModalProps {
 }
 
 export function WelcomeModal({ isOpen, onOpenChange }: WelcomeModalProps) {
-
-  const TongueIcon = () => (
-    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#ff4b4b]">
-        <path d="M12 21C15.866 21 19 17.866 19 14V12C19 8.13401 15.866 5 12 5C8.13401 5 5 8.13401 5 12V14C5 17.866 8.13401 21 12 21Z" stroke="#ff4b4b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M12 14C13.6569 14 15 12.6569 15 11C15 9.34315 13.6569 8 12 8C10.3431 8 9 9.34315 9 11C9 12.6569 10.3431 14 12 14Z" fill="#ff4b4b" fillOpacity="0.5"/>
-        <path d="M12 21V19C12 16.2386 9.76142 14 7 14" stroke="#ff4b4b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-    </svg>
-  );
-
   return (
     <Dialog open={isOpen} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-4xl p-0 border-0 bg-transparent shadow-2xl">
+      <DialogContent className="max-w-4xl p-0 border-0 shadow-2xl rounded-2xl">
         <DialogHeader className="sr-only">
-            <DialogTitle>Welcome to Chunks</DialogTitle>
-            <DialogDescription>A welcome modal with an overview of the brand and a sign-up form.</DialogDescription>
+          <DialogTitle>Welcome to Chunks</DialogTitle>
+          <DialogDescription>A welcome modal with an overview of the brand and a sign-up form.</DialogDescription>
         </DialogHeader>
-        <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] rounded-2xl overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] overflow-hidden">
           {/* Left Side */}
           <div className="bg-primary text-primary-foreground p-8 md:p-12 flex flex-col">
               <div className="flex items-center gap-4">
@@ -71,7 +61,7 @@ export function WelcomeModal({ isOpen, onOpenChange }: WelcomeModalProps) {
           {/* Right Side */}
           <div className="bg-card text-card-foreground p-8">
               <div className="text-center mb-6">
-                <h3 className="text-2xl font-headline font-bold flex items-center justify-center gap-2">Take a Bite <TongueIcon /></h3>
+                <h3 className="text-2xl font-headline font-bold flex items-center justify-center gap-2">Take a Bite <Heart className="h-6 w-6 text-primary"/></h3>
               </div>
               <form className="space-y-4">
                  <div>
@@ -85,16 +75,13 @@ export function WelcomeModal({ isOpen, onOpenChange }: WelcomeModalProps) {
                     <Checkbox id="notify" />
                     <Label htmlFor="notify" className="text-sm font-normal text-muted-foreground">Notify me with offers & updates</Label>
                  </div>
-                 <Button type="submit" className="w-full h-12 bg-gray-900 text-white hover:bg-gray-800">Submit</Button>
+                 <Button type="submit" className="w-full h-12">Submit</Button>
               </form>
               <p className="text-xs text-muted-foreground mt-4 text-center">
                 I accept that I have read & understood your <Link href="#" className="underline">Privacy Policy and T&Cs</Link>.
               </p>
           </div>
         </div>
-        <DialogClose className="absolute top-4 right-4 text-primary-foreground bg-black/20 rounded-full p-1 opacity-70 hover:opacity-100 transition-opacity">
-            <X className="h-5 w-5"/>
-        </DialogClose>
       </DialogContent>
     </Dialog>
   );
