@@ -1,5 +1,5 @@
 
-'use client'
+'use client';
 
 import Link from 'next/link'
 import { Menu, ShoppingCart, Search, Zap } from 'lucide-react'
@@ -17,6 +17,7 @@ const navLinks = [
   { href: '/products', label: 'Shop' },
   { href: '/about', label: 'Our Story' },
   { href: '/contact', label: "Let's Talk" },
+  { href: '/recipes', label: 'Recipes' },
 ]
 
 export default function Header() {
