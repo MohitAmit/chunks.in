@@ -58,7 +58,7 @@ export default function Header() {
                       href={link.href}
                       className={cn(
                         'text-lg font-headline font-bold',
-                        pathname === link.href ? 'text-primary' : 'text-foreground hover:text-primary'
+                        pathname === link.href ? 'text-secondary' : 'text-foreground hover:text-primary'
                       )}
                       onClick={() => setSheetOpen(false)}
                     >
@@ -92,7 +92,7 @@ export default function Header() {
                 className={cn(
                   'relative transition-all duration-300 ease-in-out hover:text-primary font-headline font-bold text-lg',
                   pathname === link.href
-                    ? 'text-primary'
+                    ? 'text-secondary'
                     : 'text-foreground/80'
                 )}
               >
@@ -118,7 +118,6 @@ export default function Header() {
              {cartItemCount > 0 && (
                 <div className={cn(
                     "absolute top-0 right-0 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-xs font-bold text-primary-foreground",
-                    isCartAnimating && "animate-ping"
                 )}>
                     {cartItemCount}
                 </div>
