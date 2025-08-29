@@ -60,7 +60,7 @@ export default function Home() {
             </div>
             <div>
               <Image
-                src="https://picsum.photos/600/400"
+                src="https://i.ibb.co/ZRjHkWpf/Chat-GPT-Image-Aug-30-2025-12-05-13-AM.png"
                 alt="Founders of Chunks"
                 data-ai-hint="founders portrait"
                 width={600}
@@ -87,7 +87,10 @@ export default function Home() {
               />
             </div>
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-headline font-bold">Seal of Trust</h2>
+              <div className="flex items-center gap-3">
+                <ShieldCheck className="h-10 w-10 text-primary" />
+                <h2 className="text-3xl md:text-4xl font-headline font-bold">Seal of Trust</h2>
+              </div>
               <div className="text-muted-foreground leading-relaxed space-y-4">
                 <p>
                   Our farmers instantly seal-pack every item with our patented seal, created to guarantee freshness and safety. Once your order is packed, nobody can open it except you. We’ve invested heavily in research to make sure the chances of duplicacy are impossible.
