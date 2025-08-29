@@ -10,28 +10,11 @@ import { featuredProducts, testimonials } from '@/lib/placeholder-data';
 import ProductCard from '@/components/ProductCard';
 import { TestimonialCard } from '@/components/TestimonialCard';
 import { Badge } from '@/components/ui/badge';
-import { WelcomeModal } from '@/components/WelcomeModal';
-import { useEffect, useState } from 'react';
 
 export default function Home() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      // Check if the modal has been shown before in this session
-      if (!sessionStorage.getItem('welcomeModalShown')) {
-        setIsModalOpen(true);
-        sessionStorage.setItem('welcomeModalShown', 'true');
-      }
-    }, 5000); // 5 seconds
-
-    return () => clearTimeout(timer);
-  }, []);
-
 
   return (
     <div className="flex flex-col bg-background animate-fade-in">
-       <WelcomeModal isOpen={isModalOpen} onOpenChange={setIsModalOpen} />
       {/* Hero Section */}
       <section className="relative w-full overflow-hidden bg-secondary">
         <div className="container relative px-4 md:px-6 py-20 md:py-32 flex flex-col md:flex-row items-center gap-12 text-center md:text-left">
