@@ -1,7 +1,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, Star, ShieldCheck, Heart, Users, Leaf, CookingPot } from 'lucide-react';
+import { ArrowRight, Star, ShieldCheck, Heart, Users, Leaf, CookingPot, Truck, ChefHat, PackageCheck, Lock } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { featuredProducts, testimonials } from '@/lib/placeholder-data';
@@ -102,46 +102,45 @@ export default function Home() {
         </div>
       </section>
 
-       {/* Why Chunks Section */}
-      <section className="py-16 md:py-24 bg-card">
+      {/* New "Why Chunks" Section */}
+      <section className="py-12 md:py-16 bg-primary text-primary-foreground">
         <div className="container px-4 md:px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-headline font-bold">Why Chunks?</h2>
-            <p className="mt-2 text-lg text-muted-foreground max-w-2xl mx-auto">We connect you directly to the source, ensuring purity and fairness</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div className="p-6">
-              <div className="flex justify-center mb-4">
-                <div className="bg-primary/10 p-4 rounded-full">
-                  <Leaf className="h-8 w-8 text-primary" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+            <div className="flex flex-col items-center gap-2">
+                <div className="flex items-center justify-center h-16 w-16 rounded-full border-2 border-primary-foreground/30 bg-primary-foreground/10">
+                    <Truck className="h-8 w-8" />
                 </div>
-              </div>
-              <h3 className="text-xl font-headline font-semibold">100% Natural</h3>
-              <p className="mt-2 text-muted-foreground">
-                Sourced directly from trusted vendors, free from preservatives and additives
-              </p>
+                <h3 className="text-xl font-headline font-semibold mt-2">Fast Shipping</h3>
+                <p className="text-sm text-primary-foreground/80 max-w-xs">
+                    Enjoy quick, reliable delivery on all orders.
+                </p>
             </div>
-            <div className="p-6">
-              <div className="flex justify-center mb-4">
-                <div className="bg-primary/10 p-4 rounded-full">
-                  <Users className="h-8 w-8 text-primary" />
+            <div className="flex flex-col items-center gap-2">
+                <div className="flex items-center justify-center h-16 w-16 rounded-full border-2 border-primary-foreground/30 bg-primary-foreground/10">
+                    <ChefHat className="h-8 w-8" />
                 </div>
-              </div>
-              <h3 className="text-xl font-headline font-semibold">Farmer First</h3>
-              <p className="mt-2 text-muted-foreground">
-                We ensure fair prices, empowering our farmer communities and sharing their stories
-              </p>
+                <h3 className="text-xl font-headline font-semibold mt-2">Made by Chefs</h3>
+                <p className="text-sm text-primary-foreground/80 max-w-xs">
+                    Expertly baked by chefs with premium ingredients.
+                </p>
             </div>
-            <div className="p-6">
-              <div className="flex justify-center mb-4">
-                <div className="bg-primary/10 p-4 rounded-full">
-                  <ShieldCheck className="h-8 w-8 text-primary" />
+            <div className="flex flex-col items-center gap-2">
+                <div className="flex items-center justify-center h-16 w-16 rounded-full border-2 border-primary-foreground/30 bg-primary-foreground/10">
+                    <PackageCheck className="h-8 w-8" />
                 </div>
-              </div>
-              <h3 className="text-xl font-headline font-semibold">Radical Transparency</h3>
-              <p className="mt-2 text-muted-foreground">
-                Know the origin, ingredients, and the hands that crafted your food with our reports
-              </p>
+                <h3 className="text-xl font-headline font-semibold mt-2">Handle with Care</h3>
+                <p className="text-sm text-primary-foreground/80 max-w-xs">
+                    Your products are packaged securely and thoughtfully.
+                </p>
+            </div>
+            <div className="flex flex-col items-center gap-2">
+                <div className="flex items-center justify-center h-16 w-16 rounded-full border-2 border-primary-foreground/30 bg-primary-foreground/10">
+                    <Lock className="h-8 w-8" />
+                </div>
+                <h3 className="text-xl font-headline font-semibold mt-2">100% Secure Shopping</h3>
+                <p className="text-sm text-primary-foreground/80 max-w-xs">
+                    Shop with confidence, your data is fully protected.
+                </p>
             </div>
           </div>
         </div>
