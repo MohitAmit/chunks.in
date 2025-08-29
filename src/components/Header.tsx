@@ -118,7 +118,7 @@ export default function Header() {
              {cartItemCount > 0 && (
                 <div className={cn(
                     "absolute top-0 right-0 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-xs font-bold text-primary-foreground",
-                    isCartAnimating && "animate-blinking-scaled"
+                    isCartAnimating && "animate-ping"
                 )}>
                     {cartItemCount}
                 </div>
