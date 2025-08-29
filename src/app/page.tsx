@@ -43,9 +43,67 @@ export default function Home() {
            </div>
         </div>
       </section>
+      
+      {/* My Kahani, My Zubani Section */}
+      <section className="py-16 md:py-24 bg-card">
+        <div className="container px-4 md:px-6">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <h2 className="text-3xl md:text-4xl font-headline font-bold">My Kahani, My Zubani</h2>
+              <div className="text-muted-foreground leading-relaxed space-y-4">
+                <p>
+                  Welcome to Chunks, a clean-label brand reimagining everyday indulgence. Amit and Priyanka, self-taught home chefs and cuisine explorers, are passionate about creating new flavors that feel both exciting and familiar.
+                </p>
+                <p>
+                  Every product is crafted with love, using only clean ingredients, with no preservatives and no shortcuts. We also work with a handful of genuine farmers who produce items on our demand, so your order starts getting prepared only after we receive it. That’s why deliveries take a little more time. <strong>जल्दी का काम शैतान का.</strong>
+                </p>
+              </div>
+            </div>
+            <div>
+              <Image
+                src="https://picsum.photos/600/400"
+                alt="Founders of Chunks"
+                data-ai-hint="founders portrait"
+                width={600}
+                height={400}
+                className="rounded-lg w-full"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Coz Baat Barose Ki Hai Section */}
+      <section className="py-16 md:py-24 bg-background">
+        <div className="container px-4 md:px-6">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <Image
+                src="https://i.ibb.co/RzM8yCg/promise.png"
+                alt="Our promise of quality"
+                data-ai-hint="product packaging"
+                width={600}
+                height={400}
+                className="rounded-lg w-full"
+              />
+            </div>
+            <div className="space-y-6">
+              <h2 className="text-3xl md:text-4xl font-headline font-bold">Coz Baat Barose Ki Hai</h2>
+              <div className="text-muted-foreground leading-relaxed space-y-4">
+                <p>
+                  Our farmers instantly seal-pack every item with our patented seal, created to guarantee freshness and safety. Once your order is packed, nobody can open it except you. We’ve invested heavily in research to make sure the chances of duplicacy are impossible.
+                </p>
+                <p>
+                  And because we believe in complete transparency, we also share videos and photos of the making and sealing process. So just relax, <strong>और बाकी हम पे छोड़ दो.</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
        {/* Why Chunks Section */}
-      <section className="py-16 md:py-24 bg-background">
+      <section className="py-16 md:py-24 bg-card">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-headline font-bold">Why Chunks?</h2>
@@ -88,67 +146,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
-      {/* Who We Are Section */}
-      <section className="py-16 md:py-24 bg-card">
-        <div className="container px-4 md:px-6">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-headline font-bold">My Kahani, My Zubani</h2>
-              <div className="text-muted-foreground leading-relaxed space-y-4">
-                <p>
-                  Welcome to Chunks, a clean-label brand reimagining everyday indulgence. Amit and Priyanka, self-taught home chefs and cuisine explorers, are passionate about creating new flavors that feel both exciting and familiar.
-                </p>
-                <p>
-                  Every product is crafted with love, using only clean ingredients, with no preservatives and no shortcuts. We also work with a handful of genuine farmers who produce items on our demand, so your order starts getting prepared only after we receive it. That’s why deliveries take a little more time. <strong>जल्दी का काम शैतान का.</strong>
-                </p>
-              </div>
-            </div>
-            <div>
-              <Image
-                src="https://picsum.photos/600/400"
-                alt="Founders of Chunks"
-                data-ai-hint="founders portrait"
-                width={600}
-                height={400}
-                className="rounded-lg w-full"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Sealed with Trust Section */}
-      <section className="py-16 md:py-24 bg-background">
-        <div className="container px-4 md:px-6">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <Image
-                src="https://i.ibb.co/RzM8yCg/promise.png"
-                alt="Our promise of quality"
-                data-ai-hint="product packaging"
-                width={600}
-                height={400}
-                className="rounded-lg w-full"
-              />
-            </div>
-            <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-headline font-bold">Coz Baat Barose Ki Hai</h2>
-              <div className="text-muted-foreground leading-relaxed space-y-4">
-                <p>
-                  Our farmers instantly seal-pack every item with our patented seal, created to guarantee freshness and safety. Once your order is packed, nobody can open it except you. We’ve invested heavily in research to make sure the chances of duplicacy are impossible.
-                </p>
-                <p>
-                  And because we believe in complete transparency, we also share videos and photos of the making and sealing process. So just relax, <strong>और बाकी हम पे छोड़ दो.</strong>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Featured Products Section */}
-      <section id="products" className="py-16 md:py-24 bg-card">
+      <section id="products" className="py-16 md:py-24 bg-background">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-headline font-bold">Featured Chunks</h2>
@@ -170,7 +170,7 @@ export default function Home() {
       </section>
       
       {/* Know Your Chunks CTA Section */}
-      <section className="py-16 md:py-24 bg-background">
+      <section className="py-16 md:py-24 bg-card">
         <div className="container px-4 md:px-6">
           <div className="bg-secondary rounded-2xl shadow-md overflow-hidden md:grid md:grid-cols-2 items-center">
             <div className="p-8 md:p-12">
