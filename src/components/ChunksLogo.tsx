@@ -4,10 +4,10 @@ import Image from 'next/image';
 export const ChunksLogo = () => {
   return (
     <Image
-      src="https://i.ibb.co/mFVXm9M5/Chat-GPT-Image-Aug-29-2025-09-47-25-PM.png"
+      src="https://i.ibb.co/wrcGcBc6/Screenshot-2025-08-29-at-10-22-15-PM.png"
       alt="Chunks Logo"
-      width={140}
-      height={40}
+      width={120}
+      height={30}
       className="object-contain"
       priority
     />
