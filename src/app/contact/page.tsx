@@ -18,7 +18,7 @@ export default function ContactPage() {
         <div className="text-center">
           <h1 className="text-4xl md:text-5xl font-headline font-bold text-foreground">Get In Touch</h1>
           <p className="mt-4 text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            We&apos;re here to help and answer any question you might have We look forward to hearing from you
+            We're here to help and answer any question you might have We look forward to hearing from you
           </p>
         </div>
 
@@ -66,7 +66,7 @@ export default function ContactPage() {
                       <User className="h-6 w-6 text-primary" />
                       <div>
                         <p className="font-semibold">Mohit Verma</p>
-                        <p className="text-sm text-muted-foreground">CBO</p>
+                        <p className="text-sm text-muted-foreground">CEO</p>
                       </div>
                   </div>
                   <div className="flex items-center gap-4">
@@ -131,7 +131,7 @@ export default function ContactPage() {
                   <Button type="submit" className="w-full">Submit</Button>
                 </form>
               </CardContent>
-            </Card>
+            </card>
           </div>
         </div>
 
