@@ -24,7 +24,7 @@ export default function AnnouncementBar() {
         >
           <div className="container mx-auto px-4 md:px-6 h-10 flex items-center justify-center relative">
             <p className="text-sm font-medium">
-              Free shipping on orders above ₹799 🚚✨
+              Free shipping on orders above &#8377;799 🚚✨
             </p>
             <button
               onClick={() => setIsVisible(false)}
