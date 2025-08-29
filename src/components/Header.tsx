@@ -14,10 +14,10 @@ import { ChunksLogo } from './ChunksLogo'
 import { ThemeToggle } from './ThemeToggle'
 
 const navLinks = [
-  { href: '/products', label: 'चख लो' },
-  { href: '/about', label: 'अपनी कहानी' },
-  { href: '/contact', label: 'बात-चीत' },
-  { href: '/blog', label: 'अनोखा ज्ञान' },
+  { href: '/products', label: <>चख लो</> },
+  { href: '/about', label: <>अपनी कहानी</> },
+  { href: '/contact', label: <>बात-चीत</> },
+  { href: '/blog', label: <>अनोखा ज्ञान</> },
 ]
 
 export default function Header() {
