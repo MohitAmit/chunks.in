@@ -39,7 +39,7 @@ export default function ContactPage() {
                       <User className="h-6 w-6 text-primary" />
                       <div>
                         <p className="font-semibold">Amit Singh</p>
-                        <p className="text-sm text-muted-foreground">CEO</p>
+                        <p className="text-sm text-muted-foreground">COO</p>
                       </div>
                   </div>
                   <div className="flex items-center gap-4">
