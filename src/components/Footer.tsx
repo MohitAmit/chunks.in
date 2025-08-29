@@ -58,7 +58,7 @@ export default function Footer() {
         </div>
         <div className="mt-8 border-t pt-6 flex items-center justify-between text-sm text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} Chunks All Rights Reserved</p>
-          <p>Design by KerkarMedia</p>
+          <p>प्योर टच, हेल्दी टेस्ट</p>
         </div>
       </div>
     </footer>
