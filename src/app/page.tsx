@@ -50,14 +50,14 @@ export default function Home() {
             <div className="space-y-6">
               <div className="flex items-center gap-3">
                 <Feather className="h-10 w-10 text-primary" />
-                <h2 className="text-3xl md:text-4xl font-headline font-bold">My Kahani, My Zubani</h2>
+                <h2 className="text-3xl md:text-4xl font-headline font-bold">Our Story</h2>
               </div>
               <div className="text-muted-foreground leading-relaxed space-y-4">
                 <p>
                   Welcome to Chunks, a clean-label brand reimagining everyday indulgence. Amit and Priyanka, self-taught home chefs and cuisine explorers, are passionate about creating new flavors that feel both exciting and familiar.
                 </p>
                 <p>
-                  Every product is crafted with love, using only clean ingredients, with no preservatives and no shortcuts. We also work with a handful of genuine farmers who produce items on our demand, so your order starts getting prepared only after we receive it. That’s why deliveries take a little more time <strong>जल्दी का काम शैतान का !!!</strong>
+                  Every product is crafted with love, using only clean ingredients, with no preservatives and no shortcuts. We also work with a handful of genuine farmers who produce items on our demand, so your order starts getting prepared only after we receive it. That’s why deliveries take a little more time जल्दी का काम शैतान का !!!
                 </p>
               </div>
             </div>
