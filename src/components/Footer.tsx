@@ -56,8 +56,9 @@ export default function Footer() {
             </form>
           </div>
         </div>
-        <div className="mt-8 border-t border-background/20 pt-6 text-center text-sm text-background/80">
+        <div className="mt-8 border-t border-background/20 pt-6 flex items-center justify-between text-sm text-background/80">
           <p>&copy; {new Date().getFullYear()} Chunks All Rights Reserved</p>
+          <p>Design by KerkarMedia</p>
         </div>
       </div>
     </footer>
