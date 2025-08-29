@@ -99,7 +99,7 @@ export default function ContactPage() {
                 </div>
                 <div className="flex items-start gap-4">
                     <MapPin className="h-6 w-6 text-primary mt-1" />
-                    <p>Chunks Wellness Pvt. Ltd.,<br/>Mumbai, India</p>
+                    <p>Hyderabad- 500089</p>
                 </div>
               </CardContent>
             </Card>
