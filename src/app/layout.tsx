@@ -11,6 +11,9 @@ import AnnouncementBar from '@/components/AnnouncementBar';
 export const metadata: Metadata = {
   title: 'Chunks',
   description: 'Preservative-free, homegrown Indian health products',
+  icons: {
+    icon: 'https://i.ibb.co/wrcGcBc6/Screenshot-2025-08-29-at-10-22-15-PM.png',
+  },
 };
 
 export default function RootLayout({
