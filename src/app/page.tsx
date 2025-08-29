@@ -94,7 +94,7 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-headline font-bold">अपनी कहानी</h2>
+              <h2 className="text-3xl md:text-4xl font-headline font-bold">My Kahani, My Zubani</h2>
               <div className="text-muted-foreground leading-relaxed space-y-4">
                 <p>
                   Welcome to Chunks, a clean-label brand reimagining everyday indulgence. Amit and Priyanka, self-taught home chefs and cuisine explorers, are passionate about creating new flavors that feel both exciting and familiar.
