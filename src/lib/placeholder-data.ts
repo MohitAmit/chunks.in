@@ -343,52 +343,6 @@ export const products: Product[] = [
     useCase: 'A healthier alternative to fried chips',
   },
   {
-    id: 'chia-jaggery-parfait',
-    name: 'Chia & Jaggery Parfait Jars',
-    category: 'snacks',
-    variants: [{ id: 'cjp-200g', size: '200g Jar', price: 350 }],
-    description: 'Breakfast, but prettier And better for your gut Layers of soaked chia seeds, jaggery-sweetened yogurt, and seasonal fruit puree',
-    image: 'https://placehold.co/600x600.png',
-    images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
-    region: 'All India',
-    ingredients: [
-        { name: 'Chia Seeds', source: 'Organic Farms', batchId: 'CHS-2405', procurementDate: '2024-05-15', expiryDate: '2025-11-14' },
-        { name: 'Yogurt', source: 'Local Dairy', batchId: 'YOG-2406', procurementDate: '2024-06-10', expiryDate: '2024-06-20' },
-        { name: 'Jaggery', source: 'Kolhapur Farms', batchId: 'JAG-2405', procurementDate: '2024-05-15', expiryDate: '2025-05-14' },
-    ],
-    chunkerStory: {
-      name: 'The Breakfast Club',
-      story: 'We believe that breakfast should be both beautiful and beneficial Our parfait jars are designed to give you a healthy, happy start to your day',
-      video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      photo: 'https://placehold.co/300x300.png',
-    },
-    healthBenefits: ['Rich in probiotics', 'High in fiber and Omega-3', 'Naturally sweetened'],
-    useCase: 'A healthy and convenient breakfast or light meal',
-  },
-  {
-    id: 'turmeric-cacao-bites',
-    name: 'Turmeric Cacao Bites',
-    category: 'snacks',
-    variants: [{ id: 'tcb-150g', size: '150g', price: 410 }],
-    description: 'Golden latte, meet brownie bite Anti-inflammatory bites made with cacao, turmeric, nut butter, and honey',
-    image: 'https://placehold.co/600x600.png',
-    images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
-    region: 'All India',
-    ingredients: [
-        { name: 'Cacao Powder', source: 'Kerala Farms', batchId: 'CAC-2404', procurementDate: '2024-04-20', expiryDate: '2025-10-19' },
-        { name: 'Turmeric', source: 'Erode Farms', batchId: 'TUR-2403', procurementDate: '2024-03-10', expiryDate: '2025-09-09' },
-        { name: 'Almond Butter', source: 'In-house', batchId: 'ALB-2406', procurementDate: '2024-06-01', expiryDate: '2024-12-01' }
-    ],
-    chunkerStory: {
-      name: 'The Wellness Pantry',
-      story: 'Our goal is to create snacks that heal By combining the power of turmeric and cacao, we have made a treat that tastes good and does good',
-      video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      photo: 'https://placehold.co/300x300.png',
-    },
-    healthBenefits: ['Anti-inflammatory', 'Rich in antioxidants', 'Mood-boosting'],
-    useCase: 'A functional snack to reduce inflammation and boost mood',
-  },
-  {
     id: 'beetroot-rice-crisps',
     name: 'Beetroot & Saffron Rice Crisps',
     category: 'snacks',
@@ -542,7 +496,7 @@ export const products: Product[] = [
   },
 ]
 
-export const featuredProducts = [products[3], products[4], products[9], products[20]];
+export const featuredProducts = [products[3], products[4], products[9], products[15]];
 
 export const testimonials: Testimonial[] = [
   {
