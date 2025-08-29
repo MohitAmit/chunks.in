@@ -6,6 +6,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { CartProvider } from '@/context/CartContext';
+import AnnouncementBar from '@/components/AnnouncementBar';
 
 export const metadata: Metadata = {
   title: 'Chunks',
@@ -33,6 +34,7 @@ export default function RootLayout({
         >
           <CartProvider>
             <div className="flex min-h-screen flex-col">
+              <AnnouncementBar />
               <Header />
               <main className="flex-1">{children}</main>
               <Footer />
