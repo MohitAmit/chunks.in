@@ -5,6 +5,9 @@ import {
   Dialog,
   DialogContent,
   DialogClose,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
 } from '@/components/ui/dialog';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
@@ -32,6 +35,10 @@ export function WelcomeModal({ isOpen, onOpenChange }: WelcomeModalProps) {
   return (
     <Dialog open={isOpen} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-4xl p-0 border-0 bg-transparent shadow-2xl">
+        <DialogHeader className="sr-only">
+            <DialogTitle>Welcome to Chunks</DialogTitle>
+            <DialogDescription>A welcome modal with an overview of the brand and a sign-up form.</DialogDescription>
+        </DialogHeader>
         <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] rounded-2xl overflow-hidden">
           {/* Left Side */}
           <div className="bg-primary text-primary-foreground p-8 md:p-12 flex flex-col">
@@ -57,7 +64,7 @@ export function WelcomeModal({ isOpen, onOpenChange }: WelcomeModalProps) {
                    <div className="bg-primary/80 backdrop-blur-sm p-4 rounded-lg border border-primary-foreground/20">
                       <BookOpen className="h-8 w-8 text-yellow-300 mb-2"/>
                       <h3 className="font-bold font-headline">Promise</h3>
-                      <p className="text-sm text-primary-foreground/80">Chunks isn't just a cookie brand. It&apos;s India&apos;s first gluten-free snacking movement.</p>
+                      <p className="text-sm text-primary-foreground/80">Chunks isn&apos;t just a cookie brand. It&apos;s India&apos;s first gluten-free snacking movement.</p>
                   </div>
               </div>
           </div>
