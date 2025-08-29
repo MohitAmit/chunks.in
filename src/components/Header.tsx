@@ -16,7 +16,7 @@ import { ThemeToggle } from './ThemeToggle'
 const navLinks = [
   { href: '/products', label: 'Shop' },
   { href: '/about', label: 'Our Story' },
-  { href: '/contact', label: <>बात-चीत</> },
+  { href: '/contact', label: "Let's Talk" },
   { href: '/blog', label: <>अनोखा ज्ञान</> },
 ]
 
