@@ -126,7 +126,7 @@ export default function Home() {
             </div>
             <div className="h-64 md:h-full">
               <Image
-                src="https://i.ibb.co/RTmzgjnM/Screenshot-2025-07-13-at-11-41-02-PM.png"
+                src="https://i.ibb.co/jvPrkGBf/Screenshot-2025-07-15-at-10-44-27-AM.png"
                 alt="A collage of Indian chunkers"
                 data-ai-hint="health report analysis"
                 width={600}
@@ -162,5 +162,7 @@ export default function Home() {
     </div>
   );
 }
+
+    
 
     
