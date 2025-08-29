@@ -105,7 +105,7 @@ export default function Home() {
       {/* New "Why Chunks" Section */}
       <section className="py-12 md:py-16 bg-primary text-primary-foreground">
         <div className="container px-4 md:px-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 text-center justify-center">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center justify-center">
             <div className="flex flex-col items-center gap-2">
                 <div className="flex items-center justify-center h-16 w-16 rounded-full border-2 border-primary-foreground/30 bg-primary-foreground/10">
                     <Snail className="h-8 w-8" />
@@ -126,11 +126,11 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center gap-2">
                 <div className="flex items-center justify-center h-16 w-16 rounded-full border-2 border-primary-foreground/30 bg-primary-foreground/10">
-                    <PackageCheck className="h-8 w-8" />
+                    <Award className="h-8 w-8" />
                 </div>
-                <h3 className="text-xl font-headline font-semibold mt-2">Handle with Care</h3>
+                <h3 className="text-xl font-headline font-semibold mt-2">Seal of Trust</h3>
                 <p className="text-sm text-primary-foreground/80 max-w-xs">
-                    Your products are packaged securely and thoughtfully.
+                    Authenticity and quality, guaranteed.
                 </p>
             </div>
             <div className="flex flex-col items-center gap-2">
@@ -140,15 +140,6 @@ export default function Home() {
                 <h3 className="text-xl font-headline font-semibold mt-2">100% Secure Shopping</h3>
                 <p className="text-sm text-primary-foreground/80 max-w-xs">
                     Shop with confidence, your data is fully protected.
-                </p>
-            </div>
-             <div className="flex flex-col items-center gap-2">
-                <div className="flex items-center justify-center h-16 w-16 rounded-full border-2 border-primary-foreground/30 bg-primary-foreground/10">
-                    <Award className="h-8 w-8" />
-                </div>
-                <h3 className="text-xl font-headline font-semibold mt-2">Seal of Trust</h3>
-                <p className="text-sm text-primary-foreground/80 max-w-xs">
-                    Authenticity and quality, guaranteed.
                 </p>
             </div>
           </div>
