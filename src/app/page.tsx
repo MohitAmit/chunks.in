@@ -52,7 +52,7 @@ export default function Home() {
            </div>
            <div className="flex-1 relative h-80 w-full md:h-[500px] aspect-square">
             <Image
-              src="https://i.ibb.co/xSpJSrPb/Screenshot-2025-07-14-at-8-04-34-PM.png"
+              src="https://i.ibb.co/RTmzgjnM/Screenshot-2025-07-13-at-11-41-02-PM.png"
               alt="Artisanal Indian health products"
               data-ai-hint="artisanal products"
               fill
@@ -146,7 +146,7 @@ export default function Home() {
             </div>
             <div className="h-64 md:h-full">
               <Image
-                src="https://i.ibb.co/jvPrkGBf/Screenshot-2025-07-15-at-10-44-27-AM.png"
+                src="https://placehold.co/600x400.png"
                 alt="A collage of Indian chunkers"
                 data-ai-hint="health report analysis"
                 width={600}
