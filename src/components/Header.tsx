@@ -2,7 +2,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Menu, ShoppingCart, Search, User, Zap } from 'lucide-react'
+import { Menu, ShoppingCart, Search, Zap } from 'lucide-react'
 import { usePathname } from 'next/navigation'
 
 import { Button } from '@/components/ui/button'
@@ -108,7 +108,7 @@ export default function Header() {
            </Button>
            <Button variant="ghost" size="icon" asChild>
             <Link href="/dashboard">
-             <User className="h-6 w-6" />
+             <Zap className="h-6 w-6" />
              <span className="sr-only">User Profile</span>
             </Link>
            </Button>
