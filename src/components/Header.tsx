@@ -90,13 +90,17 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  'relative transition-all duration-300 ease-in-out hover:text-primary font-headline font-bold text-lg',
+                  'relative transition-colors duration-300 ease-in-out font-headline font-bold text-lg group',
                   pathname === link.href
                     ? 'text-primary'
-                    : 'text-foreground/80'
+                    : 'text-foreground/80 hover:text-primary'
                 )}
               >
                 {link.label}
+                 <span className={cn(
+                    "absolute bottom-0 left-0 h-0.5 bg-primary w-full transform scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100",
+                    pathname === link.href ? "scale-x-100" : "scale-x-0"
+                  )}></span>
               </Link>
             ))}
         </nav>
