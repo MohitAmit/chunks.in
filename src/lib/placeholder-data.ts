@@ -229,53 +229,6 @@ export const products: Product[] = [
     useCase: 'A healthy, gluten-free snack that is rich in fiber',
   },
   {
-    id: 'cone-bites',
-    name: 'Dark Chocolate Cone Bites',
-    category: 'snacks',
-    variants: [{ id: 'dcb-150g', size: '150g', price: 420 }],
-    description: 'Bite-sized bliss with no guilt Mini waffle cones filled with delicious date-almond butter and coated in rich dark chocolate',
-    image: 'https://placehold.co/600x600.png',
-    images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
-    region: 'All India',
-    ingredients: [
-        { name: 'Mini Waffle Cones', source: 'Local Bakery', batchId: 'WFC-2406', procurementDate: '2024-06-01', expiryDate: '2024-12-01' },
-        { name: 'Date-Almond Butter', source: 'In-house', batchId: 'DAB-2406', procurementDate: '2024-06-01', expiryDate: '2024-09-01' },
-        { name: 'Dark Chocolate', source: 'Indian Cocoa Farms', batchId: 'DC-2405', procurementDate: '2024-05-15', expiryDate: '2025-05-14' }
-    ],
-    chunkerStory: {
-      name: 'Urban Homemakers',
-      story: 'We create treats that are both indulgent and healthy These cone bites are our modern take on guilt-free snacking',
-      video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      photo: 'https://placehold.co/300x300.png',
-    },
-    healthBenefits: ['Guilt-free indulgence', 'No refined sugar', 'Rich in antioxidants'],
-    useCase: 'A healthy dessert or sweet snack without refined sugar',
-  },
-  {
-    id: 'energy-cubes',
-    name: 'Honey & Nut Butter Energy Cubes',
-    category: 'snacks',
-    variants: [{ id: 'ec-200g', size: '200g', price: 380 }],
-    description: 'The natural 4PM fix with no crash Made from dates, honey, nut butter, and oats, these cubes are your perfect energy boost',
-    image: 'https://placehold.co/600x600.png',
-    images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
-    region: 'All India',
-    ingredients: [
-        { name: 'Dates', source: 'Omani Imports', batchId: 'DAT-2404', procurementDate: '2024-04-10', expiryDate: '2025-04-09' },
-        { name: 'Almond Butter', source: 'In-house', batchId: 'ALB-2406', procurementDate: '2024-06-01', expiryDate: '2024-12-01' },
-        { name: 'Rolled Oats', source: 'Punjab Farms', batchId: 'OAT-2403', procurementDate: '2024-03-20', expiryDate: '2025-09-19' },
-        { name: 'Raw Honey', source: 'Himalayan Foothills', batchId: 'HNY-2403', procurementDate: '2024-03-15', expiryDate: '2026-03-14' }
-    ],
-    chunkerStory: {
-      name: 'The Fitness Kitchen',
-      story: 'We believe in the power of natural energy Our energy cubes are crafted to provide sustained fuel for active lifestyles, without any artificial ingredients',
-      video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      photo: 'https://placehold.co/300x300.png',
-    },
-    healthBenefits: ['Sustained energy release', 'No-crash formula', 'High in protein and fiber'],
-    useCase: 'A natural pre-workout or afternoon energy snack',
-  },
-  {
     id: 'ghee-makhana',
     name: 'Ghee Roasted Makhana',
     category: 'snacks',
@@ -299,52 +252,6 @@ export const products: Product[] = [
     },
     healthBenefits: ['High in protein', 'Low calorie', 'Rich in minerals'],
     useCase: 'A healthy, crunchy snack for any time of day',
-  },
-  {
-    id: 'saffron-laddoo',
-    name: 'Saffron & Almond Laddoo',
-    category: 'snacks',
-    variants: [{ id: 'sal-200g', size: '200g', price: 480 }],
-    description: 'Grandma’s laddoo meets clean eating A luxurious yet clean-ingredient treat, rolled in oat flour and sweetened with dates',
-    image: 'https://placehold.co/600x600.png',
-    images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
-    region: 'All India',
-    ingredients: [
-        { name: 'Almonds', source: 'California Orchards', batchId: 'ALM-2403', procurementDate: '2024-03-20', expiryDate: '2025-09-19' },
-        { name: 'Saffron', source: 'Kashmir Fields', batchId: 'SFF-2311', procurementDate: '2023-11-20', expiryDate: '2025-11-19' },
-        { name: 'Dates', source: 'Omani Imports', batchId: 'DAT-2404', procurementDate: '2024-04-10', expiryDate: '2025-04-09' },
-        { name: 'Oat Flour', source: 'In-house', batchId: 'OATF-2406', procurementDate: '2024-06-01', expiryDate: '2024-12-01' }
-    ],
-    chunkerStory: {
-      name: 'The Heritage Kitchen',
-      story: 'We are reinventing traditional Indian sweets for the modern palate Our laddoos carry the warmth of tradition with the benefits of clean, healthy ingredients',
-      video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      photo: 'https://placehold.co/300x300.png',
-    },
-    healthBenefits: ['Clean ingredients', 'No refined sugar', 'Luxurious taste'],
-    useCase: 'A healthy festive sweet or an indulgent treat',
-  },
-  {
-    id: 'garlic-pita-chips',
-    name: 'Garlic Chutney Pita Chips',
-    category: 'snacks',
-    variants: [{ id: 'gcpc-150g', size: '150g', price: 220 }],
-    description: 'The spicy chip your gut loves Baked, not fried, multigrain pita chips coated with a zesty dry garlic and masala chutney',
-    image: 'https://placehold.co/600x600.png',
-    images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
-    region: 'All India',
-    ingredients: [
-        { name: 'Multigrain Flour', source: 'Local Millers', batchId: 'MGF-2406', procurementDate: '2024-06-01', expiryDate: '2024-12-01' },
-        { name: 'Dry Garlic Chutney', source: 'In-house', batchId: 'DGC-2406', procurementDate: '2024-06-01', expiryDate: '2024-09-01' }
-    ],
-    chunkerStory: {
-      name: 'Snacksmiths India',
-      story: 'We love bold Indian flavors Our garlic chutney chips are a tribute to the fiery chutneys of Maharashtra, made healthier by baking',
-      video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      photo: 'https://placehold.co/300x300.png',
-    },
-    healthBenefits: ['Baked, not fried', 'Made with multigrain', 'Rich in flavor'],
-    useCase: 'A healthier alternative to fried chips',
   },
   {
     id: 'beetroot-rice-crisps',
@@ -500,7 +407,7 @@ export const products: Product[] = [
   },
 ]
 
-export const featuredProducts = [products[1], products[4], products[9], products[15]];
+export const featuredProducts = [products[1], products[4], products[9], products[14]];
 
 export const testimonials: Testimonial[] = [
   {
