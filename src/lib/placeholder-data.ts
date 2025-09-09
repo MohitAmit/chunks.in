@@ -34,12 +34,12 @@ export const products: Product[] = [
     category: 'honey',
     variants: [{ id: 'sht-30pc', size: '30 Twigs', price: 450 }],
     description: 'Our best-selling natural performance enhancer for young people and gym lovers Infused with pure Himalayan Shilajit, these honey twigs provide a sustained energy release to power you through your workouts',
-    image: 'https://i.ibb.co/Z64ddyxp/Chat-GPT-Image-Aug-29-2025-10-48-47-PM.png',
+    image: 'https://placehold.co/600x600.png',
     dataAiHint: 'honey sticks gym',
     images: [
-      'https://i.ibb.co/Z64ddyxp/Chat-GPT-Image-Aug-29-2025-10-48-47-PM.png',
-      'https://i.ibb.co/k3B2S1b/Chat-GPT-Image-Aug-29-2025-10-48-50-PM.png',
-      'https://i.ibb.co/9gX6b2K/Chat-GPT-Image-Aug-29-2025-10-48-52-PM.png',
+      'https://placehold.co/600x600.png',
+      'https://placehold.co/600x600.png',
+      'https://placehold.co/600x600.png',
     ],
     region: 'Himalayan Region',
     ingredients: [{ name: 'Raw Honey', source: 'Himalayan Foothills', batchId: 'HNY-2403', procurementDate: '2024-03-15', expiryDate: '2026-03-14' }, { name: 'Shilajit Extract', source: 'Himalayan Higher Altitudes', batchId: 'SHJ-2310', procurementDate: '2023-10-02', expiryDate: '2028-10-01' }],
@@ -254,29 +254,6 @@ export const products: Product[] = [
     useCase: 'A healthy, crunchy snack for any time of day',
   },
   {
-    id: 'beetroot-rice-crisps',
-    name: 'Beetroot & Saffron Rice Crisps',
-    category: 'snacks',
-    variants: [{ id: 'bsrc-100g', size: '100g', price: 280 }],
-    description: 'Your snack board just got healthier (and pink) Colorful, crunchy, and naturally flavored rice crisps',
-    image: 'https://placehold.co/600x600.png',
-    images: ['https://placehold.co/600x600.png', 'https://placehold.co/600x600.png', 'https://placehold.co/600x600.png'],
-    region: 'All India',
-    ingredients: [
-        { name: 'Rice Flour', source: 'Southern Plains', batchId: 'RF-2406', procurementDate: '2024-06-01', expiryDate: '2024-12-01' },
-        { name: 'Beetroot Powder', source: 'Ooty Farms', batchId: 'BTP-2405', procurementDate: '2024-05-20', expiryDate: '2025-05-19' },
-        { name: 'Saffron', source: 'Kashmir Fields', batchId: 'SFF-2311', procurementDate: '2023-11-20', expiryDate: '2025-11-19' }
-    ],
-    chunkerStory: {
-      name: 'The Crispy Cracker Co',
-      story: 'We believe snacks should be fun and colorful without artificial ingredients Our crisps get their vibrant hues from real vegetables and spices',
-      video: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      photo: 'https://placehold.co/300x300.png',
-    },
-    healthBenefits: ['All-natural colors', 'Light and crunchy', 'Low-calorie'],
-    useCase: 'A healthy and colorful addition to snack boards and dips',
-  },
-  {
     id: 'ragi-jaggery-cookies',
     name: 'Ragi & Jaggery Cookies',
     category: 'snacks',
@@ -407,7 +384,7 @@ export const products: Product[] = [
   },
 ]
 
-export const featuredProducts = [products[1], products[4], products[9], products[14]];
+export const featuredProducts = [products[1], products[4], products[8], products[12]];
 
 export const testimonials: Testimonial[] = [
   {
